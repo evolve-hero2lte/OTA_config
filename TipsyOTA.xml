@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Stable>
+        <onyx>
+            <Filename>Tipsy-onyx-6.0.1.Vacation.v3.9--20160508-1258</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=56591</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/onyx/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+            <OPUrl
+                id="op"
+                title="OnePlus Forums"
+                description="Visit GZR onyx thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-05-07-onyx-tipsy-tesla-validus-6-0-1_43-aospb-official.437885/</OPUrl>
+        </onyx>
+        <bacon>
+            <Filename>Tipsy-bacon-6.0.1.Vacation.v3.9--20160508-1258</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=34816</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/bacon/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+            <OPUrl
+                id="op"
+                title="OnePlus Forums"
+                description="Visit GZR bacon thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-05-07-opo-tipsy-tesla-validus-6-0-1-aospb-official.442949/</OPUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit TipsyOs bacon XDA thread">http://forum.xda-developers.com/oneplus-one/development/rom-kernel-tipsyos-bacon-t3165560</XDAUrl>
+        </bacon>
+        <OnePlus2>
+            <Filename>Tipsy-oneplus2-6.0.1.Vacation.v3.9--20160508-1258</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=56588</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/oneplus2/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+            <OPUrl
+                id="op"
+                title="OnePlus Forums"
+                description="Visit GZR OnePlus2 thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-04-29-opt-tipsy-tesla-validus-6-0-1-aospb-official.437904/</OPUrl>
+        </OnePlus2>
+    </Stable>
+</SlimOTA>
+
