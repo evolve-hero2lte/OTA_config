@@ -1,25 +1,112 @@
 ====================
-     05-11-2016
+     05-16-2016
 ====================
-   * OTA_config/
-39d2d7b  frunk OTA  [Martinusbe]
-6da0b72  Revert "Add Lux OTA"  [Martinusbe]
-39ab45e  oneplus2: add url to thread on OnePlus Forums  [Martinusbe]
-8685996  Revert "url wants the blob"  [Martinusbe]
-a407f42  Add Lux OTA  [Martinusbe]
-2ada850  onyx: add OnePlus Forums thread url  [Martinusbe]
-0bb42aa  oneplus2: oneplus2 < OnePlus2  [Martinusbe]
-acb70a4  bacon: change to new afh directory  [Martinusbe]
+
    * device/oneplus/onyx/
 42718c0  Doze: we don't have cmsdk  [Martinusbe]
 20b6c4b  wakeupgestures: import slim screentype  [Martinusbe]
 15894db  make LocSharedLock::mRef ops atomic  [Martinusbe]
 a156756  onyx: doze: Add a service to mimic OOS Ambient Display  [Martinusbe]
 586c7da  onyx: Use OnePlus' default MAC prefix  [Martinusbe]
+1bb6fc3  onyx: build FMRadio  [Martinusbe]
+   * device/oneplus/oneplus2/
+3b97a10  audio: Add aanc tuning mixer  [Martinusbe]
+5c32005  audio: Disable tunnel encode and three mic  [Martinusbe]
+464bd1b  sepolicy: fix some denials  [Martinusbe]
+638128b  overlay: move proximity to frameworks  [Martinusbe]
+9462d17  overlay: update gps config  [Martinusbe]
+   * vendor/tipsy/
+c9369d4  Kirkstall_framboise it is for Pete =)  [Alx31]
+   * device/oppo/common/
+2143ccc  DeviceHandler:slider: add 2 more options  [Martinusbe]
+   * frameworks/base/
+a60ed72  Slim utils: add getColoredBitmap to imagehelper for ls weather  [Martinusbe]
+f267256  Lockscreen weather options [1/2]  [Martinusbe]
+   * kernel/oneplus/msm8994/
+2544ab2  tri_state_key: allow more key codes for extra modes  [Martinusbe]
+6978db2  qcom: core_ctl: Update core control driver  [Martinusbe]
+   * kernel/oneplus/onyx/
+3e67406  ARM: dts: 15055: Update RGB LED settings  [Martinusbe]
+ade2428  pwm: qpnp-pwm: add api for synchronous enable of pwms  [Martinusbe]
+59b9e702  leds: leds-qpnp: add synchronized rgb control  [Martinusbe]
+494577b  leds: leds-qpnp: Remove OEM modifications to RGB LED  [Martinusbe]
+d92c742  ARM: dts: 15055: Fix multi-color breathing LED & LEDs error on init  [Martinusbe]
+48dccad  tri_state_key.c: fix build after more keycodes commit  [Martinusbe]
+8acb331  onyx:tri_state_key: allow more key codes for extra modes  [Martinusbe]
+   * packages/apps/Settings/
+0782e12  Lockscreen weather options [2/2] Adapted for Tipsy with a lot of changes to include  [Martinusbe]
+25a0ee4  Use correct icon for sim card  [Martinusbe]
+   * packages/apps/Snap/
+a549c38  Automatic translation import  [Gerrit Code Review]
+1705a87  Snap: Extend user menu, disable dev menu  [Daniel Hillenbran
+   * OTA_config/
+4909ad2  oneplus2: test  [Martinusbe]
+78b9f63  onepluses: correct filenames for current build  [Martinusbe]
+   * external/skia/
+6d0d9b1  skia: qc-perf: link against libqc-opt for msm8916  [Josue Rivera]
+d1f3a4b  skia: Fix QC-PERF for msm8992  [Josue Rivera]
+   * frameworks/base/
+20e0e06  [1/2] frameworks/base: Privacy Guard  [Martinusbe]
+   * frameworks/native/
+b4d6786  Merge remote-tracking branch 'slim/mm6.0' into 6.0  [Alx31]
+f019813  Add 3GB dalvik heap and hwui memory  [Alx31]
+   * hardware/qcom/display-caf/msm8974/
+f253df3  Revert "gralloc: Use adreno_utils api for NV21 and NV12 alignment"  [Josue Rivera]
+61ffd12  hwc: Filter out interlace format from edid string  [Josue Rivera]
+d8d171e  Revert "gralloc: fall back to old pixel alignment on old blobs"  [Josue Rivera]
+114f02e  Revert "gralloc: allow forcing old pixel alignment"  [Josue Rivera]
+   * kernel/oneplus/msm8994/
+5733ca1  cpuidle: Add nop idle governor.  [Martinusbe]
+e34fac3  mdss: Change kickoff timeout to 300ms  [Martinusbe]
+28a00bd  msm: mdss: Avoid calling wake_up_all() twice in display thread  [Martinusbe]
+72c9a69  mdss: dsi: Fix null dereferences  [Martinusbe]
+   * packages/apps/FMRadio/
+7f17da9  tracks: Check track states before transitioning states  [Josue Rivera]
+d0e759f  improve audio startup performace  [Josue Rivera]
+   * packages/apps/Settings/
+bdbda30  Settings: persist privacy guard dialogs across rotates  [Martinusbe]
+2875d8f  Check boxes to Switches in PrivacyGuardPerfs  [Martinusbe]
+62405a7  Settings: Fix off-by-one SectionIndexer in PrivacyGuard.  [Martinusbe]
+73b3f00  PrivacyGuard: Tint the enabled icon  [Martinusbe]
+4d08bd9  [2/2] Settings: Privacy Guard  [Martinusbe]
+   * OTA_config/
+6a64db3  testing positions  [Martinusbe]
+5eac3e4  bacon: testbuild uploaded  [Martinusbe]
+   * art/
+55e118b  ART: Remove unique-numbered labels from arm64 assembly  [Josue Rivera]
+   * external/stagefright-plugins/
+fe44192  stagefright-plugins: Fix crash with invalid FLAC file  [Josue Rivera]
+   * hardware/qcom/audio-caf/msm8974/
+8dde55d  hal: Garbage output in logcat  [Josue Rivera]
+   * manifest/
+f9815b4  Revert "track our Eleven"  [Martinusbe]
+f268696  Revert "track AudioFX"  [Martinusbe]
+0dd7dc1  track AudioFX  [Martinusbe]
+f489eda  track our Eleven  [Martinusbe]
+   * packages/apps/SlimOTA/
+41c94d7  IDE updates  [Martinusbe]
+c3cf961  IDE updates  [Martinusbe]
+   * vendor/tipsy/
+c2c3224  build Eleven  [Martinusbe]
+44c8bd4  Add and update apns for R. of Macedonia  [Martinusbe]
+586f0cc  update adaway to 3.1.1  [Martinusbe]
+d04fa58  update Viper4Android to 2.4.0.1  [Martinusbe]
+e9ebdbc  fix up versioning  [Martinusbe]
+   * frameworks/base/
+0df5469  dexopt: change circle transparency  [Martinusbe]
+   * packages/apps/Settings/
+29e8b20  Set number of tile columns [2/2]  [Martinusbe]
+03bc36d  Add Haptic Feedback to QS tiles [2/2]  [Martinusbe]
+24231e1  Option to disable brightness slider [2/2]  [Martinusbe]
+b0d44a0  Add quick-settings pull down with one finger [2/2]  [Martinusbe]
+   * vendor/tipsy/
+895724f  version: v4.0 OTAtest  [Martinusbe]
    * frameworks/base/
 071dc81  Introduce FontHelper class  [Martinusbe]
 6a04428  Dashboard font styles 2/2  [Martinusbe]
 8ac8f86  Allow unlocked USB data access (1/2)  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8916/
+eb47ac0  audio: Add sound trigger header  [Josue Rivera]
    * kernel/oneplus/onyx/
 70df324  Crypto: sync with caf  [Martinusbe]
 f5d0315  defconfig: update  [Martinusbe]
@@ -28,6 +115,7 @@ f5d0315  defconfig: update  [Martinusbe]
    * packages/apps/FMRadio/
 148b23b  fmradio: Add an optional static library target  [Josue Rivera]
    * packages/apps/Settings/
+85ee7c7  displaysettings: move font size  [Martinusbe]
 be262f7  displaysettings: add a dashboard category  [Martinusbe]
 0ddbed1  displaysettings: housekeeping  [Martinusbe]
 2db1366  displaysettings: kill screen off gestures  [Martinusbe]
@@ -38,6 +126,8 @@ be262f7  displaysettings: add a dashboard category  [Martinusbe]
    * packages/apps/Snap/
 90d46ce  Automatic translation import  [Abhisek Devkota]
 006ef8d  Automatic translation import  [Michael Bestas]
+   * packages/inputmethods/LatinIME/
+8b2834e  Turn ON offensive words by default and disable vibration  [Martinusbe]
    * system/vold/
 ad40674  vold: Fix tool paths for minivold  [Josue Rivera]
 257a82d  cryptfs: Only consider patterns for upgrade conversion  [Josue Rivera]
@@ -47,6 +137,14 @@ d6b8a71  vold: Fix cryptfs changepw parsing  [Josue Rivera]
      05-10-2016
 ====================
    * OTA_config/
+39d2d7b  frunk OTA  [Martinusbe]
+6da0b72  Revert "Add Lux OTA"  [Martinusbe]
+39ab45e  oneplus2: add url to thread on OnePlus Forums  [Martinusbe]
+8685996  Revert "url wants the blob"  [Martinusbe]
+a407f42  Add Lux OTA  [Martinusbe]
+2ada850  onyx: add OnePlus Forums thread url  [Martinusbe]
+0bb42aa  oneplus2: oneplus2 < OnePlus2  [Martinusbe]
+acb70a4  bacon: change to new afh directory  [Martinusbe]
 866c269  onepluses: get their own changelog habitat  [Martinusbe]
 de36157  put chanelogs in their own device folder  [Martinusbe]
 83b85e0  onepluses: add changelog url  [Martinusbe]
@@ -56,9 +154,6 @@ b327f94  add oneplus2  [Martinusbe]
 254ff13  add bacon  [Martinusbe]
 94f6ec3  url wants the blob  [Martinusbe]
 b1e77ad  onyx: fix typo  [Martinusbe]
-b0607b3  onyx: Banks gapps  [Martinusbe]
-97bd877  fixes  [Martinusbe]
-8cd3268  create initial files  [Martinusbe]
    * hardware/qcom/audio-caf/msm8974/
 52fcb2a  hal: Stop log spam when COMPRESS_VOIP_ENABLED is not defined  [Josue Rivera]
    * packages/apps/Snap/
@@ -70,114 +165,41 @@ b0607b3  onyx: Banks gapps  [Martinusbe]
 ====================
      05-09-2016
 ====================
-
-   * frameworks/base/
-0ea938c  NetworkManagement : Add ability to restrict app data/wifi usage  [Martinusbe]
-a0ead7d  Keyguard Charging Current Switch [1/2]  [Martinusbe]
-   * packages/apps/Settings/
-e1580a7  Keyguard Charging Current Switch 2/2  [Martinusbe]
-
-====================
-     05-08-2016
-====================
-
-   * hardware/qcom/media-caf/msm8974/
-92d00cb  mm-video-v4l2: vdec: deprecate unused config OMX_IndexVendorVideoExtraData  [Josue Rivera]
-48a24be  mm-video-v4l2: venc: add safety checks for freeing buffers  [Josue Rivera]
-d49d1ee  mm-video-v4l2: vidc: validate omx param/config data  [Josue Rivera]
-8083b22  mm-video-v4l2: vdec: add safety checks for freeing buffers  [Josue Rivera]
-   * vendor/tipsy/
-88e0c20  3.9 is vacation  [Martinusbe]
-
-====================
-     05-07-2016
-====================
-
-   * frameworks/base/
-b94a857  Dashboard Text Size 2/2  [Martinusbe]
-   * packages/apps/Settings/
-7109d11  fix Adiutor fc  [Martinusbe]
-4519da7  Dashboard Text Size 1/2  [Martinusbe]
-
-====================
-     05-06-2016
-====================
-
-   * external/stagefright-plugins/
-8690a43  stagefright-plugins: Fix crash if nal size is not 3/4  [Josue Rivera]
-   * system/core/
-831e1ca  rootdir: Remove cpufreq mode settings  [Josue Rivera]
-31794de  fastboot: Add Nextbit's USB vendor id  [Josue Rivera]
-e22148d  fastboot: add ZTE to the list of known vendors  [Josue Rivera]
-
-====================
-     05-05-2016
-====================
-
-   * build/
-00c3765  "MOB30J"  [Martinusbe]
-fd45f68  "MOB30I"  [Martinusbe]
-8f460ff  "MOB30H"  [Martinusbe]
-a5d0b1d  "MOB30G"  [Martinusbe]
-dabf054  "MOB30F"  [Martinusbe]
-9806b2d  "MOB30E"  [Martinusbe]
-0bfd3b1  Update Security String to 2016-05-01 in preparation for May 2016 Security OTA  [Martinusbe]
-   * frameworks/av/
-3d32221  Fix AMR decoder  [Martinusbe]
-d3c6739  SoftAMR: check output buffer size to avoid overflow.  [Martinusbe]
-b6d48db  codecs: check OMX buffer size before use in VP8 encoder.  [Martinusbe]
-2be7315  NuPlayerStreamListener: NULL and bounds check before memcpy  [Martinusbe]
-9574f2c  Camera3Device: Validate template ID  [Martinusbe]
-b003978  Add VPX output buffer size check  [Martinusbe]
-   * frameworks/base/
-8db23b7  [DO NOT MERGE] Disallow guest user from changing Wifi settings  [Martinusbe]
-   * frameworks/native/
-d93e43c  Fix issue #27252896: Security Vulnerability -- weak binder  [Martinusbe]
-0832443  BQ: fix some uninitialized variables  [Martinusbe]
-   * manifest/
-c2bdbd0  track Slim's FMRadio  [Martinusbe]
-56374f7  r30 < r43  [Martinusbe]
-
-====================
-     05-04-2016
-====================
-
-   * device/oneplus/bacon/
-aac5f75  Revert "bacon: Build Snap camera app"  [Martinusbe]
-53c57cd  bc: uber 4.9 & enable some opts  [Martinusbe]
-   * device/oneplus/onyx/
-5fa8207  onyx: Update Audio Configuration  [Martinusbe]
-d8e1794  onyx: Update Audio Flags  [Martinusbe]
-3f618e7  onyx: Offer a more viable Brightness setting  [Martinusbe]
-   * external/wpa_supplicant_8/
-c9ffe7b  Guard against return value already being null  [Josue Rivera]
-a2ad534  Remove newlines from config output  [Josue Rivera]
-   * hardware/broadcom/wlan/
-7b9cfbd  net: wireless: bcmdhd: update bcm4358 FW (7.112.200.5) [DO NOT MERGE]  [Josue Rivera]
-f7c620c  net: wireless: bcmdhd: Update bcm4354/56 FW(7.35.101.1) [DO NOT MERGE]  [Josue Rivera]
-e194377  net: wireless: bcmdhd: update bcm4339 FW 6.37.32.RC23.34.42 [DO NOT MERGE]  [Josue Rivera]
-   * libcore/
-6e02f3f  CipherTest: add test for multiple updateAAD calls  [Josue Rivera]
-1888a9a  CipherTest: test instance reuse with updateAAD  [Josue Rivera]
-   * manifest/
-ca40bc1  add calendar back  [Martinusbe]
-ce3da09  slim's busybox  [Martinusbe]
-   * packages/apps/Email/
-a02b005  Don't allow cachedFile Attachments if the content Uri is pointing to EmailProvider.  [Josue Rivera]
-   * packages/apps/SnapdragonCamera/
-ce4a095  Snap: Don't crash if user saved preference is not valid  [Martinusbe]
-6bd6638  Snap: Enlarge the saving queue size to 60M  [Martinusbe]
-f39f3bb  Revert "Revert "SnapdragonCamera: Remove Camera2 apk.""  [Martinusbe]
-   * packages/apps/UnifiedEmail/
-022143f  Don't allow cachedFile Attachments if the content Uri is pointing to EmailProvider.  [Josue Rivera]
-   * system/bt/
-b14b280  Add Renault MediaNav to HFP 1.7 blacklist  [Josue Rivera]
-7ecccf2  add medianav to unsupported device for hfp 1.7  [Josue Rivera]
-d939a69  bt-vendor: Fix sporadic crashes on shutdown  [Josue Rivera]
-0a6a3ef  Bluetooth: Allow REMOVE_EAGER_THREADS to be unset  [Josue Rivera]
-13b51eb  DO NOT MERGE Check size of pin before replying  [Josue Rivera]
-   * system/core/
-886a392  Don't demangle symbol names.  [Josue Rivera]
-   * vendor/tipsy/
-2cde8ca  build Busybox  [Martinusbe]
+   * OTA_config/
+b0607b3  onyx: Banks gapps  [Martinusbe]
+97bd877  fixes  [Martinusbe]
+8cd3268  create initial files  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8916/
+ea759ab  hal: Shush some debug logging  [Josue Rivera]
+43f1de7  Add more allowed frame counts to be configured  [Josue Rivera]
+460954f  policy_hal: Reject offload path for AV streaming usecase  [Josue Rivera]
+   * hardware/qcom/audio-caf/msm8994/
+86be6af  extn: dolby: fix unused variable warnings  [Nicholas Flintham]
+fc37534  Fix incall music enabled error  [Nicholas Flintham]
+105eee2  policy_hal: Fix setOutputDevice call when starting source  [Nicholas Flintham]
+8951c60  hal: Fix build break when incall music isn't set  [Nicholas Flintham]
+08d4a82  hal: Fix warnings when building with clang  [Nicholas Flintham]
+86e7f52  policy_hal: fix improper voice-playback concurrency handling  [Nicholas Flintham]
+bebcb45  hal: Fix warnings in audio HAL and policy  [Nicholas Flintham]
+114a3d8  hal: Add performance lock for playback usecase  [Nicholas Flintham]
+49ad81c  hal: Add support for LINE out device  [Nicholas Flintham]
+4e261ca  policy_hal: handle incall sonification without checking output refCount  [Nicholas Flintham]
+7ddec54  hal: Validate active input before accessing source  [Nicholas Flintham]
+   * hardware/qcom/display-caf/msm8916/
+b7ec524  hwc: Start with ROI set to destination  [Josue Rivera]
+   * hardware/qcom/display-caf/msm8994/
+4aaa86a  display: Fix warnings on 64-bit clang  [Nicholas Flintham]
+e8ec461  hwc: cursor: Set cursor layer updating hint to driver  [Nicholas Flintham]
+   * hardware/qcom/media-caf/msm8916/
+655d20e  mm-video-v4l2: venc: add safety checks for freeing buffers  [Josue Rivera]
+3479103  mm-video-v4l2: vdec: add safety checks for freeing buffers  [Josue Rivera]
+479b72a  mm-video-v4l2: vdec: deprecate unused config OMX_IndexVendorVideoExtraData  [Josue Rivera]
+8666786  mm-video-v4l2: vidc: validate omx param/config data  [Josue Rivera]
+ed6acbf  mm-video: swvenc: No longer access 'extradata' fields.  [Josue Rivera]
+   * hardware/qcom/media-caf/msm8994/
+58b493a  media: Fix issues when building with Clang  [Nicholas Flintham]
+9561b23  mm-video-v4l2: vdec: deprecate unused config OMX_IndexVendorVideoExtraData  [Nicholas Flintham]
+d1958e6  mm-video-v4l2: venc: add safety checks for freeing buffers  [Nicholas Flintham]
+3c26d52  mm-video-v4l2: vidc: validate omx param/config data  [Nicholas Flintham]
+833a88d  mm-video-v4l2: vdec: add safety checks for freeing buffers  [Nicholas Flintham]
 
