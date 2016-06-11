@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <onyx>
-            <Filename>Tipsy-onyx-Kirkstall_framboise-v4.0-20160522</Filename>
+            <Filename>Tipsy-onyx-Kirkstall_framboise-v4.0-20160610</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -10,7 +10,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/onyx/Changelog.txt</ChangelogUrl>
+                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -21,7 +21,7 @@
                 description="Visit GZR onyx thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-05-07-onyx-tipsy-tesla-validus-6-0-1_43-aospb-official.437885/</OPUrl>
         </onyx>
         <bacon>
-            <Filename>Tipsy-bacon-Kirkstall_framboise-v4.0-20160522</Filename>
+            <Filename>Tipsy-bacon-Kirkstall_framboise-v4.0-20160610</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -29,7 +29,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/bacon/Changelog.txt</ChangelogUrl>
+                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -44,7 +44,7 @@
                 description="Visit TipsyOs bacon XDA thread">http://forum.xda-developers.com/oneplus-one/development/rom-kernel-tipsyos-bacon-t3165560</XDAUrl>
         </bacon>
         <OnePlus2>
-            <Filename>Tipsy-oneplus2-Kirkstall_framboise-v4.0-20160522</Filename>
+            <Filename>Tipsy-oneplus2-Kirkstall_framboise-v4.0-20160610</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -52,7 +52,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/oneplus2/Changelog.txt</ChangelogUrl>
+                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
