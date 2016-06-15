@@ -1,222 +1,306 @@
 ====================
-     06-15-2016
-====================
-
-   * frameworks/base/
-24e5d8f  Option to use volume keys to control media volume anytime (1/2)  [GtrCraft]
-   * kernel/sony/msm8960t/
-a0c2cb4  defconfig: huashan: Update configuration  [AdrianDC]
-7add4e0  drivers: convert shrinkers to new count/scan API  [AdrianDC]
-b702cf5  shrinker: add node awareness  [AdrianDC]
-ccbd744  mm: new shrinker API  [AdrianDC]
-2b502c7  Revert "mm: zcache: Fix 3.4 backport"  [AdrianDC]
-   * packages/apps/Settings/
-4bce9ce  Option to use volume keys to control media volume anytime (1/2)  [GtrCraft]
-
-====================
-     06-14-2016
-====================
-
-   * build/
-67897ab  make bootzip: tipsyfy  [Alx31]
-   * kernel/sony/msm8960t/
-a1aabde  msm: camera: Add checks for integer overflow  [AdrianDC]
-de796ec  msm: camera: Add check for zero length buffer  [AdrianDC]
-7b14181  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
-79eb768  msm: camera: Fix off by one error  [AdrianDC]
-bd26fbf  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
-fb2a966  msm: camera: Check for array index out of bounds  [AdrianDC]
-6dc4cd5  msm: camera: Add proper bounds check for resolution config  [AdrianDC]
-80b5344  msm: camera: Check for array index out of bounds  [AdrianDC]
-e87cc51  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
-f6a1e29  msm: camera: Check for overflow condition  [AdrianDC]
-06d1b93  msm: vpe: Add check to prevent index out of bounds  [AdrianDC]
-c2383ea  Revert "mm: vmstat: make vmstat_work cpu bound during requeue"  [AdrianDC]
-
-====================
-     06-13-2016
+     06-07-2016
 ====================
 
    * bionic/
-4476089  Define char16_t and char32_t to make gcc 5.1 happy  [Martinusbe]
-2fd6cf2  bionic: Use a more simple strrchr for arm64  [Martinusbe]
-f50fb89  Update timezone data to 2016a  [Martinusbe]
-249b9b2  libm: ARM: reorganize a bit to match ARM64  [Martinusbe]
-3693e37  Fix arm64 fenv warnings, and make warnings errors.  [Martinusbe]
-16be107  Fix regoff_t for LP32 and _FILE_OFFSET_BITS=64.  [Martinusbe]
-cb5297e  bionic: Let popen fall back to /sbin/sh  [Martinusbe]
-07d7f75  libc: ARM64: improve performance in strlen  [Martinusbe]
-9b9ae2e  libc: ARM64: optimize memset.  [Martinusbe]
-92e87f8  libc: ARM64: remove bcopy from memset  [Martinusbe]
-48e8cc6  libc: ARM64: optimize memmove  [Martinusbe]
-56c335f  libc: remove bcopy from memmove on 64-bit architectures  [Martinusbe]
-b338d5d  libc: AArch64: Tune memcpy  [Martinusbe]
-8e9dfdd  libc: ARM64: Optimize memcpy.  [Martinusbe]
-63e1f16  libc: include strrchr for kryo and denver64  [Martinusbe]
-fc02015  libc: ARM64: add assembly strrchr  [Martinusbe]
-cccc24f  libc: arm: Add optimised memchr to scorpion  [Martinusbe]
-02c1451  [AOSP Master] libc: krait: Use performance version of memcpy  [Martinusbe]
-347c11c  Remove pushes from memsets (krait/cortex-a9).  [Martinusbe]
-447cd1d  Replace bx lr with update of pc from the stack.  [Martinusbe]
-ec49024  libc: Add memchr to a53+a57 target  [Martinusbe]
-c4419fc  Add cortex-a53.a57 target for 32 bit big/little.  [Martinusbe]
-8b40672  libc: arm: add optimized memchr implementation  [Martinusbe]
-ab4cd9e  Add optimized cortex-a7/cortex-a53 memset/memcpy.  [Martinusbe]
-88b080b  bionic: Add flag to restore legacy mmap behavior  [Martinusbe]
-e34fa96  Revert "Revert "Use compiler builtins for fabs.""  [Martinusbe]
-d218401  Fix potential race condition on CTS TC pthread_gettid_np  [Martinusbe]
-beebe91  Fix over read in strcpy/stpcpy/strcat.  [Martinusbe]
-ff53995  Make all labels local.  [Martinusbe]
-43a4b65  Sync with upstream FreeBSD libm.  [Martinusbe]
-c347099  Use __builtin_* in <math.h>.  [Martinusbe]
-c09df77  linker: Allow text-relocs for x86 (only)  [Martinusbe]
-4cd8f27  Don't leak sockets if setsockopt() or fchown() fail.  [Martinusbe]
-a057eee  Fix GNU/POSIX basename headers.  [Martinusbe]
-dcdc800  Add prlimit to LP32.  [Martinusbe]
-d5dd02b  libc: ARM64: kryo: use generic memmove routine  [Martinusbe]
-6422842  libc: ARM64: denver64: optimized memmove breaks denver  [Martinusbe]
-f264119  bionic: linker: Load shim libs *before* the self-linked libs  [Martinusbe]
-3c256b2  libc: Add Scorpion-optimized variant  [Martinusbe]
-9e9ab0d  Make shim lib load failure non-fatal.  [Martinusbe]
-9665da6  bionic: Do not allow LD_SHIM_LIBS for setuid executables  [Martinusbe]
-e73c1b2  linker: Don't try to walk the g_active_shim_libs when doing dlsym  [Martinusbe]
-456de18  linker: Reset the active shim libs each time we do a dlopen  [Martinusbe]
-c045b56  linker: Fix the fact that shim libs do not properly call constructors  [Martinusbe]
-f645986  linker: Add support for dynamic "shim" libs  [Martinusbe]
-5a8949a  bionic: Allow devices to add device specfic static libs  [Martinusbe]
-   * device/qcom/common/
-e0f186a  power-8992: Remove extraneous boosting  [Martinusbe]
-24307bc  power: Use declared enums where possible  [Martinusbe]
-1a35473  power-8952: Fix array initialization  [Martinusbe]
-a89c3d8  power: Fixup typo in 8939 cpu4 timer rate  [Martinusbe]
-08e5443  power-8992: Add prefetcher support  [Martinusbe]
-6b77b9e  power-8992: Fix boost and screen off params  [Martinusbe]
-8d17125  power: Bring all CM features to 8992 PowerHAL  [Martinusbe]
-a0bad11  qcom: power: Allow devices to write their own platform specific bits  [Martinusbe]
-7a1fceb  power: Encode optimization  [Martinusbe]
-b859135  power: Modify camera encode/preview hint  [Martinusbe]
-99a417a  power: Enable camera preview hint in powerhal  [Martinusbe]
-95e4aa9  power: Add and update resources for encode powerHAL  [Martinusbe]
-53746ef  power: Introduce 8996 specific handling  [Martinusbe]
-9009e8e  init: Add MSM-specific init extension library for msm8996  [Martinusbe]
-eb643ed  power: msm8952: Handle POWER_HINT_INTERACTION  [Martinusbe]
-c8bf4ee  power: Handle POWER_HINT_INTERACTION  [Martinusbe]
-469095a  power-8992: Fix build error and warnings  [Martinusbe]
-914b80f  init: Add msm8952-specific init extension library  [Martinusbe]
-849f521  power-8992: Add launch boost profile  [Martinusbe]
-2660aea  power: Remove custom low power mode hint handling  [Martinusbe]
-   * manifest/
-fae9e9b  Revert "Track own development"  [Martinusbe]
-7ccd0e9  track libnfnetlink & libnetfilter_conntrack from slim  [Martinusbe]
-73aae6b  6.0.1_r46  [Martinusbe]
-   * packages/apps/PackageInstaller/
-9eed2e9  DO NOT MERGE Take advantage of new MotionEvent flag to prevent tapjacking.  [Martinusbe]
-d748534  Fix crash in OnDismiss  [Martinusbe]
-1777c64  PackageInstaller: Complete PackageInstaller DayNight Theming  [Martinusbe]
-8c6668f  Properly Implement DayNight Theme  [Martinusbe]
-afb39f8  Revert "DO NOT MERGE: Remove DayNight theme"  [Martinusbe]
-e3663c2  Revert "Remove old -night values DO NOT MERGE"  [Martinusbe]
-
-====================
-     06-12-2016
-====================
-   * OTA_config/
-395f639  onepluses: update 20160610 & one changelog for all  [Martinusbe]
-   * build/
-860cc51  uber.mk: add libavcodec to graphite exclusions  [Alx31]
-   * kernel/sony/msm8960t/
-68c0029  msm: camera: sensor: Validate step_boundary  [AdrianDC]
-b85f8ba  msm: kgsl: Defer adding the mem entry to a process  [AdrianDC]
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
-a93454c  Initial commit  [DespairFactor]
-
-====================
-     06-11-2016
-====================
-
-   * build/
-7c5da6a  uber.mk: add exclusions to build with new tcs.  [Alx31]
+45b198f  Add prlimit to LP32.  [a7r3]
    * frameworks/av/
-f5d1e78  Fixing ALOGE message in commit ad40e57890f81a3cf436c5f06da66396010bd9e5  [Martinusbe]
-2da968c  SampleTable.cpp: Fixed a regression caused by a fix for bug 28076789.  [Martinusbe]
-59c1178  Resolve merge conflict when cp'ing ag/931301 to mnc-mr1-release  [Martinusbe]
-f4b7279  h264dec: check for overflows when calculating allocation size.  [Martinusbe]
-d7d1a22  codecs: check OMX buffer size before use in (avc|hevc|mpeg2)dec  [Martinusbe]
-e5e84a5  codecs: check OMX buffer size before use in (gsm|g711)dec  [Martinusbe]
-ae73590  AudioSource: initialize variables  [Martinusbe]
-cf35a2d  Check mp3 output buffer size  [Martinusbe]
-19fdcf0  codecs: check OMX buffer size before use in (h263|h264)dec  [Martinusbe]
-5e721fe  DO NOT MERGE codecs: check OMX buffer size before use in (vorbis|opus)dec  [Martinusbe]
-f0f5281  Fix OMX_IndexParamConsumerUsageBits size check  [Martinusbe]
-aa15531f  Fix size check for OMX_IndexParamConsumerUsageBits  [Martinusbe]
-d43f94c  Fix initialization of AAC presentation struct  [Martinusbe]
-b403873  DO NOT MERGE Verify OMX buffer sizes prior to access  [Martinusbe]
-d096aca  Clear allocation to avoid info leak  [Martinusbe]
-953fe0a  Fixing safteynet logging bug introduced in ag/862848  [Martinusbe]
-0e55143  3 uninitialized variables in IOMX.cpp  [Martinusbe]
-3fd0b95  IOMX.cpp uninitialized pointer in BnOMX::onTransact  [Martinusbe]
-   * frameworks/native/
-b33b8c8  Add new MotionEvent flag for partially obscured windows.  [Martinusbe]
-   * kernel/sony/msm8960t/
-12d405c  defconfig: huashan: Disable CONFIG_DYNAMIC_DEBUG  [AdrianDC]
+354965e  DO NOT MERGE:Camera: fix recording stream update logic  [Martinusbe]
+f45b667  stagefright: ignore port setting change for input port  [Martinusbe]
+dd1658d  If the offset is less than 0, it will cause some surprising exceptions.  [Martinusbe]
+b96cdc9  Remove throttle logcat for bluetooth  [Martinusbe]
+4ff8811  SoftHEVC: Exit gracefully in case of decoder errors  [Martinusbe]
+fdb1226  camera: Fix high battery drain after using flashlight  [Martinusbe]
 
 ====================
-     06-10-2016
+     06-06-2016
 ====================
 
+   * device/sony/huashan/
+2087d95  Tipsidize!  [a7r3]
+e4b0d68  Revert "huashan: Multiple LEDs LibLights control"  [a7r3]
+98cd758  huashan: Adapt Doze Sensors detection for AOSP-based ROMs  [a7r3]
+af6234e  huashan: Remove CM lights framework overlays for AOSP-based ROMs  [a7r3]
    * kernel/sony/msm8960t/
-6156687  mm/swapfile.c: do not skip lowest_bit in scan_swap_map() scan loop  [AdrianDC]
-8077e82  mm: vmstat: make vmstat_work cpu bound during requeue  [AdrianDC]
-589d1b2  vmscan: fix increasing nr_isolated incurred by putback unevictable pages  [AdrianDC]
-50d593f  mm: compaction: fix the page state calculation in too_many_isolated  [AdrianDC]
-f9b5144  mm: page-writeback: fix page state calculation in  throttle_vm_writeout  [AdrianDC]
-0f7e1fa  mm/compaction: fix wrong order check in compact_finished()  [AdrianDC]
-eb1c618  mm/compaction: make isolate_freepages start at pageblock boundary  [AdrianDC]
-bef7736  mm: compaction: detect when scanners meet in isolate_freepages  [AdrianDC]
-f0b19a8  mm: compaction: reset cached scanner pfn's before reading them  [AdrianDC]
-29034eb  mm: Fix "mm: vmpressure: account allocstalls only on higher pressures"  [AdrianDC]
-e8fc50d  mm: process_reclaim: Fix "mm: process_reclaim: use unbounded cpu workqueue"  [AdrianDC]
-97b8f6d  mm: process_reclaim: fix reclaim skip on low efficiency  [AdrianDC]
-1706885  mm: Remove shrink_page  [AdrianDC]
-98ea3cb  mm: make shrink_page_list with pages work from multiple zones  [AdrianDC]
+1b981ef  defconfig: huashan: Update configuration  [AdrianDC]
+bdeae37  drivers: convert shrinkers to new count/scan API  [AdrianDC]
+c45c737  shrinker: add node awareness  [AdrianDC]
+a045aa3  mm: new shrinker API  [AdrianDC]
+c82ede2  Revert "mm: zcache: Fix 3.4 backport"  [AdrianDC]
+859e773  arm: irq: warn only when affinity really breaks  [AdrianDC]
+5f4962a  arm: irq: Notify affinity change when migrating IRQs during hotplug  [AdrianDC]
+4c87858  msm: perf: Do not allocate new hw_event if event is duplicate.  [AdrianDC]
+   * manifest/
+26c7881  track GZR Adiutor  [Martinusbe]
+b1e5e1d  track our snap  [Martinusbe]
+
+====================
+     06-05-2016
+====================
+
+   * packages/apps/KernelAdiutor/
+adc155d  Revert "add support for MSM Performance"  [Martinusbe]
+34936d6  Revert "Hotplugs: Fix crash caused by MSM_Performance"  [Martinusbe]
+cb3ce78  Revert "MSM_Performance: Get rid of the big/little stuff..."  [Martinusbe]
+c2b0796  Hotplugs: AutoSMP - Fix  a warning being added to the divider card  [Martinusbe]
+08e9974  Hotplugs: Intelliplug - Fix some malfunctioning cards  [Martinusbe]
+4acb965  Hotplugs: Bricked - remove some variable usage  [Martinusbe]
+86743f6  MSM_Performance: Get rid of the big/little stuff...  [Martinusbe]
+bbd7fae  Hotplugs: Fixup IntelliPlug enable/disable toggle and tunables issue  [Martinusbe]
+55de6b1  Hotplugs: Fix IntelliPlug logic.  [Martinusbe]
+fcab1a1  Hotplugs: Fix crash caused by MSM_Performance  [Martinusbe]
    * vendor/sony/
-1d34344  hayabusa: Remove unused liblowi_client.so  [AdrianDC]
-5929f3f  hayabusa: Use new perfd-client  [AdrianDC]
-31ce379  hayabusa: Update to newer mpdecision  [AdrianDC]
-0de15e2  hayabusa: Remove libqc-opt and update libmmcamera_wavelet_lib.so  [AdrianDC]
-ffd367c  hayabusa: Use cancro mm fm patch downloader  [AdrianDC]
-9a91668  TOCOMPLETE: blue: Fix camera capture due to overlapping do_mmap_ion  [AdrianDC]
-3d5cbfa  BLUE DIRTY: Move to new rmt-storage binary (requires kernel support)  [AdrianDC]
-77ebab9  DIRTY BLUE: Get rid of old lights wrapper  [AdrianDC]
-66e65bc  DIRTY BLUE: hayabusa: move libqc-opt.so  [AdrianDC]
-5115996  DIRTY BLUE: Add hayabusa blobs by updateing  [AdrianDC]
-f0da4e2  DIRTY BLUE: Merge local changes  [AdrianDC]
+b315bce  Merge pull request #171 from AdrianDC/cm-13.0  [Chirayu Desai]
 
 ====================
-     06-09-2016
+     06-04-2016
+====================
+
+   * device/sony/huashan/
+2c0775b  huashan: Move prima WiFi files to the device tree  [AdrianDC]
+608037f  Automatic translation import  [Gerrit Code Review]
+aeba35d  huashan: Fix the combined bootimage recovery build  [AdrianDC]
+   * frameworks/native/
+77b0e6a  Add dalvik heap/hwui overrides for xxxhdpi phone with 4096MB RAM  [Martinusbe]
+   * kernel/sony/msm8960t/
+421f388a  f2fs: adjust other changes  [AdrianDC]
+c54efee  f2fs: flush pending bios right away when error occurs  [AdrianDC]
+f8f97b1  f2fs: avoid ENOSPC fault in the recovery process  [AdrianDC]
+4c57ca4  f2fs: make exit_f2fs_fs more clear  [AdrianDC]
+8ddf5d2  f2fs: use percpu_counter for total_valid_inode_count  [AdrianDC]
+c5d2537  f2fs: use percpu_counter for alloc_valid_block_count  [AdrianDC]
+bd756ed  f2fs: use percpu_counter for # of dirty pages in inode  [AdrianDC]
+06ee9cd  f2fs: use percpu_counter for page counters  [AdrianDC]
+848ff83  f2fs: use bio count instead of F2FS_WRITEBACK page count  [AdrianDC]
+02467b9  f2fs: manipulate dirty file inodes when DATA_FLUSH is set  [AdrianDC]
+be8b3e3  f2fs: add fault injection to sysfs  [AdrianDC]
+8c91c19  f2fs: no need inc dirty pages under inode lock  [AdrianDC]
+52c7744  f2fs: fix incorrect error path handling in f2fs_move_rehashed_dirents  [AdrianDC]
+7f2543a  f2fs: fix i_current_depth during inline dentry conversion  [AdrianDC]
+b6496c1  f2fs: correct return value type of f2fs_fill_super  [AdrianDC]
+b2faf33  f2fs: fix deadlock when flush inline data  [AdrianDC]
+8717511  f2fs: avoid f2fs_bug_on during recovery  [AdrianDC]
+d7e96cf  f2fs: show # of orphan inodes  [AdrianDC]
+cc9dfc9  f2fs: support in batch fzero in dnode page  [AdrianDC]
+2b0e1d6  f2fs: support in batch multi blocks preallocation  [AdrianDC]
+a6a42a7  f2fs: make atomic/volatile operation exclusive  [AdrianDC]
+4324df0  f2fs: use mnt_{want,drop}_write_file in ioctl  [AdrianDC]
+524f447  f2fs: do not preallocate block unaligned to 4KB  [AdrianDC]
+a04d8f5  f2fs: read node blocks ahead when truncating blocks  [AdrianDC]
+436ff85  f2fs: fallocate data blocks in single locked node page  [AdrianDC]
+52cf4b1  f2fs: fix inode cache leak  [AdrianDC]
+87e9d16  fscrypto/f2fs: allow fs-specific key prefix for fs encryption  [AdrianDC]
+b115510  f2fs: avoid panic when truncating to max filesize  [AdrianDC]
+6f0a05f  f2fs: fix incorrect mapping in ->bmap  [AdrianDC]
+421bdbe  f2fs: remove an obsolete variable  [AdrianDC]
+950b9bc  f2fs: don't worry about inode leak in evict_inode  [AdrianDC]
+2138d18  f2fs: shrink size of struct seg_entry  [AdrianDC]
+6f35844  f2fs: reuse get_extent_info  [AdrianDC]
+6adb58a  f2fs: remove unneeded memset when updating xattr  [AdrianDC]
+8d08dda  f2fs: remove unneeded readahead in find_fsync_dnodes  [AdrianDC]
+d34f009  f2fs: retry to truncate blocks in -ENOMEM case  [AdrianDC]
+c74bd28  f2fs: fix leak of orphan inode objects  [AdrianDC]
+d02befd  f2fs: revisit error handling flows  [AdrianDC]
+5a2ff7d  f2fs: inject ENOSPC failures  [AdrianDC]
+89d9505  f2fs: inject page allocation failures  [AdrianDC]
+18e57a5  f2fs: inject kmalloc failure  [AdrianDC]
+037c3a6  f2fs: add mount option to select fault injection ratio  [AdrianDC]
+4513a10  f2fs: use f2fs_grab_cache_page instead of grab_cache_page  [AdrianDC]
+7baaaab  f2fs: introduce f2fs_kmalloc to wrap kmalloc  [AdrianDC]
+b57b178  f2fs: add proc entry to show valid block bitmap  [AdrianDC]
+0d0f811  f2fs: introduce macros for proc entries  [AdrianDC]
+0a23026  f2fs: factor out fsync inode entry operations  [AdrianDC]
+c345f3b  f2fs: fix to clear page private flag  [AdrianDC]
+3b266b6  f2fs: fix to clear private data in page  [AdrianDC]
+26782f5  f2fs: fix to return 0 if err == -ENOENT in f2fs_readdir  [AdrianDC]
+88af12d  f2fs: move node pages only in victim section during GC  [AdrianDC]
+d98ae75  f2fs: be aware of invalid filename length  [AdrianDC]
+897cfba  f2fs: issue cache flush on direct IO  [AdrianDC]
+7667729  f2fs: set fsync mark only for the last dnode  [AdrianDC]
+1c38a64  f2fs: report unwritten status in fsync_node_pages  [AdrianDC]
+7ab65bb  f2fs: split sync_node_pages with fsync_node_pages  [AdrianDC]
+db9720f  f2fs: avoid writing 0'th page in volatile writes  [AdrianDC]
+faa15d1  f2fs: avoid needless lock for node pages when fsyncing a file  [AdrianDC]
+0dccd29  f2fs: flush dirty pages before starting atomic writes  [AdrianDC]
+2d30bfb  f2fs: don't invalidate atomic page if successful  [AdrianDC]
+81a7c4e  f2fs: give -E2BIG for no space in xattr  [AdrianDC]
+de65935  f2fs: remove redundant condition check  [AdrianDC]
+ea4f064  f2fs: unset atomic/volatile flag in f2fs_release_file  [AdrianDC]
+1b58820  f2fs: fix dropping inmemory pages in a wrong time  [AdrianDC]
+542ef0d  f2fs: add BUG_ON to avoid unnecessary flow  [AdrianDC]
+59f62ce  f2fs: fix to convert inline directory correctly  [AdrianDC]
+f684126  f2fs: show current mount status  [AdrianDC]
+57b0a29  f2fs: treat as a normal umount when remounting ro  [AdrianDC]
+6b1811d  f2fs: give -EINVAL for norecovery and rw mount  [AdrianDC]
+153bd79  f2fs: recover superblock at RW remounts  [AdrianDC]
+bfec5da  f2fs: give RO message when recovering superblock  [AdrianDC]
+   * packages/apps/KernelAdiutor/
+78a174c  GPU: Gaming Mode Min Power Level  [Martinusbe]
+92ebb58  add support for MSM Performance  [Martinusbe]
+f8599a6  CoreControl: Remove BCH and clean up the formatting a bit  [Martinusbe]
+d1c7258  Constants: Add some sysfs paths from @Benschold for OP2  [Martinusbe]
+792e2d1  Utils: Add helper function to return the existing sysfs path from an array of paths.  [Martinusbe]
+ff60e30  Add MW and TW gestures  [Martinusbe]
+d249e5a  THermal: Remove derp  [Martinusbe]
+f87e3c5  Revert "SysFS Dump: This creates a sysfs dump function."  [Martinusbe]
+c50b3d6  fix constants  [Martinusbe]
+114199f  Add CoreControl to Bootservice  [Martinusbe]
+b7dc946  Setup Core Control  [Martinusbe]
+6789947  Add switch for Boeffla Config Helper  [Martinusbe]
+83e121e  Add possibility to switch back and recents button  [Martinusbe]
+d9490fc  GPU: Adreno Idler - Allow for either a Y or 1 for enabled  [Martinusbe]
+4326deb  Utils: isLetter function  [Martinusbe]
+a05ea81  Fix Merge Derps from Previous 2 commits  [Martinusbe]
+924c0e8  Thunderplug settings  [Martinusbe]
+0189ae2  Slider for SD810 low power mode  [Martinusbe]
+14cf69f  Hotplugs: Fixup some compatability issues.  [Martinusbe]
+4a0098c  CPU Governor Tunables: Add support for big/little tuned paths  [Martinusbe]
+b7e2195  Reduce MinSDK back to 19  [Martinusbe]
+9029a18  SysFS Dump: This creates a sysfs dump function.  [Martinusbe]
+fdfd86f  Decrease MinSDK to 19 here as well...  [Martinusbe]
+76204cf  DayNight  [Martinusbe]
+5e1771b  Icon update  [Martinusbe]
+080732a  strings: GZR Kernel Adiutor  [Martinusbe]
+e413a68  add GZR banner  [Martinusbe]
+ae5a5da  strings: GZR Kernel Adiutor  [Martinusbe]
+21acf45  CPUHotplug: Bluplug - Fix it not showing for people without my enable/disable mod  [Martinusbe]
+
+====================
+     06-03-2016
+====================
+
+   * kernel/sony/msm8960t/
+3c652ca  kgsl: switch back to allocating from highmem  [AdrianDC]
+3526dc0  kgsl: allocate from lowmem  [AdrianDC]
+cee129a  kgsl: allocate shared memory one page at a time  [AdrianDC]
+5f28860  mmc: core: add function comment header  [AdrianDC]
+781b595  mmc: block: Remove call to mmc_blk_set_blksize  [AdrianDC]
+
+====================
+     06-02-2016
+====================
+   * OTA_config/
+48f3a96  Add Huashan (Build + Changelog)  [a7r3]
+   * device/sony/huashan/
+d97fb16  Automatic translation import  [inky@build01]
+   * kernel/sony/msm8960t/
+4fad55e  mutex: Add a delay into the SPIN_ON_OWNER wait loop.  [AdrianDC]
+1d1a067  kernel: use the gnu89 standard explicitly  [AdrianDC]
+760a3f8  kbuild: Remove reference to uninitialised variable  [AdrianDC]
+f545c4c  kbuild: Remove useless warning while appending KCFLAGS  [AdrianDC]
+1f40685  wlan: Remove support for deprecated api get/set countryrev  [AdrianDC]
+fb110b3  wlan: EnableStrictRegulatoryForFCC should be False by default.  [AdrianDC]
+bcfeec5  wlan: Synchronize country code HDD ioctl  [AdrianDC]
+721da5b  wlan: Correcting timeout value for event driver_crda_req.  [AdrianDC]
+3c1f333  net/wireless: Fix kernel crash while doing iwlist scan  [AdrianDC]
+fc51aaa  cfg80211: avoid restoring the regulatory during disconnect  [AdrianDC]
+d47d11f  cfg80211: unblock user hint when cfg80211_regdom is intersected  [AdrianDC]
+   * vendor/sony/
+d88bb58  huashan: Move prima WiFi files to the device tree  [AdrianDC]
+
+====================
+     06-01-2016
 ====================
 
    * build/
-d274a7d  MOB30M  [Martinusbe]
-9b061a1  "MOB30L"  [Martinusbe]
-72aa4f9  "MOB30K"  [Martinusbe]
-0b0241c  Update security patch string to 2016-06-01  [Martinusbe]
+91c51ec  qcom: Use correct path for BT vendor  [Martinusbe]
+820785c  build: Create a oem image when BOARD_OEMIMAGE_FILE_SYSTEM_TYPE is defined  [Martinusbe]
+a8f0f3e  build: Add BOOTIMAGE_EXTRA_DEPS for BOOT_SIGNER products too  [Martinusbe]
+778e580  build: Use compatibility DTB directory path for custom DTB tool builds  [Martinusbe]
+1409f2f  build: Add MTK support  [Martinusbe]
+2fe3e0f  qcom: Allow usage of default QC HAL paths  [Martinusbe]
+e94634a  Preventing default locale from being overridden because of buildinfo.sh  [Martinusbe]
+2e23501  build: add build module from root  [Martinusbe]
+a3d9c8a  kernel: prevent targets from being rebuilt needlessly  [Martinusbe]
+adf555b  kernel: don't build modules or dtbs unless enabled  [Martinusbe]
+7d9b8ef  kernel: add `make kernelxconfig' target  [Martinusbe]
+a6108b1  build: e2fsck missing from emulator  [Martinusbe]
+4297752  Set mcpu targets based on cpu variant.  [Martinusbe]
+f584b7c  prebuild: compress shared libraries in prebundled apks  [Martinusbe]
+f822497  build: force .config update if additional kernel config changes  [Martinusbe]
+999f524  kernel: Fix usage of KERNEL_ARCH  [Martinusbe]
+c5d9bee  build: Add msm8952 as a QCOM board platform  [Martinusbe]
+f2e390a  core_minimal: Change make_f2fs to mkfs.f2fs  [Martinusbe]
+2c2d14a  build: add msm8996 to QCOM targets  [Martinusbe]
+20b5609  qcom: Add support for custom device specific paths  [Martinusbe]
+   * vendor/tipsy/
+3f2f86d  common.mk: v4.1 Geuze  [Martinusbe]
+1bd3e57  common.mk: build GZR Adiutor  [Martinusbe]
+5dbecd4  remove prebuilt adiutor  [Martinusbe]
+04c0104  Revert "build Eleven"  [Martinusbe]
+06ce61a  sepolicy:app.te: remove themes entry  [Martinusbe]
+ce3ed51  APN: Use single APN for T-Mobile US LTE  [Martinusbe]
+9f581cd  cm: Remove garbage from sepolicy  [Martinusbe]
+b21d1bb  APN: Fix Saunalahti APN regression introduced by CYNGNOS-436  [Martinusbe]
+c8107e5  APN: update Batelco and Zain APNs for Bahrain  [Martinusbe]
+67cb4be  sepolicy: Allow recovery to mount on tmpfs  [Martinusbe]
+232f448  MetroPCS APN update  [Martinusbe]
+84bad2d  Irancell & MTS APN updates  [Martinusbe]
+6c312f5  Update APN name for Movistar INTERNET  [Martinusbe]
+b2918a9  APN: fixup single-digit mnc APNs  [Martinusbe]
+480c5cb  SMART [PH] APN updates  [Martinusbe]
+e87e923  Fix typo  [Martinusbe]
+6d81289  apns: fix build  [Martinusbe]
+bf3e76f  apns: Add ATT Nextgenphone  [Martinusbe]
+961e39e  Resolve Orange RO authtype  [Martinusbe]
+79841ca  Modify APN for Orange Romania  [Martinusbe]
+13fc172  add yufone APN  [Martinusbe]
+19a865c  apns: Net10 310410: Fix port  [Martinusbe]
+c543b49  Cleanup APN list for Norway  [Martinusbe]
+bfc9c8d  apns: Cricket AIO 310150: Remove duplicate  [Martinusbe]
+71b423b  apns: T-Mobile 310260: Compatibility update  [Martinusbe]
+f076c89  APN: Remove wrong T-Mobile CZ and Vodafone CZ APNs  [Martinusbe]
+d094263  fix cricket APN  [Martinusbe]
+f4ddae3  Update IMS APN based on Smartfren Device Technical document-v1 2  [Martinusbe]
+432d9b5  APN: Fixup Vodafone IT and remove Noverca  [Martinusbe]
+c51b139  APN: Update TIM MVNOs  [Martinusbe]
+dcceb4a  Fix Digi Mobile defaults  [Martinusbe]
+7f83bec  apns: update for IMS  [Martinusbe]
+92839bc  vendor/cm: Update Japanese APNs  [Martinusbe]
+5f0c42a  Correct Tele2 Sweden APNs and remove Comviq Sweden.  [Martinusbe]
+da5d870  APN: Remove identical MVNO entries  [Martinusbe]
+05e9725  Ventelo is now Phonero  [Martinusbe]
+57f7fb9  Remove instance of server=""  [Martinusbe]
+c01d097  Correct Tele2 Sweden APNs and remove Comviq Sweden.  [Martinusbe]
+659da44  init: stop ril daemons if ro.radio.noril is set  [Martinusbe]
+69eccf3  init: set ro.radio.noril if persist.radio.noril is set  [Martinusbe]
+ab054c8  init: Remove world-writable permissions in BFQ hierarchy  [Martinusbe]
+51f79ef  slim: remove some cruft  [Martinusbe]
+0ba9c71  init: add permissions for max_freq_hysteresis node  [Martinusbe]
+92a952d  cm: Update and add additional permissions  [Martinusbe]
+1b804c8  Allow reading of cpufreq attributes  [Martinusbe]
+6b3d83e  cm: Set perms on a few additional paths  [Martinusbe]
+3ad397c  init.local.rc: Fix typo  [Martinusbe]
+62b6e96  vendor/cm: Clean up init.local.rc  [Martinusbe]
+ee663ff  cm: Update permissions for ondemand sysfs nodes  [Martinusbe]
+1d6489a  cm: Set permissions on input_boost node  [Martinusbe]
+5cd1614  rootdir: Set permissions for additional interactive sysfs nodes  [Martinusbe]
+64dfb2b  init: provide initial pemissions for ondemand governor  [Martinusbe]
+aca33af  init.cm: Fix sysinit dependencies  [Martinusbe]
+3f49a84  validus: add opt-out for exFAT  [Martinusbe]
+d2ab7b3  sepolicy: Add permission for formatting user/cache partition  [Martinusbe]
+351e07d  sepolicy: allow vold to trim persist  [Martinusbe]
+90ae707  sepolicy: qcom: Allow reading PSU sysfs by system_server  [Martinusbe]
+2718839  sepolicy: Remove some denials  [Martinusbe]
+34fe30a  sepolicy: Add policy for thermal engine changes  [Martinusbe]
+9ae5220  sepolicy: Allow adb pull of executables without root  [Martinusbe]
+de051e2  sepolicy: Allow system app to set boot anim property  [Martinusbe]
+998bc97  sepolicy: Allow recovery to set system properties  [Martinusbe]
+eefae8c  sepolicy: Allow recovery to create links in the rootfs  [Martinusbe]
+e2942a9  sepolicy: fix denial for sudaemon  [Martinusbe]
+f965d92  sepolicy: Underp the context for persistent storage  [Martinusbe]
+16b4ebe  sepolicy: Make superuser_device and sudaemon mlstrustedobjects  [Martinusbe]
+5d09057  recovery: Add new rules for recursive wipe  [Martinusbe]
+ad35d1a  Grant platform apps access to /mnt/media_rw with sdcard_posix label  [Martinusbe]
+185136b  sepolicy: Add perfprofd with set_prop macro  [Martinusbe]
+1620a30  sepolicy: Allow minivold execute_no_trans  [Martinusbe]
+7b526d9  sepolicy: label exfat and ntfs mkfs executables  [Martinusbe]
+dc88b22  sepolicy: Add domain for mkfs binaries  [Martinusbe]
+bbe961b  sepolicy: Set the context for fsck.exfat/ntfs to fsck_exec  [Martinusbe]
+b060ed9  slim: sepolicy: fix denials for external storage  [Martinusbe]
 
 ====================
-     06-08-2016
+     05-31-2016
 ====================
-   * OTA_config/
-6a10961  Update Huashan (4.0 -> 4.1)  [a7r3]
-   * frameworks/base/
-3f7d951  Merge pull request #21 from TipsyOs/testing  [martin coulon]
-   * kernel/sony/msm8960t/
-904d3ab  msm: kgsl: Add missing checks for alloc size and sglen  [AdrianDC]
-3124fda  wlan: Deprecate all WAPI ioctls  [AdrianDC]
-1bd53a9  wlan: Validate ioctls for valid input length  [AdrianDC]
-9350cd4  wlan: validate essid length before processing scan req  [AdrianDC]
-   * manifest/
-ca71935  track toolchains from DespairFactor  [Martinusbe]
-9422b8d  clone-depth="1" on all prebuilts  [Martinusbe]
-   * packages/apps/Settings/
-4ff67b3  Merge pull request #15 from TipsyOs/testing  [martin coulon]
+
 
