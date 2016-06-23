@@ -1,232 +1,92 @@
 ====================
-     06-16-2016
+     06-23-2016
 ====================
 
-   * vendor/sony/
-e3b9f0e  blue: Cleanup unused hayabusa, mint and tsubasa blobs  [AdrianDC]
 
 ====================
-     06-15-2016
+     06-22-2016
 ====================
-   * OTA_config/
-07ef894  Revert "Update Huashan (13/06)"  [a7r3]
-09bd1fa  Update Huashan (13/06)  [a7r3]
-   * frameworks/base/
-668daf4  nfc: Pull in NXP base  [Martinusbe]
-   * frameworks/opt/telephony/
-76c6dce  Telephony: Migrate to new overlay framework.  [Martinusbe]
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
-0c368e2  Initial commit  [DespairFactor]
-   * vendor/sony/
-5d6e374  hayabusa: Fix camera capture due to overlapping do_mmap_ion  [AdrianDC]
-f30cc40  blue-common: Move prima WiFi files to the device tree  [AdrianDC]
-52e005b  blue-common: Update to newer mpdecision  [AdrianDC]
-cfc9ddf  blue-common: Remove libqc-opt and update libmmcamera_wavelet_lib.so  [AdrianDC]
-c942f9c  blue-common: Add libqti-perfd-client to replace libqc-opt  [AdrianDC]
-0068eb8  blue-common: Use cancro mm fm patch downloader  [AdrianDC]
-5ef01b7  hayabusa: Reimport old device blobs  [AdrianDC]
-2a703dc  blue-common: Delete unused yamato firmware  [AdrianDC]
+
+   * hardware/qcom/audio-caf/msm8960/
+36aec39  hal: only open the amplifier once  [Matt Mower]
+2d69794  hal: enable amplifier earlier  [Matt Mower]
+dfe21b6  hal: Notify amplifier of device enable/disable  [Matt Mower]
+1170162  hal: Convert libaudioamp to audio_amplifier HAL  [Matt Mower]
+   * packages/apps/Snap/
+7984593  Snap: Add picture resolutions for OnePlus 3  [Martinusbe]
    * vendor/tipsy/
-84c8ebf  devices: add oneplus3  [Martinusbe]
+26bea58  bootani 1080p  [Martinusbe]
+d979c8a  go to 4.3 while i'm here  [Martinusbe]
+d50c677  bootani: new one by Pete, 720p version  [Martinusbe]
 
 ====================
-     06-14-2016
+     06-21-2016
+====================
+
+   * hardware/qcom/audio-caf/msm8960/
+dbf1e5f  hal: Support the audio amplifier hook  [Matt Mower]
+
+====================
+     06-20-2016
+====================
+
+   * build/
+1b2550d  OMS: adb shell command to access OverlayManagerService  [Martinusbe]
+   * external/sepolicy/
+eb3d59e  Add service 'overlay' to service_contexts  [Martinusbe]
+   * manifest/
+914318f  track external/dhcpcd from Slim  [Martinusbe]
+   * system/bt/
+80f6742  bt: Use the clock functions from libutils instead of clock_gettime  [Josue Rivera]
+f81bf67  bt: Unify usage of clock_gettime  [Josue Rivera]
+   * vendor/sony/
+fa82478  blue: Cleanup hayabusa, mint and tsubasa proprietary files  [AdrianDC]
+1fcbfc2  blue-common: Move prima WiFi files to the device tree  [AdrianDC]
+bbb62f0  blue-common: Update to newer mpdecision  [AdrianDC]
+1b084e9  blue-common: Remove libqc-opt and update libmmcamera_wavelet_lib.so  [AdrianDC]
+1d3b595  blue-common: Add libqti-perfd-client to replace libqc-opt  [AdrianDC]
+5965958  blue-common: Use cancro mm fm patch downloader  [AdrianDC]
+dcf4695  hayabusa: Fix camera capture due to overlapping do_mmap_ion  [AdrianDC]
+e7a3c43  hayabusa: Add missing blobs from 9.2.A.1.215 (Sony 4.3)  [AdrianDC]
+a2b1213  hayabusa: Reimport old device blobs  [AdrianDC]
+f2ca570  blue-common: Delete unused yamato firmware  [AdrianDC]
+5aec9b8  huashan: Remove libcsd-client.so library  [AdrianDC]
+
+====================
+     06-19-2016
+====================
+
+   * frameworks/base/
+9926e6b  Revert "nfc: Pull in NXP base"  [Martinusbe]
+
+====================
+     06-18-2016
 ====================
 
    * device/sony/huashan/
-618d246  Fix Derp  [a7r3]
-dcaa321  Revert "huashan: Add deviceHardwareWakeKeys overlay"  [a7r3]
-3908cb6  huashan: Always enable Glove Mode service  [a7r3]
-755bc1a  Revert "huashan: Remove CM lights framework overlays for AOSP-based ROMs"  [a7r3]
-f8ff921  huashan: Isolate device specific parameters of the custombootimg  [a7r3]
-   * frameworks/base/
-135a5c8  Option to use volume keys to control media volume anytime (1/2)  [Martinusbe]
-   * kernel/sony/msm8960t/
-a0c2cb4  defconfig: huashan: Update configuration  [AdrianDC]
-7add4e0  drivers: convert shrinkers to new count/scan API  [AdrianDC]
-b702cf5  shrinker: add node awareness  [AdrianDC]
-ccbd744  mm: new shrinker API  [AdrianDC]
-2b502c7  Revert "mm: zcache: Fix 3.4 backport"  [AdrianDC]
-a1aabde  msm: camera: Add checks for integer overflow  [AdrianDC]
-de796ec  msm: camera: Add check for zero length buffer  [AdrianDC]
-7b14181  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
-79eb768  msm: camera: Fix off by one error  [AdrianDC]
-bd26fbf  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
-fb2a966  msm: camera: Check for array index out of bounds  [AdrianDC]
-6dc4cd5  msm: camera: Add proper bounds check for resolution config  [AdrianDC]
-80b5344  msm: camera: Check for array index out of bounds  [AdrianDC]
-e87cc51  msm: camera: Add check to prevent array index out of bounds  [AdrianDC]
-f6a1e29  msm: camera: Check for overflow condition  [AdrianDC]
-06d1b93  msm: vpe: Add check to prevent index out of bounds  [AdrianDC]
-c2383ea  Revert "mm: vmstat: make vmstat_work cpu bound during requeue"  [AdrianDC]
-   * packages/apps/Settings/
-bfdf7a3  Option to use volume keys to control media volume anytime (1/2)  [Martinusbe]
+b33c583  Tipsidize!  [a7r3]
+a97455f  huashan: Always enable Glove Mode service  [a7r3]
+7212034  Revert "huashan: Multiple LEDs LibLights control"  [a7r3]
+51a0772  huashan: Adapt Doze Sensors detection for AOSP-based ROMs  [a7r3]
+db27f39  Revert "huashan: Enable persistent usb drive notification"  [a7r3]
+5391d36  Revert "huashan: Turn off Mobile data by default"  [a7r3]
+ebab81b  Revert "huashan: Add deviceHardwareWakeKeys overlay"  [a7r3]
+   * external/libnetfilter_conntrack/
+4e75a53  conntrack: Add kernel dependency  [deadman96385]
+6ec2aa5  conntrack: Fix Clang errors  [deadman96385]
 
 ====================
-     06-13-2016
-====================
-
-   * build/
-67897ab  make bootzip: tipsyfy  [Alx31]
-
-====================
-     06-12-2016
-====================
-
-   * bionic/
-4476089  Define char16_t and char32_t to make gcc 5.1 happy  [Martinusbe]
-2fd6cf2  bionic: Use a more simple strrchr for arm64  [Martinusbe]
-f50fb89  Update timezone data to 2016a  [Martinusbe]
-249b9b2  libm: ARM: reorganize a bit to match ARM64  [Martinusbe]
-3693e37  Fix arm64 fenv warnings, and make warnings errors.  [Martinusbe]
-16be107  Fix regoff_t for LP32 and _FILE_OFFSET_BITS=64.  [Martinusbe]
-cb5297e  bionic: Let popen fall back to /sbin/sh  [Martinusbe]
-07d7f75  libc: ARM64: improve performance in strlen  [Martinusbe]
-9b9ae2e  libc: ARM64: optimize memset.  [Martinusbe]
-92e87f8  libc: ARM64: remove bcopy from memset  [Martinusbe]
-48e8cc6  libc: ARM64: optimize memmove  [Martinusbe]
-56c335f  libc: remove bcopy from memmove on 64-bit architectures  [Martinusbe]
-b338d5d  libc: AArch64: Tune memcpy  [Martinusbe]
-8e9dfdd  libc: ARM64: Optimize memcpy.  [Martinusbe]
-63e1f16  libc: include strrchr for kryo and denver64  [Martinusbe]
-fc02015  libc: ARM64: add assembly strrchr  [Martinusbe]
-cccc24f  libc: arm: Add optimised memchr to scorpion  [Martinusbe]
-02c1451  [AOSP Master] libc: krait: Use performance version of memcpy  [Martinusbe]
-347c11c  Remove pushes from memsets (krait/cortex-a9).  [Martinusbe]
-447cd1d  Replace bx lr with update of pc from the stack.  [Martinusbe]
-ec49024  libc: Add memchr to a53+a57 target  [Martinusbe]
-c4419fc  Add cortex-a53.a57 target for 32 bit big/little.  [Martinusbe]
-8b40672  libc: arm: add optimized memchr implementation  [Martinusbe]
-ab4cd9e  Add optimized cortex-a7/cortex-a53 memset/memcpy.  [Martinusbe]
-88b080b  bionic: Add flag to restore legacy mmap behavior  [Martinusbe]
-e34fa96  Revert "Revert "Use compiler builtins for fabs.""  [Martinusbe]
-d218401  Fix potential race condition on CTS TC pthread_gettid_np  [Martinusbe]
-beebe91  Fix over read in strcpy/stpcpy/strcat.  [Martinusbe]
-ff53995  Make all labels local.  [Martinusbe]
-43a4b65  Sync with upstream FreeBSD libm.  [Martinusbe]
-c347099  Use __builtin_* in <math.h>.  [Martinusbe]
-c09df77  linker: Allow text-relocs for x86 (only)  [Martinusbe]
-4cd8f27  Don't leak sockets if setsockopt() or fchown() fail.  [Martinusbe]
-a057eee  Fix GNU/POSIX basename headers.  [Martinusbe]
-dcdc800  Add prlimit to LP32.  [Martinusbe]
-d5dd02b  libc: ARM64: kryo: use generic memmove routine  [Martinusbe]
-6422842  libc: ARM64: denver64: optimized memmove breaks denver  [Martinusbe]
-f264119  bionic: linker: Load shim libs *before* the self-linked libs  [Martinusbe]
-3c256b2  libc: Add Scorpion-optimized variant  [Martinusbe]
-9e9ab0d  Make shim lib load failure non-fatal.  [Martinusbe]
-9665da6  bionic: Do not allow LD_SHIM_LIBS for setuid executables  [Martinusbe]
-e73c1b2  linker: Don't try to walk the g_active_shim_libs when doing dlsym  [Martinusbe]
-456de18  linker: Reset the active shim libs each time we do a dlopen  [Martinusbe]
-c045b56  linker: Fix the fact that shim libs do not properly call constructors  [Martinusbe]
-f645986  linker: Add support for dynamic "shim" libs  [Martinusbe]
-5a8949a  bionic: Allow devices to add device specfic static libs  [Martinusbe]
-   * build/
-860cc51  uber.mk: add libavcodec to graphite exclusions  [Alx31]
-   * device/qcom/common/
-e0f186a  power-8992: Remove extraneous boosting  [Martinusbe]
-24307bc  power: Use declared enums where possible  [Martinusbe]
-1a35473  power-8952: Fix array initialization  [Martinusbe]
-a89c3d8  power: Fixup typo in 8939 cpu4 timer rate  [Martinusbe]
-08e5443  power-8992: Add prefetcher support  [Martinusbe]
-6b77b9e  power-8992: Fix boost and screen off params  [Martinusbe]
-8d17125  power: Bring all CM features to 8992 PowerHAL  [Martinusbe]
-a0bad11  qcom: power: Allow devices to write their own platform specific bits  [Martinusbe]
-7a1fceb  power: Encode optimization  [Martinusbe]
-b859135  power: Modify camera encode/preview hint  [Martinusbe]
-99a417a  power: Enable camera preview hint in powerhal  [Martinusbe]
-95e4aa9  power: Add and update resources for encode powerHAL  [Martinusbe]
-53746ef  power: Introduce 8996 specific handling  [Martinusbe]
-9009e8e  init: Add MSM-specific init extension library for msm8996  [Martinusbe]
-eb643ed  power: msm8952: Handle POWER_HINT_INTERACTION  [Martinusbe]
-c8bf4ee  power: Handle POWER_HINT_INTERACTION  [Martinusbe]
-469095a  power-8992: Fix build error and warnings  [Martinusbe]
-914b80f  init: Add msm8952-specific init extension library  [Martinusbe]
-849f521  power-8992: Add launch boost profile  [Martinusbe]
-2660aea  power: Remove custom low power mode hint handling  [Martinusbe]
-   * frameworks/base/
-e8969ed  SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission  [Martinusbe]
-ae867a7  Add interpolators to qs tiles animation [1/2]  [Martinusbe]
-29b3448  FWB: QS shade transparency (1/2)  [Martinusbe]
-5c6a094  Add animations to quick settings tiles [1/2]  [Martinusbe]
-4df60db  Add Screenshot Crop & Share [1/2] * Cleaned up a lill * Need to see if nothing is broken Change-Id: I100c4a86048a3d61cff8457471dd205cf9555714 Signed-off-by: Martinusbe <martinusbe@gmail.com>  [Martinusbe]
-   * kernel/sony/msm8960t/
-68c0029  msm: camera: sensor: Validate step_boundary  [AdrianDC]
-b85f8ba  msm: kgsl: Defer adding the mem entry to a process  [AdrianDC]
-   * manifest/
-fae9e9b  Revert "Track own development"  [Martinusbe]
-7ccd0e9  track libnfnetlink & libnetfilter_conntrack from slim  [Martinusbe]
-73aae6b  6.0.1_r46  [Martinusbe]
-   * packages/apps/PackageInstaller/
-9eed2e9  DO NOT MERGE Take advantage of new MotionEvent flag to prevent tapjacking.  [Martinusbe]
-d748534  Fix crash in OnDismiss  [Martinusbe]
-1777c64  PackageInstaller: Complete PackageInstaller DayNight Theming  [Martinusbe]
-8c6668f  Properly Implement DayNight Theme  [Martinusbe]
-afb39f8  Revert "DO NOT MERGE: Remove DayNight theme"  [Martinusbe]
-e3663c2  Revert "Remove old -night values DO NOT MERGE"  [Martinusbe]
-   * packages/apps/Settings/
-11494f7  Add interpolators to qs tiles animation [2/2] + fixing previous commits  [Martinusbe]
-891da8b  Settings: QS shade transparency (2/2)  [Martinusbe]
-3692c4f  Add animations to quick settings tiles [2/2]  [Martinusbe]
-c4c1717  Add Screenshot Crop & Share [2/2]  [Martinusbe]
-
-====================
-     06-11-2016
+     06-17-2016
 ====================
    * OTA_config/
-395f639  onepluses: update 20160610 & one changelog for all  [Martinusbe]
-   * build/
-7c5da6a  uber.mk: add exclusions to build with new tcs.  [Alx31]
-   * kernel/sony/msm8960t/
-12d405c  defconfig: huashan: Disable CONFIG_DYNAMIC_DEBUG  [AdrianDC]
+7802fef  Update Huashan 1606  [a7r3]
+   * device/sony/huashan/
+8d4a4ec  huashan: Additional relative paths usage and makefiles cleanups  [AdrianDC]
+4a76567  temptest  [AdrianDC]
+3d61772  huashan: Import arch configs first from a PlatformConfig.mk  [AdrianDC]
 
 ====================
-     06-10-2016
-====================
-
-   * frameworks/av/
-f5d1e78  Fixing ALOGE message in commit ad40e57890f81a3cf436c5f06da66396010bd9e5  [Martinusbe]
-2da968c  SampleTable.cpp: Fixed a regression caused by a fix for bug 28076789.  [Martinusbe]
-59c1178  Resolve merge conflict when cp'ing ag/931301 to mnc-mr1-release  [Martinusbe]
-f4b7279  h264dec: check for overflows when calculating allocation size.  [Martinusbe]
-d7d1a22  codecs: check OMX buffer size before use in (avc|hevc|mpeg2)dec  [Martinusbe]
-e5e84a5  codecs: check OMX buffer size before use in (gsm|g711)dec  [Martinusbe]
-ae73590  AudioSource: initialize variables  [Martinusbe]
-cf35a2d  Check mp3 output buffer size  [Martinusbe]
-19fdcf0  codecs: check OMX buffer size before use in (h263|h264)dec  [Martinusbe]
-5e721fe  DO NOT MERGE codecs: check OMX buffer size before use in (vorbis|opus)dec  [Martinusbe]
-f0f5281  Fix OMX_IndexParamConsumerUsageBits size check  [Martinusbe]
-aa15531f  Fix size check for OMX_IndexParamConsumerUsageBits  [Martinusbe]
-d43f94c  Fix initialization of AAC presentation struct  [Martinusbe]
-b403873  DO NOT MERGE Verify OMX buffer sizes prior to access  [Martinusbe]
-d096aca  Clear allocation to avoid info leak  [Martinusbe]
-953fe0a  Fixing safteynet logging bug introduced in ag/862848  [Martinusbe]
-0e55143  3 uninitialized variables in IOMX.cpp  [Martinusbe]
-3fd0b95  IOMX.cpp uninitialized pointer in BnOMX::onTransact  [Martinusbe]
-   * frameworks/base/
-6035e0e  round some systemui stuff for a clean smooth look  [Martinusbe]
-f35702a  SystemUI: fix notification on charger  [Martinusbe]
-9cb84aa  Kill the real/isolated uid group, not the ApplicationInfo uid  [Martinusbe]
-a9cbb01  Add new, hidden MotionEvent flag for partially obscured windows.  [Martinusbe]
-   * frameworks/native/
-b33b8c8  Add new MotionEvent flag for partially obscured windows.  [Martinusbe]
-   * kernel/sony/msm8960t/
-6156687  mm/swapfile.c: do not skip lowest_bit in scan_swap_map() scan loop  [AdrianDC]
-8077e82  mm: vmstat: make vmstat_work cpu bound during requeue  [AdrianDC]
-589d1b2  vmscan: fix increasing nr_isolated incurred by putback unevictable pages  [AdrianDC]
-50d593f  mm: compaction: fix the page state calculation in too_many_isolated  [AdrianDC]
-f9b5144  mm: page-writeback: fix page state calculation in  throttle_vm_writeout  [AdrianDC]
-0f7e1fa  mm/compaction: fix wrong order check in compact_finished()  [AdrianDC]
-eb1c618  mm/compaction: make isolate_freepages start at pageblock boundary  [AdrianDC]
-bef7736  mm: compaction: detect when scanners meet in isolate_freepages  [AdrianDC]
-f0b19a8  mm: compaction: reset cached scanner pfn's before reading them  [AdrianDC]
-29034eb  mm: Fix "mm: vmpressure: account allocstalls only on higher pressures"  [AdrianDC]
-e8fc50d  mm: process_reclaim: Fix "mm: process_reclaim: use unbounded cpu workqueue"  [AdrianDC]
-97b8f6d  mm: process_reclaim: fix reclaim skip on low efficiency  [AdrianDC]
-1706885  mm: Remove shrink_page  [AdrianDC]
-98ea3cb  mm: make shrink_page_list with pages work from multiple zones  [AdrianDC]
-
-====================
-     06-09-2016
+     06-16-2016
 ====================
 
 
