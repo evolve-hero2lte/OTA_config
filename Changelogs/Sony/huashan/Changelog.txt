@@ -1,92 +1,145 @@
 ====================
+     06-30-2016
+====================
+
+   * device/sony/huashan/
+bdf77eb  Tipsidize!  [a7r3]
+22511ba  Revert "huashan: Use cmsdk FileUtils"  [a7r3]
+c89665a  Revert "huashan: Fix the use of cmsdk FileUtils"  [a7r3]
+b3c4ebf  huashan: Always enable Glove Mode service  [a7r3]
+4941653  huashan: Adapt Doze Sensors detection for AOSP-based ROMs  [a7r3]
+e607064  Revert "huashan: Add deviceHardwareWakeKeys overlay"  [a7r3]
+f61b25b  Revert "huashan: Turn off Mobile data by default"  [a7r3]
+cdbb9e9  Revert "huashan: Multiple LEDs LibLights control"  [a7r3]
+8267f68  Revert "huashan: Use the segmented LEDs config for charge meter"  [a7r3]
+656d4cb  Revert "huashan: Remove side segmented LEDs usage for charging meter"  [a7r3]
+0b53c5e  Revert "huashan: Enable persistent usb drive notification"  [a7r3]
+dd32386  huashan: Increase ZRAM size to 400MB  [AdrianDC]
+
+====================
+     06-29-2016
+====================
+
+   * device/sony/huashan/
+5dd4bd5  huashan: Fix the use of cmsdk FileUtils  [AdrianDC]
+   * system/core/
+17858e6  rootdir: Put bootanimation service in system-background group  [Josue Rivera]
+   * vendor/sony/
+2d5531d  blue-common: Update rmt_storage from flo MOB30D  [AdrianDC]
+
+====================
+     06-28-2016
+====================
+
+   * build/
+81e4b3c  dumpvar: simplify GCC version  [Martinusbe]
+0c4a59f  Revert "build: use gcc 5.4 to build arm"  [Martinusbe]
+a17f9d6  dumpvar: put and end to the color output  [Martinusbe]
+805dd67  dumpvar: show optimizations when in boardconfig  [Martinusbe]
+ebbd144  dumpvar: make it readable  [Martinusbe]
+4378f53  Revert "Fix dumpvar information"  [Martinusbe]
+f8d18b9  Fix dumpvar information  [Martinusbe]
+7805a57  Enable color output from gcc and clang  [Martinusbe]
+797a0c0  Add Memory Sanitize optimization (1/3)  [Martinusbe]
+c6931cd  Add poly optimization (1/3)  [Martinusbe]
+5963f45  improve performance of blockimgdiff  [Martinusbe]
+fa75de1  Add optimized string routine libraries  [Martinusbe]
+c2f18ec  Avoid accidentally using the host's native 'as' command.  [Martinusbe]
+dee13f6  build: use gcc 5.4 to build arm  [Martinusbe]
+   * device/sony/huashan/
+3859cfc  huashan: Use cmsdk FileUtils  [AdrianDC]
+   * external/busybox/
+bc2e13c  Add statically linked, minimal variation of busybox  [Nicholas Flintham]
+   * external/stagefright-plugins/
+1020200  stagefright-plugins: call packet_queue_init earier  [Nicholas Flintham]
+   * hardware/broadcom/libbt/
+f662d09  libbt-vendor (BRCM): Add ssr_cleanup  [Nicholas Flintham]
+   * hardware/qcom/bt-caf/
+4d1355d  Merge branch 'bt.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/bt into HEAD  [Nicholas Flintham]
+   * hardware/qcom/wlan-caf/
+86c2649  Merge branch 'wlan-aosp.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0  [Nicholas Flintham]
+   * packages/apps/CellBroadcastReceiver/
+9cc155a  Layers 4.x - Themes: Expose hardcoded styles and colors for themes  [Jean-Pierre Rasquin]
+   * system/vold/
+717d930  cryptfs: Fix returning to default password  [Nicholas Flintham]
+a41f014  Revert "vold: Branch out SW and HW FDE paths to improve boot up time"  [Nicholas Flintham]
+d1c9d99  Fix ioctl parameter  [Nicholas Flintham]
+
+====================
+     06-27-2016
+====================
+
+   * device/sony/common/
+a8e5bd5  init: Launch the ramdisk init inside of the main thread  [AdrianDC]
+   * device/sony/huashan/
+8c6e221  huashan: Enable bootanimation optimizations  [AdrianDC]
+ef9d67a  huashan: Update custombootimg for renamed toybox_init  [AdrianDC]
+   * hardware/qcom/wlan-caf/
+f1df678  Wifi-HAL: Extract wmsg length from nlmsg_hdr with ntohs()  [Josue Rivera]
+1066145  Wifi-HAL: Add length check before proceeding to parse data.  [Josue Rivera]
+9e61ada  wcnss_service: support dynamic replacement for wlan_nv.bin  [Josue Rivera]
+f0d755a  Wifi_HAL: Add new QCA specific wifi config attribute  [Josue Rivera]
+6659c0b  Revert "WiFi-HAL: Remove global variables usage in gscan"  [Josue Rivera]
+1a64bc6  WiFi-HAL: Remove global variables usage in gscan  [Josue Rivera]
+f137bdd  WiFi-HAL: GSCAN- Allow more than max_channels per bucket  [Josue Rivera]
+4fd36a5  wcnss_service: Migrate from QMI to QCCI  [Josue Rivera]
+58437be  WiFi-HAL: Allow number of channels in a bucket to be zero(0)  [Josue Rivera]
+
+====================
+     06-26-2016
+====================
+
+   * device/sony/common/
+97b461a  init: Avoid overriding root toybox binary after booting  [AdrianDC]
+   * device/sony/huashan/
+a87d226  huashan: Remove side segmented LEDs usage for charging meter  [AdrianDC]
+   * kernel/sony/msm8960t/
+5c89c9f  android: configs: Update Android config fragments  [AdrianDC]
+1cceea4  defconfig: huashan: Restrict access to perf events  [AdrianDC]
+34d31bd  FROMLIST: security,perf: Allow further restriction of perf_event_open  [AdrianDC]
+a79f223  BACKPORT: perf tools: Document the perf sysctls  [AdrianDC]
+da29301  KEYS: potential uninitialized variable  [AdrianDC]
+f9637fa  net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom  [AdrianDC]
+827bc1b  mnt: Fail collect_mounts when applied to unmounted mounts  [AdrianDC]
+
+====================
+     06-25-2016
+====================
+
+   * device/sony/huashan/
+d1b3a8f  huashan: Import arch configs first from a PlatformConfig.mk  [AdrianDC]
+   * frameworks/base/
+be73e32  Merge pull request #22 from TipsyOs/testing  [GitHub]
+   * system/bt/
+a51fadd  bt: Don't use CLOCK_BOOTTIME where CLOCK_MONOTONIC was expected  [Josue Rivera]
+bdbff78  bt-vendor: Check for vendor SSR function before attempting to call it  [Josue Rivera]
+
+====================
+     06-24-2016
+====================
+   * OTA_config/
+ade4643  Update Huashan 2306  [a7r3]
+   * frameworks/base/
+e1fd771  Support µg package signature faking  [Martinusbe]
+   * packages/apps/Browser/
+08342a0  Browser: runtime permissions  [Josue Rivera]
+
+====================
      06-23-2016
 ====================
 
-
-====================
-     06-22-2016
-====================
-
+   * frameworks/base/
+521137c  Avoid ANR by previous dead receiver.  [Martinusbe]
+3b17a3a  Wait until the Keyguard is drawn to dismiss the boot dialog.  [Martinusbe]
+574aa01  Speed up notification panel pulldown animation when called externally  [Martinusbe]
+b2c6690  Don't enable screen until keyguard is ready  [Martinusbe]
    * hardware/qcom/audio-caf/msm8960/
-36aec39  hal: only open the amplifier once  [Matt Mower]
-2d69794  hal: enable amplifier earlier  [Matt Mower]
-dfe21b6  hal: Notify amplifier of device enable/disable  [Matt Mower]
-1170162  hal: Convert libaudioamp to audio_amplifier HAL  [Matt Mower]
-   * packages/apps/Snap/
-7984593  Snap: Add picture resolutions for OnePlus 3  [Martinusbe]
+fb47c68  hal: Don't make missing CSD init/deinit functions fatal  [Ethan Chen]
+a4fb123  hal: Detect additional baseband properties  [Ethan Chen]
+a6a5908  hal: Add support for HTC CSD client  [Ethan Chen]
+5a07631  hal: Support old CSD API and add support for Samsung CSD client  [Ethan Chen]
    * vendor/tipsy/
 26bea58  bootani 1080p  [Martinusbe]
 d979c8a  go to 4.3 while i'm here  [Martinusbe]
 d50c677  bootani: new one by Pete, 720p version  [Martinusbe]
-
-====================
-     06-21-2016
-====================
-
-   * hardware/qcom/audio-caf/msm8960/
-dbf1e5f  hal: Support the audio amplifier hook  [Matt Mower]
-
-====================
-     06-20-2016
-====================
-
-   * build/
-1b2550d  OMS: adb shell command to access OverlayManagerService  [Martinusbe]
-   * external/sepolicy/
-eb3d59e  Add service 'overlay' to service_contexts  [Martinusbe]
-   * manifest/
-914318f  track external/dhcpcd from Slim  [Martinusbe]
-   * system/bt/
-80f6742  bt: Use the clock functions from libutils instead of clock_gettime  [Josue Rivera]
-f81bf67  bt: Unify usage of clock_gettime  [Josue Rivera]
-   * vendor/sony/
-fa82478  blue: Cleanup hayabusa, mint and tsubasa proprietary files  [AdrianDC]
-1fcbfc2  blue-common: Move prima WiFi files to the device tree  [AdrianDC]
-bbb62f0  blue-common: Update to newer mpdecision  [AdrianDC]
-1b084e9  blue-common: Remove libqc-opt and update libmmcamera_wavelet_lib.so  [AdrianDC]
-1d3b595  blue-common: Add libqti-perfd-client to replace libqc-opt  [AdrianDC]
-5965958  blue-common: Use cancro mm fm patch downloader  [AdrianDC]
-dcf4695  hayabusa: Fix camera capture due to overlapping do_mmap_ion  [AdrianDC]
-e7a3c43  hayabusa: Add missing blobs from 9.2.A.1.215 (Sony 4.3)  [AdrianDC]
-a2b1213  hayabusa: Reimport old device blobs  [AdrianDC]
-f2ca570  blue-common: Delete unused yamato firmware  [AdrianDC]
-5aec9b8  huashan: Remove libcsd-client.so library  [AdrianDC]
-
-====================
-     06-19-2016
-====================
-
-   * frameworks/base/
-9926e6b  Revert "nfc: Pull in NXP base"  [Martinusbe]
-
-====================
-     06-18-2016
-====================
-
-   * device/sony/huashan/
-b33c583  Tipsidize!  [a7r3]
-a97455f  huashan: Always enable Glove Mode service  [a7r3]
-7212034  Revert "huashan: Multiple LEDs LibLights control"  [a7r3]
-51a0772  huashan: Adapt Doze Sensors detection for AOSP-based ROMs  [a7r3]
-db27f39  Revert "huashan: Enable persistent usb drive notification"  [a7r3]
-5391d36  Revert "huashan: Turn off Mobile data by default"  [a7r3]
-ebab81b  Revert "huashan: Add deviceHardwareWakeKeys overlay"  [a7r3]
-   * external/libnetfilter_conntrack/
-4e75a53  conntrack: Add kernel dependency  [deadman96385]
-6ec2aa5  conntrack: Fix Clang errors  [deadman96385]
-
-====================
-     06-17-2016
-====================
-   * OTA_config/
-7802fef  Update Huashan 1606  [a7r3]
-   * device/sony/huashan/
-8d4a4ec  huashan: Additional relative paths usage and makefiles cleanups  [AdrianDC]
-4a76567  temptest  [AdrianDC]
-3d61772  huashan: Import arch configs first from a PlatformConfig.mk  [AdrianDC]
-
-====================
-     06-16-2016
-====================
-
 
