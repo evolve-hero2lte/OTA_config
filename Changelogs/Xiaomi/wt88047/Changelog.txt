@@ -1,0 +1,234 @@
+====================
+     07-12-2016
+====================
+
+   * device/wingtech/wt88047/
+c9cf248  sepolicy updates  [Prema Chand Alugu]
+   * external/sepolicy/
+e15eea6  Further restrict socket ioctls available to apps  [Martinusbe]
+67f92c3  Remove generic socket access from untrusted processes  [Martinusbe]
+   * frameworks/av/
+7cab6e8  Resolve a merge issue between lmp and lmp-mr1+  [Martinusbe]
+7007f94  MPEG4Extractor: ensure kKeyTrackID exists before creating an MPEG4Source as track.  [Martinusbe]
+4de518d  limit mediaserver memory  [Martinusbe]
+e042cf7  Fix security vulnerability in libstagefright  [Martinusbe]
+b3a24dd  h264bsdActivateParamSets: Prevent multiplication overflow.  [Martinusbe]
+8ebe471  Clear unused pointer field when sending across binder  [Martinusbe]
+3f2a007  Check section size when verifying CRC  [Martinusbe]
+   * frameworks/base/
+1ece9ce  Merge pull request #24 from TipsyOs/testing  [GitHub]
+fb11c3f  Backport of backup transport whitelist  [Martinusbe]
+fee0ff1  Backport ChooserTarget package source check from N  [Martinusbe]
+e90e8bb  Don't pass URL path and username/password to PAC scripts  [Martinusbe]
+54f1cbf  Fix missing permission check when saving pattern/password  [Martinusbe]
+   * frameworks/native/
+4745b92  Correctly handle dup() failure in Parcel::readNativeHandle  [Martinusbe]
+   * manifest/
+561a38f  r52  [GitHub]
+
+====================
+     07-11-2016
+====================
+
+   * device/wingtech/wt88047/
+cefcf89   kernel defconfig definition updated  [Prema Chand Alugu]
+   * kernel/cyanogen/msm8916/
+8b6f180  Release Jerrica-MM-3.2  [Prema Chand Alugu]
+a964c1e  Fix whitespce errors  [Prema Chand Alugu]
+7dd75d4  mm/zpool: add name argument to create zpool  [Prema Chand Alugu]
+04c19ef  mm/zpool: use prefixed module loading  [Prema Chand Alugu]
+e6ad1b4  mm/zpool: implement common zpool api to zbud/zsmalloc  [Prema Chand Alugu]
+a2629b6  Revert "cpuidle: kick all cpu after idle handler installed"  [Prema Chand Alugu]
+31c7ac1  Revert "msm: lpm-levels: add suspend_again handler"  [Prema Chand Alugu]
+93bb6f9  Revert "drivers: lpm-levels: Don't allow idle low power modes during resume"  [Prema Chand Alugu]
+d28daae  Revert "power: get rid of quick_wakeup driver"  [Prema Chand Alugu]
+0513e47  update defconfig - KCAL  [Prema Chand Alugu]
+5d8dee8  msm: mdss: KCAL: Only apply updates on index 0  [Prema Chand Alugu]
+0625589  msm: mdss: KCAL: Use PCC for negative display mode  [Prema Chand Alugu]
+c230cc7  msm: mdss: KCAL: Send a pp display commit when changes are made  [Prema Chand Alugu]
+7c8e435  msm: mdss: KCAL: Do not read from picture adjustment registers  [Prema Chand Alugu]
+6521d7c  msm: mdss: KCAL: Read values from MDP registers wherever possible  [Prema Chand Alugu]
+522e9ae  msm: mdss: KCAL: Apply default values on boot  [Prema Chand Alugu]
+fff2da7  msm: mdss: KCAL: Queue changes when panel is powered off  [Prema Chand Alugu]
+d73342b  msm: mdss: KCAL: Remove MODULE_DESCRIPTION  [Prema Chand Alugu]
+ed74d13  msm: mdss: KCAL: Update Kconfig description  [Prema Chand Alugu]
+cd83bb2  msm: mdss: KCAL: Update according to linux guidelines and checkpatch.pl  [Prema Chand Alugu]
+c7141ba  msm: mdss: KCAL: Check panel power state before applying values  [Prema Chand Alugu]
+cc91c38  msm: mdss: KCAL: Allow kcal_enable to control all post-processing features  [Prema Chand Alugu]
+fef204a  msm: mdss: Keep KCAL within its own source file  [Prema Chand Alugu]
+22d81b5  msm: mdss: Remove deprecated __dev* markings  [Prema Chand Alugu]
+b8c9aec  msm: mdss: Add pa_v2 support to KCAL  [Prema Chand Alugu]
+c6793f7  msm: mdss: Replace PGC implementation with PCC for KCAL  [Prema Chand Alugu]
+7c374e4  msm: mdss: Add KCAL support for post processing control [v2]  [Prema Chand Alugu]
+a2ad2aa  Release Jerrica-MM-3.1  [Prema Chand Alugu]
+d5646f3  mako hotplug - fix stats conflict with driver code  [Prema Chand Alugu]
+fc679ef  cpufreq: add an helper to get/set cpu utilization to be used by mako_hotplug  [Prema Chand Alugu]
+41bdf29  Mako: Add working toggle.  [Prema Chand Alugu]
+c16b329  mako_hotplug: increase the work schedule time when dual-core or quad-core mode is active, from 1 to 2 seconds  [Prema Chand Alugu]
+478fab1  mako_hotplug: don't use PAGE_SIZE for snprintf  [Prema Chand Alugu]
+c0f663b  mako_hotplug: run the main work only once every second if special cases apply  [Prema Chand Alugu]
+8549028  mako_hotplug: don't offline cores if the load at that sample is above the threshold, even if we met all the other conditions  [Prema Chand Alugu]
+56bc2d8  mako_hotplug: let's use an unbound wq  [Prema Chand Alugu]
+57706aa  mako_hotplug: remove works for resume/suspend entirely  [Prema Chand Alugu]
+9fa5291  mako_hotplug: squash code from lollipop branch  [Prema Chand Alugu]
+de15efa  msm: mpm: disable debugging  [Prema Chand Alugu]
+091129d  update deconfig  [Prema Chand Alugu]
+c7d8214  state_helper: Remove delay for state notifier events  [Prema Chand Alugu]
+c78210a  state_helper: Follow reverse sequence to online offline cores  [Prema Chand Alugu]
+574482d  state_helper: Reschedule when thermal driver hotplugs  [Prema Chand Alugu]
+3e95d39  state_helper: implement for Redmi2  [Prema Chand Alugu]
+c312609  state_notifier: enabled by default  [Prema Chand Alugu]
+f526dcb  msm: Import state notifier driver  [Prema Chand Alugu]
+ee7e31e  lz4: fix compression/decompression signedness mismatch  [Prema Chand Alugu]
+5728070  lib: add lz4 compressor module  [Prema Chand Alugu]
+9644de1  lib: add support for LZ4-compressed kernel  [Prema Chand Alugu]
+ed95a0c  decompressor: add LZ4 decompressor module  [Prema Chand Alugu]
+86f43e7  mm: zsmalloc: backport from Linux 4.1  [Prema Chand Alugu]
+63e971d  block: zram: make lz4 the default compressor  [Prema Chand Alugu]
+8cccb8a  block: zram: Backport from Linux 4.1  [Prema Chand Alugu]
+4255e9b  Revert "Revert "block/fs: keep track of the task that dirtied the page""  [Prema Chand Alugu]
+
+====================
+     07-10-2016
+====================
+
+   * hardware/qcom/audio-caf/msm8916/
+4dd5633  DO NOT MERGE Fix AudioEffect reply overflow  [Josue Rivera]
+   * hardware/qcom/audio-caf/msm8974/
+30d1a97  DO NOT MERGE Fix AudioEffect reply overflow  [Josue Rivera]
+
+====================
+     07-09-2016
+====================
+   * OTA_config/
+ba640c5  Update Huashan 0705  [a7r3]
+
+====================
+     07-08-2016
+====================
+
+   * build/
+46986f1  "MOB30R"  [Martinusbe]
+6cba277  MOB30Q  [Martinusbe]
+710152a  "MOB30P"  [Martinusbe]
+eed80f7  "MOB30O"  [Martinusbe]
+d038564  Updating security string to 2016-07-05 to release branches  [Martinusbe]
+9302f5e  "MOB30N"  [Martinusbe]
+   * external/stagefright-plugins/
+7d12776  stagefright-plugins: Clean up warnings for invalid format strings  [Josue Rivera]
+60f693c  stagefright-plugins: Stop using AVPicture  [Josue Rivera]
+   * frameworks/base/
+1460271  Merge remote-tracking branch 'tipsy/testing' into 6.0  [f100cleveland]
+   * hardware/broadcom/wlan/
+f869801  net: wireless: bcmdhd: Update bcm4354 FW (7.35.101.3) [DO NOT MERGE]  [Josue Rivera]
+c5daa39  net: wireless: bcmdhd: Update bcm4339 FW (6.37.34.43) [DO NOT MERGE]  [Josue Rivera]
+26f73b5  net: wireless: bcmdhd: Update bcm4356 FW (7.35.101.3) [DO NOT MERGE]  [Josue Rivera]
+   * hardware/libhardware/
+ac0c295  Add guest mode functionality (1/3)  [Josue Rivera]
+   * hardware/qcom/audio/default/
+4d99374  DO NOT MERGE Fix AudioEffect reply overflow  [Josue Rivera]
+   * hardware/qcom/media/default/
+ea607a8  DO NOT MERGE mm-video-v4l2: venc: Avoid processing ETBs/FTBs in invalid states  [Josue Rivera]
+ee58472  DO NOT MERGE mm-video-v4l2: vdec: Avoid processing ETBs/FTBs in invalid states  [Josue Rivera]
+   * packages/apps/Bluetooth/
+c222c65  Add guest mode functionality (3/3)  [Josue Rivera]
+   * packages/apps/Nfc/
+51caf47  Verify setForegroundDispatch caller is in foreground.  [Josue Rivera]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
+c31f433  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
+69f20cd  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
+37df54c  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
+d67fa5c  Initial commit  [DespairFactor]
+   * system/bt/
+42618ba  Fix call to enable(bool) which changed as part of 049eae4ff84fbbdbc4b0068cb2a217f9f0460bf4  [Josue Rivera]
+ae12c32  DO NOT MERGE btif: check overflow on create_pbuf size  [Josue Rivera]
+eaf1fda  Add guest mode functionality (2/3)  [Josue Rivera]
+   * system/core/
+3e330ca  Fix scanf %s in lsof.  [Josue Rivera]
+
+====================
+     07-07-2016
+====================
+
+   * bionic/
+1339fbe  cortex-a9: Fix reference to __memcpy_base_aligned.  [Martinusbe]
+645b9d3  Do not depend on host bits to get the right size to write.  [Martinusbe]
+ed4cc42  libc: Fix invalid offset warning with Clang  [Martinusbe]
+   * frameworks/base/
+387466a  Add config to show HD icon on EVS codec.  [Martinusbe]
+76d1d95  Remove TONE_SUPERVISORY_CH  [Martinusbe]
+37186c7  Ignore IMS type APN when notify data connection  [Martinusbe]
+3bdef82  Associate connected APN list with subscription  [Martinusbe]
+4f4268e  MSIM: Restrict data activity change to listeners with matching subId  [Martinusbe]
+d334764  combo bug when location reported by providers do not come with extras  [Martinusbe]
+0ef40f3  Wifi: Make maximum selective channel scans and interval configurable  [Martinusbe]
+72ec427  WifiDisplayController: Fix p2p disconnect before rtsp teardown completes  [Martinusbe]
+c32e515  Bluetooth: Access mediaplayerlist in synchronized way  [Martinusbe]
+7844811  Encapsulate the unbindService with try catch block  [Martinusbe]
+8c67b37  Add absent sim info to locked screen text  [Martinusbe]
+eb75947  BT: Set persiste Bluetooth State during enable timeout case  [Martinusbe]
+   * frameworks/opt/telephony/
+98ff442  Revert "Subscription updater: don't post messages on events in BroadcastReceiver"  [Martinusbe]
+1f2633a  Revert "TelephonyProvider: Add CDMA call forwarding/waiting function"  [Martinusbe]
+ed41ef7  Subscription updater: don't post messages on events in BroadcastReceiver  [Martinusbe]
+73142d6  TelephonyProvider: Add CDMA call forwarding/waiting function  [Martinusbe]
+48142bc  dct: Sync with upstream  [Martinusbe]
+d824e9d  MSIM: Send FINISH request on flex map START fail  [Martinusbe]
+6738d62  Set additional info for LaunchBrowser error case.  [Martinusbe]
+d5c9f59  Telephony: Reduce back to back same APN activation delay.  [Martinusbe]
+a656442  Fix emergency ims pdn setup issue  [Martinusbe]
+da464d0  Fix ims pdn issue on non dds sub on iwlan  [Martinusbe]
+3c13e33  Fix to resolve data call issue for sim hot swap case  [Martinusbe]
+5c7070e  Notify disconnect on phone dispose  [Martinusbe]
+ff79a36  Use EVS codec for HD if carrier supports it.  [Martinusbe]
+59591a5  Fix Dds switch issue for wifi and IWLAN scenarios  [Martinusbe]
+3022db5  Fix to avoid unnecessary PS attach.  [Martinusbe]
+d7e8957  Fix ims pdn request issue  [Martinusbe]
+348a3a0  Parse the record number from byte to int  [Martinusbe]
+234db7e  Finer grained character boundaries in computing SMS fragment lengths  [Martinusbe]
+51c8f8e  MSIM: Use SIM specific subId for setMccMnc  [Martinusbe]
+4dd8416  IMS: Fix phone app crash at setOutgoingCallerIdDisplay().  [Martinusbe]
+2bc24ec  Fix DDS switch issues for CDMA and IWLAN scenarios.  [Martinusbe]
+733e3a8  Add the slot id when broadcasting card state to STK app.  [Martinusbe]
+4e00516  Fix default data reset issue on device powerup  [Martinusbe]
+49a8fd7  Send shutdown command to modem  [Martinusbe]
+680c80b  Telephony: CDMA: allow MT SMS when in ECBM  [Martinusbe]
+7a67381  IMS: Exit ECBM before dialing a pending non-emergency MO call  [Martinusbe]
+2591dd7  IMS: Fix null pointer exception for call forwarding  [Martinusbe]
+8e2b114  Setup data on new APNs only when APN changes  [Martinusbe]
+a2834f2  gsmsst: Protect against "null" string literals  [Martinusbe]
+70959db  Remove identifier that causes warnings under OpenJDK 8 compiler  [Martinusbe]
+   * packages/apps/Snap/
+1696512  Automatic translation import  [Martinusbe]
+2bf8d3f  Automatic translation import  [Martinusbe]
+64872b5  Automatic translation import  [Martinusbe]
+51e9d5f  Snap: Check photo orientation when creating thumbnail  [Martinusbe]
+9ecabe2  Automatic translation import  [Martinusbe]
+ac0326c  Snap: Update comment to reflect audio focus changes  [Martinusbe]
+06cce49  SnapdragonCamera: Release audio focus when video recording is done  [Martinusbe]
+b40a38d  SnapdragonCamera: request audio focus before starting video recording  [Martinusbe]
+2dd9b52  SnapdragonCamera: Recording screen to be dynamic  [Martinusbe]
+6e8948a  SnapdragonCamera: Fix the memory leak on view.  [Martinusbe]
+   * packages/services/Telecomm/
+c784804  DO NOT MERGE - Restrict ability to add call based on device provision status  [Martinusbe]
+eb9831c  Fix to prevent NPE  [Martinusbe]
+e431e4a  Remove TONE_SUPERVISORY_CH  [Martinusbe]
+
+====================
+     07-06-2016
+====================
+   * OTA_config/
+f3bab50  onepluses: add oneplus3 to OTA  [Martinusbe]
+   * frameworks/opt/telephony/
+b738fa9  For NV-based devices like CDMA only devices, ignore ICC Card status change EVENT.  [Martinusbe]
+   * packages/apps/Snap/
+4d6470b  Snap: Fix name for OnePlus 3 resolution  [Martinusbe]
+
+====================
+     07-05-2016
+====================
+
+

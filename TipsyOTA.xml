@@ -104,5 +104,24 @@
                 title="XDA"
                 description="Visit TipsyOs Huashan XDA thread">http://forum.xda-developers.com/xperia-sp/development/rom-6-0-1r22-layers-tipsy-os-3-x-t3361161</XDAUrl>
         </huashan>
+        <wt88047>
+            <Filename>Tipsy-wt88047-Geuze-v4.3-20160712-0450.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=24591000424946378</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Xiaomi/wt88047/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit TipsyOs Redmi-2 XDA thread">http://forum.xda-developers.com/redmi-2/development/rom-tipsyos-t3343744</XDAUrl>
+        </wt88047>
     </Stable>
 </SlimOTA>
