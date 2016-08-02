@@ -1,0 +1,169 @@
+====================
+     08-02-2016
+====================
+
+   * build/
+0c2414a  disable unpriv perf by default in user{,debug} builds  [Martinusbe]
+cf65bb7  "MOB30Z"  [Martinusbe]
+bcc30f3  "MOB30Y"  [Martinusbe]
+58b08b3  "MOB30X"  [Martinusbe]
+4edcf60  "MOB30W"  [Martinusbe]
+632eacb  "MOB30V"  [Martinusbe]
+45e34e5  MOB30U  [Martinusbe]
+92cdb16  "MOB30T"  [Martinusbe]
+7c81a88  "MOB30S"  [Martinusbe]
+2ca8b2b  Updating security string to 2016-08-05 - directly to mnc-mr2-release  [Martinusbe]
+   * external/sepolicy/
+c168f58  expose control over unpriv perf access to shell  [Martinusbe]
+   * frameworks/av/
+73448cf  DO NOT MERGE: Camera: Adjust pointers to ANW buffers to avoid infoleak  [Martinusbe]
+9e4908d  DO NOT MERGE omx: check buffer port before using  [Martinusbe]
+7255df4  Check effect command reply size in AudioFlinger  [Martinusbe]
+8ed9b36  Don't use sp<>&  [Martinusbe]
+be6ad54  SoftAAC2: fix crash on all-zero adts buffer  [Martinusbe]
+9cd4d2a  Fix potential overflow  [Martinusbe]
+   * frameworks/base/
+91dcc61  Add pm operation to set user restrictions.  [Martinusbe]
+38563b9  Reduce shell power over user management.  [Martinusbe]
+cf1c59d  DO NOT MERGE Disable app pinning when emergency call button pressed  [Martinusbe]
+0936a78  DO NOT MERGE Fix intent filter priorities  [Martinusbe]
+   * frameworks/native/
+b74e4cb  Add FrameStats default constructor  [Martinusbe]
+   * frameworks/opt/net/wifi/
+1f4bc21  Deal correctly with short strings  [Martinusbe]
+   * frameworks/opt/telephony/
+1554033  backport security fix: avoid set NITZ time to 2038  [Martinusbe]
+   * manifest/
+e32e51b  r61  [GitHub]
+   * packages/apps/masquerade/
+3aae3c5  Update Travis-CI badge for TeamSubstratum Repo  [GitHub]
+be8c613  Merge remote-tracking branch 'nicholaschum/master'  [Nicholas Chum]
+0a18bd0  Let's get versioning working when building through AOSP  [Nicholas Chum]
+9c23216  Merge remote-tracking branch 'nicholaschum/master'  [Nicholas Chum]
+63f9659  Bump the version up to 14  [Nicholas Chum]
+eb94b9c  Merge remote-tracking branch 'nicholaschum/master'  [Nicholas Chum]
+2d883d3  Remove traces of MainActivity and Launcher Icon  [Nicholas Chum]
+4edfca5  Merge pull request #4 from beanstown106/master  [GitHub]
+697d376  Lets hide masquerade  [beanstown106]
+   * system/core/
+8383333  add a property for controlling perf_event_paranoid  [Martinusbe]
+
+====================
+     08-01-2016
+====================
+
+   * frameworks/opt/telephony/
+57c3f2e  Define telephony resources as a coreApp  [Martinusbe]
+   * packages/apps/ContactsCommon/
+e30fe73  Night mode updates (4/5)  [Martinusbe]
+   * packages/apps/Messaging/
+d659384  Messaging app crashes after a few MMS  [Martinusbe]
+
+====================
+     07-31-2016
+====================
+
+   * external/sepolicy/
+9ed9f80  sepolicy: Add policy for sdcardfs and configfs  [Martinusbe]
+   * frameworks/base/
+346a71e  mountservice: Shut down volumes before restarting framework  [Martinusbe]
+   * packages/apps/masquerade/
+0034e1d  Merge remote-tracking branch 'nicholaschum/master'  [Nicholas Chum]
+d7d3cc3  Uninstaller: Allow for Substratum to restart SystemUI on boolExtra  [Nicholas Chum]
+2fb8739  Merge remote-tracking branch 'nicholaschum/master'  [Nicholas Chum]
+   * system/core/
+33d1352  sdcard: Fix sdcardFS check  [Martinusbe]
+3575edb  sdcard: Add support for sdcardfs!  [Martinusbe]
+   * vendor/tipsy/
+78f0482  sepolicy: Let the IO prefetcher look at sdcardfs  [Martinusbe]
+99a1d77  sepolicy: Revert custom sdcardfs policy in favor of AOSP  [Martinusbe]
+111ab45  sepolicy: A few more denials  [Martinusbe]
+96d057e  sepolicy: Add rule to allow sdcardfs to read package list  [Martinusbe]
+550f20d  sepolicy: Add sdcardfs support  [Martinusbe]
+
+====================
+     07-30-2016
+====================
+
+
+====================
+     07-29-2016
+====================
+
+   * build/
+f33a6ac  Revert "build: use gcc 5.4 to build arm"  [Martinusbe]
+   * manifest/
+e8e0e7b  tack our system core  [Martinusbe]
+   * packages/apps/KernelAdiutor/
+bb69289  Lighten up the actionbar a lil make swich visable  [GitHub]
+   * system/core/
+2e9dcac  healthd: Add DASH charger type  [Martinusbe]
+   * system/netd/
+cb7029c  netd: Don't build the QSAP SDK on Nexii  [Victor Lapin]
+   * vendor/oneplus/
+2554f2b  op3: add Dash  [Martinusbe]
+   * vendor/tipsy/
+24f2eac  extract_utils: Add support for files in rootfs  [Martinusbe]
+4480aec  cm: Remove stray echo from extract_utils  [Martinusbe]
+03b0779  cm: Underp dumping of 64-bit only libraries  [Martinusbe]
+e16291e  cm: Add generic tools for extract-files / setup-makefiles scripts  [Martinusbe]
+
+====================
+     07-28-2016
+====================
+
+   * build/
+bc96709  build: use gcc 5.4 to build arm  [otisman]
+   * packages/providers/TelephonyProvider/
+dbee3b7  Fix apn restore issue for multi-sim  [Martinusbe]
+
+====================
+     07-27-2016
+====================
+
+   * frameworks/base/
+895ff1e  Disable Zygote preloaded drawables.  [Martinusbe]
+e4e5250  ApplicationsState: add filter for Substratum overlays (1/2)  [Martinusbe]
+32b914a  OMS: Fix Quick settings tiles font themes derp [6/6]  [Martinusbe]
+c366396  OMS: Add dynamic theme fonts support (Squash) [5/6]  [Martinusbe]
+887b69d  OMS: Add dynamic theme BootAnimation support [4/6]  [Martinusbe]
+18795a4  OMS: Allow multiple targets for enabling and disabling overlays [3/8]  [Martinusbe]
+288add2  OMS: Persistence on boot through OverlayManagerServiceImpl [2/6]  [Martinusbe]
+c2c9780  OMS: Introduce the OverlayManagerService (Squash) [1/6]  [Martinusbe]
+   * packages/apps/Snap/
+64de768  Merge pull request #1 from TipsyOs/mm6.0  [GitHub]
+0a391e0  Automatic translation import  [Martinusbe]
+393eedc  Automatic translation import  [Martinusbe]
+18e608d  Snap: Fix incorrect default ISO values parameter  [Martinusbe]
+d61dcc1  Snap: Always allow 100% JPEG quality to be set  [Martinusbe]
+87daa6a  Automatic translation import  [Martinusbe]
+cff12cc  Automatic translation import  [Martinusbe]
+707f217  Snap: Tighten openLegacy() try-catch block  [Martinusbe]
+d01f415  Automatic translation import  [Martinusbe]
+99c174d  Automatic translation import  [Martinusbe]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel/
+7716f22  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel/
+988238f  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-kernel/
+f4bee0f  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.0-kernel/
+be90e26  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
+8b282f8  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
+afc0560  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-7.0-uber/
+01d49b1  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
+a9c79b5  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
+f8f1020  Initial commit  [DespairFactor]
+
+====================
+     07-26-2016
+====================
+
+   * packages/apps/masquerade/
+5163142  Merge pull request #3 from halogenOS/master  [GitHub]
+
