@@ -139,7 +139,7 @@
                 description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
         </titan>
         <falcon>
-            <Filename>Tipsy-falcon-OMS-v4.4-20160803-0006.zip</Filename>
+            <Filename>Tipsy-falcon-frunk-v4.6-20160819-1457.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
