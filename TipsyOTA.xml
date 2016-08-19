@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <onyx>
-            <Filename>Tipsy-onyx-OMS-v4.4-20160803-1037.zip</Filename>
+            <Filename>Tipsy-onyx-frunk-v4.6-20160819-1706.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
