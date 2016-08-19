@@ -154,7 +154,7 @@
                 description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
         </falcon>
         <mako>
-            <Filename>Tipsy-mako-OMS-v4.4-20160803-0129.zip</Filename>
+            <Filename>Tipsy-mako-frunk-v4.6-20160819-1759.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
