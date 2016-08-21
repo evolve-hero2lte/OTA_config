@@ -1,425 +1,188 @@
 ====================
-     07-05-2016
-====================
-
-   * device/oneplus/oneplus3/
-ebabcf4  oneplus3: switch back & menu key  [Martinusbe]
-205c750  oneplus3:Doze: rename to OnePlus Doze  [Martinusbe]
-bfe1dc0  oneplus3: don't build Gello  [Martinusbe]
-349ceb6  Revert "op3: Add net_raw group for ril-daemon"  [Martinusbe]
-e567fd4  Revert "oneplus3: selinux permissive"  [Martinusbe]
-6eeb455  oneplus3:sepolicy: fix 2 more denials  [Martinusbe]
-d325ac3  oneplus3:sepolicy: address some denials  [Martinusbe]
-9b07495  Revert "oneplus3: cmhw: Use cmsdk FileUtils"  [Martinusbe]
-eace288  oneplus3: selinux permissive  [Martinusbe]
-e44fec9  oneplus3: remove unused vendor overlay  [Martinusbe]
-5b7cbd3  oneplus3: enable proximitywake  [Martinusbe]
-76a59fb  oneplus3: fix model number  [Martinusbe]
-f44bd11  oneplus3:system.prop: lcd density 400  [Martinusbe]
-6cd12bb  oneplus3: make it frunk  [Martinusbe]
-59750b9  op3: Update power configs  [Martinusbe]
-10b80f9  op3: Add net_raw group for ril-daemon  [Martinusbe]
-3ead826  op3: Change audio flags  [Martinusbe]
-d3fdcc5  op3: Reduce audio latency  [Martinusbe]
-b35f14e  sepolicy: Address perfd denial  [Martinusbe]
-0b9af14  init: Correct model name  [Martinusbe]
-2af8245  op3: Some house cleaning  [Martinusbe]
-681ca79  oneplus3: Remove nfcee_access.xml and add missing nfc permissions  [Martinusbe]
-79ec4b5  op3: Add missing blobs  [Martinusbe]
-4f02a3b  op3: Build the whole thing with Clang  [Martinusbe]
-4f879b8  op3: Fix display calibration  [Martinusbe]
-5964cea  Configure fingerprint sensor location  [Martinusbe]
-54140a7  op3: Declare TARGET_VENDOR  [Martinusbe]
-dee9f15  op3: Use PRODUCT_COPY_FILES for GPS configurations  [Martinusbe]
-6f76787  op3: Add package rule for libthermalclient  [Martinusbe]
-98c865a  oneplus3: Correct and clean up power config  [Martinusbe]
-197b53f  oneplus3: Update build fingerprint  [Martinusbe]
-186f274  oneplus3: Move proprietary things to vendor  [Martinusbe]
-e64f95c  oneplus3: Adjust filesystem size for crypto footer  [Martinusbe]
-68f8055  oneplus3: fix setting sched_downmigrate value  [Martinusbe]
-22f9813  Revert "Remove qti telephony extension"  [Martinusbe]
-9e17b26  oneplus3: Add missing changer images  [Martinusbe]
-923df04  oneplus3: Adress more denials and remove btnvtool  [Martinusbe]
-2578da7  oneplus3: Update wifi config for kernel change  [Martinusbe]
-45d4371  oneplus3: Enable perfd again  [Martinusbe]
-4b98f71  oneplus3: Tweak fstab  [Martinusbe]
-a781500  oneplus3: Add missing product name override  [Martinusbe]
-a28aac9  oneplus3: Update power parameters from LA.HB.1.3.2-15400-8x96.0  [Martinusbe]
-2dcc928  oneplus3: Adjust auto brightness level  [Martinusbe]
-7068cb7  oneplus3: usb: switch to qcom vendor id for adb  [Martinusbe]
-099b7ce  Move fingerprint and product to cm.mk  [Martinusbe]
-3574057  oneplus3: Update WCNSS configuration from stock  [Martinusbe]
-200918b  oneplus3: Clean up proprietary blobs list  [Martinusbe]
-ad7d8ab  rootdir: add paths for unencrypted ioshed read ahead  [Martinusbe]
-90a480c  oneplus3: Disable the combo provider  [Martinusbe]
-de693e7  oneplus3: Reenable QC location provider  [Martinusbe]
-1c5965a  oneplus3: Clean up device tree  [Martinusbe]
-0ccb050  oneplus3: Clean up TCP buffer settings  [Martinusbe]
-74e6f26  oneplus3: start io prefetching  [Martinusbe]
-0c810d2  rootdir: correct setting min cpu freq  [Martinusbe]
-c88fd26  oneplus3: remove duplicate powerhal declaration  [Martinusbe]
-df1b6dd  oneplus3: Enable CM enhanced NFC  [Martinusbe]
-fdf2ee6  oneplus3: Clean up boardconfig, add missing flags from OnePlusOSS  [Martinusbe]
-eed6d2b  oneplus3: Missing ANT permission  [Martinusbe]
-2a9d1af  overlay: Remove custom resolutions from Snap  [Martinusbe]
-87362fc  oneplus3: Support for CDMA  [Martinusbe]
-2d985c7  Use same ril props for all variants  [Martinusbe]
-07dbf62  oneplus3: Add missing overlays  [Martinusbe]
-1bd2b95  oneplus3: Introduce a new way to create symlinks  [Martinusbe]
-28d1853  oneplus3: Clean up OMX blobs  [Martinusbe]
-96fd2b3  oneplus3: Enable cpusets  [Martinusbe]
-3563177  init.qcom.rc: Add separate service to configure BT address  [Martinusbe]
-4a3df5e  oneplus3: Add cm dependencies  [Martinusbe]
-ab2902e  oneplus3: Add F2FS support  [Martinusbe]
-582f26c  overlay: Remove hardcoded preview size of Snap  [Martinusbe]
-7d48f98  Remove TWRP  [Martinusbe]
-0331a27  oneplus3: Add device specific healthd  [Martinusbe]
-29713bd  oneplus3: cmhw: Use cmsdk FileUtils  [Martinusbe]
-0ba7d63  oneplus3: Add missing OMX blob  [Martinusbe]
-4abd7b1  oneplus3: Disable HDR 1x frame for Snap  [Martinusbe]
-e573653  audio: Remove unused files  [Martinusbe]
-65ccf0c  media_codecs: Add VT version for avc decoder  [Martinusbe]
-e9ed878  oneplus3: add output sampling rates to 16 bit compress offload  [Martinusbe]
-bc43996  media_codecs: update vp9 bitrate capability  [Martinusbe]
-37ab323  oneplus3: Enable RX thread to receive packet  [Martinusbe]
-81460fd  rootdir: Missing permissions for fb  [Martinusbe]
-213abd8  audio: Clean up and use correct acdb ids  [Martinusbe]
-33864c0  ril: Add header from OnePlusOSS  [Martinusbe]
-e4fadd3  Remove apps limit  [Martinusbe]
-0eb129b  nfc: Use NQ opensource  [Martinusbe]
-a8d5def  Stop building libinit_msm  [Martinusbe]
-4e73044  Remove qti telephony extension  [Martinusbe]
-9ee9708  Missing ims blob  [Martinusbe]
-8c4f6ad  Update files from OOS 3.1.3  [Martinusbe]
-5ed29a6  Remove duplicated flag  [Martinusbe]
-6784264  nfc: Use android api  [Martinusbe]
-6cf8c86  Address more denials  [Martinusbe]
-   * frameworks/opt/telephony/
-b738fa9  For NV-based devices like CDMA only devices, ignore ICC Card status change EVENT.  [Martinusbe]
-   * hardware/qcom/audio-caf/msm8996/
-4fb5a5a  hal: Fix build with HDMI disabled  [Steve Kondik]
-   * kernel/oneplus/msm8996/
-97c4ad4  asoc/msm: Reduce min capture size  [Martinusbe]
-4a69b58  op3: Update defconfig  [Martinusbe]
-33c6e3d  qcacld-2.0: Release LA.HB.1.3.2-16800-8x96.0  [Martinusbe]
-fca7704  proc: relax write permissions of sched_group_id file  [Martinusbe]
-b14ae05  fs/buffer.c: Revoke LRU when trying to drop buffers  [Martinusbe]
-26f849b  net: Warn for cloned packets in ingress path on SMP systems only  [Martinusbe]
-82b08f7  USB: dwc3-msm: Do not schedule resume work if id state is not changed  [Martinusbe]
-29b67d8  usb: dwc3: Request dwc3 irq in driver probe  [Martinusbe]
-c75484a  soc: qcom: glink: Squash upstream fixes  [Martinusbe]
-9fc3269  msm: kgsl: Add array of page pointers to memdesc  [Martinusbe]
-6facb8b  msm: kgsl: Add MMU offset mapping functions  [Martinusbe]
-5ef7eec  msm: kgsl: Use fault context to retrieve process information  [Martinusbe]
-334dd19  msm: kgsl: Refactor MMU/IOMMU support  [Martinusbe]
-e1bae2e  msm: kgsl: Declare platform_bus_type as secure for ARM driver  [Martinusbe]
-dd38ac6  msm: kgsl: Move all platform drivers to the same module init function  [Martinusbe]
-ff5c336  msm: kgsl: Add accounting for memory mapped in userspace  [Martinusbe]
-bd02628  msm: kgsl: Fix overflow in sharedmem read/write functions  [Martinusbe]
-8d11db6  msm: kgsl: Add 1M and 8K pools to the allocator  [Martinusbe]
-2bdab2db  msm: kgsl: Use a page pool to reduce allocation time  [Martinusbe]
-0b34dc4  defconfig: msm: enable msm_power driver  [Martinusbe]
-6d5782c  ARM: dts: msm: add msm_power device for msm8996  [Martinusbe]
-0e94f8f  soc: qcom: msm_power: add msm_power driver  [Martinusbe]
-881c20f  staging/android/ion : fix a race condition in the ion driver  [Martinusbe]
-81ecaba  mm: fix cma accounting in zone_watermark_ok  [Martinusbe]
-ede0621  mm: add zone counter for cma pages  [Martinusbe]
-f8dbc63  mm, page_isolation: remove bogus tests for isolated pages  [Martinusbe]
-61a51fb  fs: Use synchronize_rcu_expedited  [Martinusbe]
-4414761  net: core: Release neigh lock when neigh_probe is enabled  [Martinusbe]
-f5d409f  net: rmnet_data: Fix use after free when sending MAP command ACK  [Martinusbe]
-b81af9a  serial: msm_serial_hs: Move clk count voting out of runtime callbacks  [Martinusbe]
-cdd24db  msm_serial_hs: Change resource voting and system suspend logic  [Martinusbe]
-04dfe60  serial: core: Fix crashes while echoing when closing  [Martinusbe]
-9b7b147  serial: core: Flush ldisc after dropping port mutex in uart_close()  [Martinusbe]
-4e06dd8  serial: Refactor uart_flush_buffer() from uart_close()  [Martinusbe]
-8edda70  msm_serial_hs: Add defensive checks due to sudden port close  [Martinusbe]
-985dea1  msm_serial_hs: Fix race condition blocking suspend and remove wakeup source  [Martinusbe]
-d75805e  clk: msm: clock: Add the non_local_control setting for video clocks  [Martinusbe]
-a2f40af  clk: msm: clock-local2: Enable sources before force turning on RCG  [Martinusbe]
-3587c61  clk: msm: clock-local2: Set RCG root_enable bit prior to changing rate  [Martinusbe]
-236671d  clk: msm: clock-cpu-8996: Update calibration settings  [Martinusbe]
-d337230  mpm-of: Support multiple mpm pin mapping to same gic interrupt  [Martinusbe]
-f44db4c  soc: qcom: mpm_of: Print snapshot of enabled interrupts  [Martinusbe]
-e243c46  ARM: dts: msm: Map MPM pins for DP&DM to hs_phy_irq for msm8996/8953  [Martinusbe]
-6183896  ARM: msm: dts: Add camera interrupts as bypass for msm8996  [Martinusbe]
-9a406c9  ARM: dts: msm: Push C4 with PSCI to 11.5ms for MSM8996  [Martinusbe]
-896b5d3  clk: msm: clock-cpu-8996: round clock rates to nearest fmax frequency  [Martinusbe]
-122e1bc  clk: msm: clock: Avoid turning off hmss_ahb_clk during certain LPM states  [Martinusbe]
-5e98895  clk: Update clk_get_sys to return ENOENT on failure  [Martinusbe]
-59259a0  clk: msm: clock-cpu-8996: Allow interrupts during alt_pll set_rate  [Martinusbe]
-7d976bc  clk: msm: clock-alpha-pll: Allow interrupts to be enabled during set_rate  [Martinusbe]
-c9e4488  soc: qcom: rpm-smd: Account for NOACK messages with system sleep  [Martinusbe]
-7374bc8  soc: qcom: rpm-smd: Move timeout for rpm ack error message  [Martinusbe]
-b9adff6  qcom: rpm-smd: Force smd channel update in interrupt lock context  [Martinusbe]
-178f132  qcom: rpm-smd: Increase wait timeout during sleep set  [Martinusbe]
-6b3d5b1  soc: qcom: rpm: Change driver memory allocation to use GFP_NOFS  [Martinusbe]
-c463e2f  sched: use proper typedef for cpumask  [Martinusbe]
-55c4b16  sched: qhmp: add a knob to restrict tasks spreading  [Martinusbe]
-22286c4  sched: add a knob to prefer the waker CPU to an idle CPU in waker cluster  [Martinusbe]
-26ce08d  sched: break the forever prev_cpu selection preference  [Martinusbe]
-b695a92  sched: inherit the group id from the group leader  [Martinusbe]
-d222ee7  cpufreq: interactive: use mult_frac in sl_busy_to_laf  [Martinusbe]
-244722c  cpufreq: interactive: Use load prediction provided by scheduler  [Martinusbe]
-53d4ab9  cpufreq: interactive: Delay evaluation of notification by 1ms  [Martinusbe]
-4a3dc4a  sched: Aggregate for frequency  [Martinusbe]
-7d86b35  sched: simplify CPU frequency estimation and cycle counter API  [Martinusbe]
-10a3fd8  sched: take into account of limited CPU min and max frequencies  [Martinusbe]
-42925cd  sched: add support for CPU frequency estimation with cycle counter  [Martinusbe]
-607da55  sched: Add separate load tracking histogram to predict loads  [Martinusbe]
-9f026e5  sched: qhmp: fix hmp_capable detection bug in small task CPU selection  [Martinusbe]
-c0fae96  sched: allow select_prev_cpu_us to be set to values greater than 100us  [Martinusbe]
-a17d90f  sched: fix circular dependency of rq->lock and kswadp waitqueue lock  [Martinusbe]
-53307b6  sched: clean up idle task's mark_start restoring in init_idle()  [Martinusbe]
-f9978d1  sched: let sched_boost take precedence over sched_restrict_cluster_spill  [Martinusbe]
-216d04c  sched: Fix compilation errors with !SCHED_HMP  [Martinusbe]
-84b1e5f  sched: use correct Kconfig macro name CONFIG_SCHED_HMP_CSTATE_AWARE  [Martinusbe]
-ec96229  sched: fix excessive task packing where CONFIG_SCHED_HMP_CSTATE_AWARE=y  [Martinusbe]
-3efd69e  sched: add option whether CPU C-state is used to guide task placement  [Martinusbe]
-10a1056  sched: update placement logic to prefer C-state and busier CPUs  [Martinusbe]
-dc4bab5  sched: Optimize wakeup placement logic when need_idle is set  [Martinusbe]
-68a5f69  qos: Register irq notify after adding the qos request  [Martinusbe]
-c3561ef  qos: wake up cores based on the qos updated cpu mask  [Martinusbe]
-db59a62  cpuidle: Wakeup only cpus for which qos has changed.  [Martinusbe]
-12aef59  asoc/msm: Disable unwanted modules in arch config  [Martinusbe]
-2491c82  net: rmnet_data: Change the log level for unknown IOCTL's  [Martinusbe]
-74c98975  Silences WLAN, PCIe, and CPU suspend state kernel messages  [Martinusbe]
-635c1fb  qcacld-2.0: Chillax the spammy logging  [Martinusbe]
-bb521ad  PM / QoS: Add debugfs support to view the list of constraints  [Martinusbe]
-2bbb428  mm: compaction: compact all zones when turning off screen  [Martinusbe]
-70cf9b2  power: make sync on suspend optional  [Martinusbe]
-20844ce  pm: supsend: read suspend time from timekeeping  [Martinusbe]
-   * vendor/oneplus/
-77fe4a8  Revert "op3: Update blobs"  [Martinusbe]
-797c8fb  Revert "op3: Update perf service"  [Martinusbe]
-96f0624  op3: Update perf service  [Martinusbe]
-4eead4c  op3: Update blobs  [Martinusbe]
-d384d29  oneplus3: Move more configs to vendor  [Martinusbe]
-33a0bd4  oneplus3: Kang adreno/media blobs from gemini  [Martinusbe]
-a15fea2  oneplus3: Update qti-telephony-common.jar  [Martinusbe]
-41ff9c2  oneplus3: Fix dpmserviceapp.apk dependence  [Martinusbe]
-8adca61  oneplus3: Import OnePlus3Hydrogen_16_OTA_007_all_1606271453_0972bf3e98cd4e7a  [Martinusbe]
-8a87950  oneplus3: Clean up media blobs  [Martinusbe]
-fc597a9  oneplus3: Update adreno blobs  [Martinusbe]
-33af7e1  oneplus3: Remove qti telephony extension  [Martinusbe]
-
-====================
-     07-04-2016
-====================
-
-   * frameworks/base/
-02d0750  Squash of CMTE recreateStatusBar (Test)  [Martinusbe]
-5d05366  Revert "Default night"  [Martinusbe]
-01addf8  Fix Quick settings tiles font themes derp  [Martinusbe]
-d3ea534  Grant signature permission to setup and search  [Martinusbe]
-57a0e57  Fix default app for default grants  [Martinusbe]
-0fb496f  SystemUI: make sure to expand all the way when flinging  [Martinusbe]
-02bd166  Add check whether wallpaper's size has changed  [Martinusbe]
-6a13739  Make accessing mWaitingForDrawn thread-safe  [Martinusbe]
-628a28d  OMS: Allow multiple targets for enabling and disabling overlays  [Martinusbe]
-15b0884  Themes: Refresh fonts at new app launch  [Martinusbe]
-87bc737  OMS: Add option to disable all overlays in om  [Martinusbe]
-   * hardware/qcom/display-caf/msm8996/
-0bbc949  sdm/hwc: Silence logspam  [Steve Kondik]
-   * kernel/oneplus/msm8996/
-54f928c  op3: Enable dynamic debug  [Martinusbe]
-
-====================
-     07-03-2016
-====================
-
-
-====================
-     07-02-2016
-====================
-
-   * device/oneplus/oneplus2/
-c68cddf  oneplus2: enable QC telephony extension  [Martinusbe]
-   * frameworks/base/
-40e9f14  Add Theme Fonts support (WIP)  [Martinusbe]
-9933c1b8  SysUI: Guard against NPE in SignalClusterView  [Martinusbe]
-8690c38  OMS: We can't delay the inevitable, it must go missing!  [Martinusbe]
-09961e6  Add Theme BootAnimation support  [Martinusbe]
-38e8096  OMS: Use themes on Power menu  [Martinusbe]
-3054531  Add back assetSeq  [Martinusbe]
-0a03c85  OMS: Update OverlayManagerServiceImpl based on Rules.java  [Martinusbe]
-b909851  Check invariants after ResTable is modified  [Martinusbe]
-4e0aefb  idmap: suppress print for padded resources  [Martinusbe]
-e235d1f  PackageManager: set EXTRA_REPLACING correctly in ACTION_PACKAGE_ADDED  [Martinusbe]
-04b469e  OMS: integrate OverlayManagerService into framework  [Martinusbe]
-3960ef3  OMS: introduce the OverlayManagerService  [Martinusbe]
-6d50fc7  Support tagging resources as OK to overlay  [Martinusbe]
-535d706  Add ResTable::remove(cookie)  [Martinusbe]
-21f5e5a  Make asset manager cookies opaque  [Martinusbe]
-2bc9623  Runtime resource overlay: support downloaded overlay packages  [Martinusbe]
-108e789  Use std::unique_ptr instead of UniquePtr.  [Martinusbe]
-fb36a9b  Fix lseek argument order.  [Martinusbe]
-35241fe  RRO: idmap: allow flock(2) to block  [Martinusbe]
-699b74c  Make 'idmap --scan' accept more than one input directory  [Martinusbe]
-   * hardware/qcom/audio-caf/msm8996/
-bfad1f3  audio: Fix complilation warnings under Clang  [Steve Kondik]
-   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel/
-c653a1c  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel/
-9a882b4  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-kernel/
-1d36384  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
-7ac6d49  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
-91c3c32  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
-12e682a  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
-4750571  Initial commit  [DespairFactor]
-   * vendor/oneplus/
-cd73075  oneplus2: add QC telephony extension blobs  [Martinusbe]
-
-====================
-     07-01-2016
+     08-20-2016
 ====================
    * OTA_config/
-9cf8b58  Update Huashan 3006  [a7r3]
+28387a6  Mako gets drunk  [GitHub]
+   * device/oneplus/oneplus3/
+22890d7  system.prop: Change the GLES version string to 3.1  [Martinusbe]
+727c25b  op3: Add Alipay fingerprint payment support  [Martinusbe]
+7fc88e2  op3: Set missing RIL_QCOM_VERSION  [Martinusbe]
+b23f805  op3: Tweak autobrightness  [Martinusbe]
+   * kernel/motorola/msm8226/
+af42dc1  net: ipc_router: Bind only a client port as control port  [Matthias Yzusqui]
+   * kernel/oneplus/msm8996/
+93294d0  Intoxicated  [Martinusbe]
+3d431d9  video: adf: Zero out the mapping data  [Martinusbe]
+3887eea  msm: mdss: fix autorefresh configs for pp-split cases  [Martinusbe]
+abe3c1f  msm: mdss: fix race condition between iommu attach and sending DCS cmds  [Martinusbe]
+aa5c9c2  USB: dwc3: Fix to debugfs returns with spin_lock  [Martinusbe]
+630b776  USB: dwc3: debugfs: Add boundary check in dwc3_store_ep_num()  [Martinusbe]
+1607ecc  soc: qcom: pil: Add flag to know if modem SSR happened.  [Martinusbe]
+   * vendor/motorola/
+65aedab  Merge pull request #255 from gmrt/cm-13.0  [GitHub]
+5a290bd  msm8226-common thea titan peregrine falcon: Regenerate makefiles  [Gabriele M]
+   * vendor/oneplus/
+efc0a39  op3: remove xtra_t_app for now  [Martinusbe]
+b204e43  op3: Add alipay fingerprint payment blobs  [Martinusbe]
+1392f11  op3: Fix dpmserviceapp.apk dependence  [Martinusbe]
+b096205  op3: Missing config  [Martinusbe]
+da395f0  op3: Update blobs  [Martinusbe]
+b1e60a6  op3: Update LiveDisplay blob  [Martinusbe]
+5accabd  Revert "op3: remove xtra_t_app for now"  [Martinusbe]
 
 ====================
-     06-30-2016
+     08-19-2016
 ====================
-
-   * device/oneplus/oneplus2/
-53da89e  limit dex2oat threads to improve thermals  [Martinusbe]
-
-====================
-     06-29-2016
-====================
-
-   * system/core/
-17858e6  rootdir: Put bootanimation service in system-background group  [Josue Rivera]
+   * OTA_config/
+66dbce3  Onyx gets frunk  [GitHub]
+f69a950  Falcon gets frunk  [GitHub]
 
 ====================
-     06-28-2016
+     08-18-2016
+====================
+
+   * device/motorola/msm8226-common/
+4db7940  msm8226-common: Get rid of charge_only_mode  [Vatsal]
+   * frameworks/base/
+238538e  OMS: Themes should be dynamically theming the power menu  [Martinusbe]
+6b9784c  AudioService: Allow system effect sounds to be themed  [Martinusbe]
+   * frameworks/opt/net/wifi/
+3ec2317  wifi: Stop spamming logs  [Martinusbe]
+678d560  wifi: Create new WifiConfiguration for savedConfig in addOrUpdateNetworkNative  [Martinusbe]
+03fab77  Wifi: Issue Disconnect when Ip is changed  [Martinusbe]
+7825ca2  Fix potential memory leak  [Martinusbe]
+de37b5d  Do not process the results array if no results are received  [Martinusbe]
+   * frameworks/opt/telephony/
+160a0c2  DctController: fix mismerge with getTopPriorityRequestPhoneId()  [Martinusbe]
+b81fff0  dct: Sync with upstream  [Martinusbe]
+a99ff79  Fix default data reset issue on device powerup  [Martinusbe]
+   * vendor/motorola/
+b1c6f76  Merge pull request #254 from Rashed97/quark-blur  [GitHub]
+6a52ec0  quark: Enable uiblur  [Rashed Abdel-Tawab]
+8a532f4  quark: Use new generic blobs extraction scrips  [Rashed Abdel-Tawab]
+3c57dc1  Merge pull request #253 from luk1337/cm-13.0  [GitHub]
+
+====================
+     08-17-2016
 ====================
 
    * build/
-81e4b3c  dumpvar: simplify GCC version  [Martinusbe]
-0c4a59f  Revert "build: use gcc 5.4 to build arm"  [Martinusbe]
-a17f9d6  dumpvar: put and end to the color output  [Martinusbe]
-805dd67  dumpvar: show optimizations when in boardconfig  [Martinusbe]
-ebbd144  dumpvar: make it readable  [Martinusbe]
-4378f53  Revert "Fix dumpvar information"  [Martinusbe]
-f8d18b9  Fix dumpvar information  [Martinusbe]
-7805a57  Enable color output from gcc and clang  [Martinusbe]
-797a0c0  Add Memory Sanitize optimization (1/3)  [Martinusbe]
-c6931cd  Add poly optimization (1/3)  [Martinusbe]
-5963f45  improve performance of blockimgdiff  [Martinusbe]
-fa75de1  Add optimized string routine libraries  [Martinusbe]
-c2f18ec  Avoid accidentally using the host's native 'as' command.  [Martinusbe]
-dee13f6  build: use gcc 5.4 to build arm  [Martinusbe]
-   * external/busybox/
-bc2e13c  Add statically linked, minimal variation of busybox  [Nicholas Flintham]
-   * external/stagefright-plugins/
-1020200  stagefright-plugins: call packet_queue_init earier  [Nicholas Flintham]
-   * frameworks/base/
-f1c0a53  Disable/Enable screenshot sound [1/2]  [Martinusbe]
-25b69de  Android.mk: fix docs/html-ndk': No such file or directory  [Martinusbe]
-3201ec3  fix blur... ...thank`s omnirom  [Martinusbe]
-869bb7e  fix  [Martinusbe]
-   * hardware/broadcom/libbt/
-f662d09  libbt-vendor (BRCM): Add ssr_cleanup  [Nicholas Flintham]
-   * hardware/qcom/audio-caf/msm8994/
-9661bd1  msm8994: fix werror when AUDIO_FEATURE_ENABLED_DTS_EAGLE is enabled  [Nicholas Flintham]
-   * hardware/qcom/bt-caf/
-4d1355d  Merge branch 'bt.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/bt into HEAD  [Nicholas Flintham]
+0773ba7  build: Source a Tipsy-specific global BoardConfig  [Martinusbe]
+   * device/oneplus/oneplus3/
+591b9e6  Revert "op3: Lights improvements"  [Martinusbe]
    * hardware/qcom/wlan-caf/
-86c2649  Merge branch 'wlan-aosp.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0  [Nicholas Flintham]
+9d2f34e  wifi-hal: stop the UMAC logspam  [Nicholas Flintham]
+   * manifest/
+d770dbc  Marty was drunk again  [GitHub]
+   * vendor/tipsy/
+f5b96d9  Tipsy: charger: Add support for double backlight displays  [Martinusbe]
+e23dbda  Tipsy: Add custom off-mode charging screen  [Martinusbe]
+
+====================
+     08-16-2016
+====================
+
+   * device/qcom/common/
+66a7336  power-8916: Simplify missed soc_id check in 9e40a0e  [Nicholas Flintham]
+   * manifest/
+ee099f2  track slim's external jpeg  [Martinusbe]
+
+====================
+     08-15-2016
+====================
+
+   * device/oneplus/oneplus2/
+62b73e8  Remove duplicate i2c-6 permission  [Martinusbe]
+fa317b3  optimize it  [Martinusbe]
+   * device/oneplus/oneplus3/
+06d3f8a  op3: Remove healthd extension  [Martinusbe]
+e1a224f  op3: Cleanup QC init script  [Martinusbe]
+bd99180  op3: Correct cluster 2 minumum frequency property  [Martinusbe]
+f4edff9  bc: add them optimizations back  [Martinusbe]
+   * vendor/motorola/
+fde0351  Merge pull request #252 from MotoX-2015/cm-13.0  [GitHub]
+026cb79  clark: remove charge_only_mode  [HashBang]
+
+====================
+     08-14-2016
+====================
+
+
+====================
+     08-13-2016
+====================
+
+   * device/oneplus/oneplus3/
+b0c6ec3  Revert "bc: add some optimizations"  [Martinusbe]
+2dcaed6  op3: Underp thermal-engine  [Martinusbe]
+6e9ae59  op3: Allow 60 background apps  [Martinusbe]
+1664f63  op3: Claim pro audio feature \o/  [Martinusbe]
+f1da469  bc: add some optimizations  [Martinusbe]
+8d283fb  bc: build with uber 4.9x64  [Martinusbe]
+ab45d37  dep: track BigTopKrazies vendor_oneplus  [Martinusbe]
+e89a2c4  dep: track dataservices  [Martinusbe]
+291693b  dep: track toxic kernel  [Martinusbe]
    * kernel/oneplus/msm8996/
-bf4cf36  start intoxicated  [Martinusbe]
-e3d2332  qcacld-2.0: Update to LA.HB.1.3.2-15400-8x96.0  [Martinusbe]
-779e315  msm: ipa: clear uC interrupt only before processing  [Martinusbe]
-f8437b2  msm: ipa: Decrement ipa clock count  [Martinusbe]
-57ce2b6  msm: ipa: Fix to polling mode  [Martinusbe]
-425d265  msm: ipa: fix multiple issues  [Martinusbe]
-9df32ce  msm: ipa: support qmap control pkt using pkt_init  [Martinusbe]
-146f6fe  msm: ipa: add repl_hdlr to WLAN  [Martinusbe]
-bb7d05f  slim: msm: ngd: Add priority to DSP SSR notifier  [Martinusbe]
-93577e3  cnss: Disable wlan irq when PCIe link down is detected  [Martinusbe]
-6f6b339  net: core: neighbour: Change the print format for addresses  [Martinusbe]
-bfa4d9d  cfg80211: Add option to report the bss entry in connect result  [Martinusbe]
-2ae4b04  Revert "ipv4/GRO: Make GRO conform to RFC 6864"  [Martinusbe]
-ebd1a90  ipv4/GRO: Make GRO conform to RFC 6864  [Martinusbe]
-2836268  net: core: To send ARP probe when neighbor state is NUD_STALE  [Martinusbe]
-c358a62  Bluetooth: Replace %p with %pK  [Martinusbe]
-870c7da  net: ipc_router: Bind only a client port as control port  [Martinusbe]
-c200bf9  net: rmnet_data: Fix QMAP ACK's to work with DL checksum offload  [Martinusbe]
-87638e3  net: rmnet_data: Set the protocol when sending MAP ACK's  [Martinusbe]
-9416e2f  oneplus3: Enable CRC32 hw accelerated module  [Martinusbe]
-c5a3bab  arm64/crypto: use crypto instructions to generate AES key schedule  [Martinusbe]
-1e1eaac  arm64: crypto: increase AES interleave to 4x  [Martinusbe]
-6421364  arm64/crypto: issue aese/aesmc instructions in pairs  [Martinusbe]
-0e2f4b6  arm64: crypto: Change priority of arm64 aes cipher.  [Martinusbe]
-e525166  crypto: arm64/crc32 - bring in line with generic CRC32  [Martinusbe]
-face131  crypto: crc32 - Add ARM64 CRC32 hw accelerated module  [Martinusbe]
-e3c60ff  mm + fs: extends support for cache dropping  [Martinusbe]
-48085aa  scsi: ufs: issue link starup 2 times if device isn't active  [Martinusbe]
-2bfbe6b  scsi: ufs-debugfs: Fix hba access  [Martinusbe]
-01a916c  scsi: ufs: qcom-ice: block further requests until ICE config is complete  [Martinusbe]
-adee7ea  scsi: ufs: fix deadlock between clock scaling and clock ungating work  [Martinusbe]
-82489f6  scsi: ufs: increase the scsi query response timeout  [Martinusbe]
-1b568c8  PFK: ice: change to non-atomic scm calls  [Martinusbe]
-f90c06f  crypto: fix pointer dereference  [Martinusbe]
-c33c9f4  crypto: msm: crypto driver performance improvement  [Martinusbe]
-fbcc32a  crypto: qce50: set BAM ipc log level  [Martinusbe]
-8cdf2e3  crypto: ice: split the config callback  [Martinusbe]
-89341db  PFK: fix race between key set and key invalidate in TZ  [Martinusbe]
-29aae56  eCryptfs: fixed bug in cipher handling  [Martinusbe]
-f45b91d  eCryptfs: fixes issue where files sometimes got corrupted upon close  [Martinusbe]
-1601dd8  pfk: added some additional debug prints  [Martinusbe]
-c3f44e9  ARM: dts: msm: change crypto driver bus setting for msm8996  [Martinusbe]
-0790a14  ARM: dts: msm: correct CE clock setting for crypto driver on msm8996  [Martinusbe]
-5bb32a0  ARM: dts: msm: Increase USB QMP PHY register address space size on MSM8996  [Martinusbe]
-2f08130  ARM: dts: msm: Add DT node for RPM master stats  [Martinusbe]
-461d263  msm: msm_bus: remove the buspm module from kernel  [Martinusbe]
-fbb8910  ARM: dts: msm: raise APCC CPR floor to 625 mV for CPR Rev < 6 on msm8996v3  [Martinusbe]
-64d6e6d  ARM: dts: msm: remove oneplus craps  [Martinusbe]
-65dee4c  ARM: dts: msm: Add support for FPC without psci for 8996  [Martinusbe]
-1c71e2c  ARM: dts: msm: Update power attributes for 8996  [Martinusbe]
-f31ce19  ARM: dts: msm: Update USB core clock frequency to allow SVS  [Martinusbe]
-f0b9310  msm: mdss: properly support SRE  [Martinusbe]
-ce899e9  USB: dwc3: gadget: Don't queue endless req through generic ep_queue  [Martinusbe]
-a7982cc  usb: gadget: ffs: fix: Always call ffs_closed() in ffs_data_clear()  [Martinusbe]
-9f80b94  USB: android: Set dev->enabled to true if android_enable fails  [Martinusbe]
-baf4e55  USB: android: Check ffs->state in ffs_ready_callback  [Martinusbe]
-75c5d77  USB: dwc3: msm: Fix error handling with dwc3_msm_ep_queue()  [Martinusbe]
-b9d8b93  usb: f_serial: Check for SMD data length in GSER_IOCTL  [Martinusbe]
-174cca1  usb: dwc3-msm: Fix incorrect roles with multiple instances  [Martinusbe]
-81f3951  USB: dwc3-msm: clear in_restart flag always in restart work  [Martinusbe]
-1aee239  usb: gadget: f_gsi: Check for USB GSI IN endpoint against NULL  [Martinusbe]
-95e4039  dwc3-msm: Check USB Endpoint status before queueing endless request  [Martinusbe]
-373d5ab  USB: dwc3-msm: Add support for setting specific frequency for core clock  [Martinusbe]
-eab8f58  xhci-hub: Handle error condition with xhci_stop_device  [Martinusbe]
-4888f4e  arm64: Control use of app specific settings  [Martinusbe]
-bcdbd39  msm: Use dedicated functions for app_setting bit manipulation  [Martinusbe]
-b330443  trace: prevent NULL pointer dereference  [Martinusbe]
-5c7e482  sched: restrict sync wakee placement bias with waker's demand  [Martinusbe]
-f12e9b1  sched: add preference for waker cluster CPU in wakee task placement  [Martinusbe]
-74daa40e  perf: duplicate deletion of perf event  [Martinusbe]
-b1eef1e  lpm-levels: Use residency instead of power and energy overhead values  [Martinusbe]
-060cbc9  lpm: Allow cpu to enter FPC from hypervisor  [Martinusbe]
-a2cadf5  oneplus3: Enable jump label  [Martinusbe]
-7f267e6  UPSTREAM: arm64: jump labels: NOP out NOP -> NOP replacement  [Martinusbe]
-6c92d87  ARM64: unwind: Fix PC calculation  [Martinusbe]
-c69f7ee  arm64: lib: memory utilities optimization  [Martinusbe]
-a9fba05  sched/rt: really force updates rq clock in pick_next_task_rt  [Martinusbe]
-486c6e2  arm64: lib: improve copy_page to deal with 128 bytes at a time  [Martinusbe]
-7738a1d  HID: Fix compilation  [Martinusbe]
-1eb3c7f  oneplus3: Update defconfig  [Martinusbe]
-028c77c  Export HBM as SRE.  [Martinusbe]
-c395a9e  ARM: dts: 15801: Correct asoc dtsi override  [Martinusbe]
-   * packages/apps/CellBroadcastReceiver/
-9cc155a  Layers 4.x - Themes: Expose hardcoded styles and colors for themes  [Jean-Pierre Rasquin]
-   * packages/apps/Settings/
-f9ad4ea  OtherSounds: Disable/Enable screenshot sound [2/2]  [Martinusbe]
-   * system/vold/
-717d930  cryptfs: Fix returning to default password  [Nicholas Flintham]
-a41f014  Revert "vold: Branch out SW and HW FDE paths to improve boot up time"  [Nicholas Flintham]
-d1c9d99  Fix ioctl parameter  [Nicholas Flintham]
+59bbd04  Merge branch 'opt/test' into HEAD  [Martinusbe]
+3b16275  qcacld-2.0: Update to LA.HB.1.3.2-22100-8x96.0  [Steve Kondik]
+35a4480  msm: kgsl: Remove superfluous NULL checks when reading timestamps  [Steve Kondik]
+1b85387  spi: spi_qsd: Improve latencies for small transfers  [Steve Kondik]
+db20b01  drivers: lpm-levels: Allow rpm handshake only with cluster LPM  [Steve Kondik]
+22661d6  cpuidle: lpm-workarounds: Skip L2 spm enabling in HLOS  [Steve Kondik]
+8ff4dc8  msm: spm_devices: Initialize the local variable before using  [Steve Kondik]
+534f10a  msm: kgsl: Pass correct buffer size for mapping gpuobj user memory  [Steve Kondik]
+2b5bca4  msm: kgsl: Zero the adreno ioctl command buffer  [Steve Kondik]
+19b16ed  msm: kgsl: Attach mem_entry once we have valid GPU address  [Steve Kondik]
+2bcc698  msm: kgsl: Fix race condition during mem_entry detach  [Steve Kondik]
+7066aad  msm: kgsl: Avoid racing against context delete while releasing contexts  [Steve Kondik]
+3c7c6bc  msm: kgsl: track GPU active time per frequency  [Steve Kondik]
+4adb912  msm: kgsl: Keep the active draw context until it is switched out  [Steve Kondik]
+e87c312  msm: kgsl: Record the ringbuffer start of pipeline timestamp  [Steve Kondik]
+8f06310  iommu/arm-smmu: Ratelimit dynamic ASID allocation error  [Steve Kondik]
+bff25ad  msm: kgsl: Remove unneeded error message in kgsl_iommu.c  [Steve Kondik]
+f424a0f  msm: kgsl: Do INIT_WORK() just before queueing a deferred mem entry  [Steve Kondik]
+94b9e7a  msm: kgsl: Remove idle wait in kgsl_iommu_set_pf_policy()  [Steve Kondik]
+93f96c8  msm: kgsl: Allow a draw context to skip snapshot  [Steve Kondik]
+b412081  msm: kgsl: Implement fast preemption for 5XX  [Steve Kondik]
+894b9ea  msm: kgsl: Remove harmless preemption log message  [Steve Kondik]
+27b76d1  msm: kgsl: Rate limit all logs from the interrupt handler  [Steve Kondik]
+534e416  msm: kgsl: Purge unused #defines  [Steve Kondik]
+f5c877d  msm: kgsl: Don't overwrite the VBIF XIN offset for A3xx  [Steve Kondik]
+0ef685d  msm: kgsl: Set the DDR high bank bit if specified in the device tree  [Steve Kondik]
+7e35bcc  msm: kgsl: Leave the MMU clocks on with the rest of the GPU  [Steve Kondik]
+bd78b2c  msm: kgsl: Enable GPU-BIMC clocks from kernel driver  [Steve Kondik]
+a05fd7b  msm: kgsl: Preemption cleanups  [Steve Kondik]
+73f7c2c  msm: kgsl: Use the GPU to write the RPTR  [Steve Kondik]
+749677b  msm: kgsl: Clean up adreno trace code  [Steve Kondik]
+34fef8c  msm: kgsl: Streamline ringbuffer initialization  [Steve Kondik]
+7d6de41  msm: kgsl: Enable content protection for A506  [Steve Kondik]
+5e9790d  msm: kgsl: Move A3XX specific ringbuffer init out of common init  [Steve Kondik]
+afa8c6e  msm: kgsl: Update RBBM_CLOCK_HYST_UCHE idle setting value for A50x  [Steve Kondik]
+99ac2d6  msm: kgsl: Disable all HW clockgating during snapshot  [Steve Kondik]
+36e2257  msm: kgsl: Disable guardpage for A5x and suppress pagefaults  [Steve Kondik]
+8050f4b  msm: kgsl: Change the active context tracker  [Steve Kondik]
+6bf1ec7  msm: kgsl: Avoid an interrupt storm from the GPU  [Steve Kondik]
+d63336b  msm: kgsl: Relax timestamp comparisons for processing events  [Steve Kondik]
+bdf025c  ASoC: wcd-mbhc: disable fake electrical interrupts  [Steve Kondik]
+3de9a40  ASoC: wcd9335: Enable standalone ldo_h  [Steve Kondik]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel/
+9a462ef  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel/
+292e438  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-kernel/
+5b2a2dd  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.0-kernel/
+80f129e  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
+9d44006  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
+fafc797  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-7.0-uber/
+3697930  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
+a919470  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
+fd40716  Initial commit  [DespairFactor]
+   * vendor/motorola/
+1737e6a  Merge pull request #251 from razrqcom-dev-team/cm-13.0  [GitHub]
 
