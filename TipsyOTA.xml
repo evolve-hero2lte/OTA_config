@@ -86,11 +86,11 @@
                 description="Visit the Tipsy op3 thread on OnePlus Forums">https://forums.oneplus.net/threads/rom-op3-6-0-1-tipsyos.450657/</OPUrl>
         </OnePlus3>
         <huashan>
-            <Filename>Tipsy-huashan-Geuze-v4.3-20160706-1900</Filename>
+            <Filename>Tipsy-huashan-frunk-v4.6-201608021-0125</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=24591000424945183</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=24686681827312225</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -102,7 +102,7 @@
             <XDAUrl
                 id="xda"
                 title="XDA"
-                description="Visit TipsyOs Huashan XDA thread">http://forum.xda-developers.com/xperia-sp/development/rom-6-0-1r22-layers-tipsy-os-3-x-t3361161</XDAUrl>
+                description="Visit TipsyOs Xperia SP XDA thread">http://forum.xda-developers.com/xperia-sp/development/rom-6-0-1r22-layers-tipsy-os-3-x-t3361161</XDAUrl>
         </huashan>
         <wt88047>
             <Filename>Tipsy-wt88047-Vacation-v4.5-20160803-0106.zip</Filename>
