@@ -1,188 +1,115 @@
 ====================
-     08-20-2016
+     09-03-2016
 ====================
-   * OTA_config/
-28387a6  Mako gets drunk  [GitHub]
+
    * device/oneplus/oneplus3/
-22890d7  system.prop: Change the GLES version string to 3.1  [Martinusbe]
-727c25b  op3: Add Alipay fingerprint payment support  [Martinusbe]
-7fc88e2  op3: Set missing RIL_QCOM_VERSION  [Martinusbe]
-b23f805  op3: Tweak autobrightness  [Martinusbe]
-   * kernel/motorola/msm8226/
-af42dc1  net: ipc_router: Bind only a client port as control port  [Matthias Yzusqui]
+229e45f  fix data when libc crashes  [Martinusbe]
+6299d7d  Revert "op3: test WCNSS_qcom_cfg.ini"  [Martinusbe]
+d48906e  Merge branch '6.0' of https://github.com/TipsyOs-Devices/device_oneplus_oneplus3 into HEAD  [Martinusbe]
+844ec86  oneplus3: force HAL1 for certain apps  [Martinusbe]
    * kernel/oneplus/msm8996/
-93294d0  Intoxicated  [Martinusbe]
-3d431d9  video: adf: Zero out the mapping data  [Martinusbe]
-3887eea  msm: mdss: fix autorefresh configs for pp-split cases  [Martinusbe]
-abe3c1f  msm: mdss: fix race condition between iommu attach and sending DCS cmds  [Martinusbe]
-aa5c9c2  USB: dwc3: Fix to debugfs returns with spin_lock  [Martinusbe]
-630b776  USB: dwc3: debugfs: Add boundary check in dwc3_store_ep_num()  [Martinusbe]
-1607ecc  soc: qcom: pil: Add flag to know if modem SSR happened.  [Martinusbe]
-   * vendor/motorola/
-65aedab  Merge pull request #255 from gmrt/cm-13.0  [GitHub]
-5a290bd  msm8226-common thea titan peregrine falcon: Regenerate makefiles  [Gabriele M]
-   * vendor/oneplus/
-efc0a39  op3: remove xtra_t_app for now  [Martinusbe]
-b204e43  op3: Add alipay fingerprint payment blobs  [Martinusbe]
-1392f11  op3: Fix dpmserviceapp.apk dependence  [Martinusbe]
-b096205  op3: Missing config  [Martinusbe]
-da395f0  op3: Update blobs  [Martinusbe]
-b1e60a6  op3: Update LiveDisplay blob  [Martinusbe]
-5accabd  Revert "op3: remove xtra_t_app for now"  [Martinusbe]
+6303fad  Revert "input: synaptics: s3320: Remove wild msleeps from init"  [Martinusbe]
+790db5b  Revert "Revert "Revert "usb: dwc3: gadget: always enable IOC on bulk/interrupt transfers"""  [Martinusbe]
+3a80f8b  Revert "usb: dwc3: fix for the isoc transfer EP_BUSY flag"  [Martinusbe]
+499e542  op3: Enable CONFIG_SECURITY_PERF_EVENTS_RESTRICT  [Martinusbe]
+b476ad1  msm_defconfig: Enable config for b/29119870  [Martinusbe]
+da92beb8  USB: dwc3: msm: Kill tasklet before disabling irq in suspend  [Martinusbe]
+c7d22a8  FROMLIST: security,perf: Allow further restriction of perf_event_open  [Martinusbe]
+5a62e43  spi: spi_qsd: Don't restrict first transfer in FIFO mode  [Martinusbe]
 
 ====================
-     08-19-2016
-====================
-   * OTA_config/
-66dbce3  Onyx gets frunk  [GitHub]
-f69a950  Falcon gets frunk  [GitHub]
-
-====================
-     08-18-2016
-====================
-
-   * device/motorola/msm8226-common/
-4db7940  msm8226-common: Get rid of charge_only_mode  [Vatsal]
-   * frameworks/base/
-238538e  OMS: Themes should be dynamically theming the power menu  [Martinusbe]
-6b9784c  AudioService: Allow system effect sounds to be themed  [Martinusbe]
-   * frameworks/opt/net/wifi/
-3ec2317  wifi: Stop spamming logs  [Martinusbe]
-678d560  wifi: Create new WifiConfiguration for savedConfig in addOrUpdateNetworkNative  [Martinusbe]
-03fab77  Wifi: Issue Disconnect when Ip is changed  [Martinusbe]
-7825ca2  Fix potential memory leak  [Martinusbe]
-de37b5d  Do not process the results array if no results are received  [Martinusbe]
-   * frameworks/opt/telephony/
-160a0c2  DctController: fix mismerge with getTopPriorityRequestPhoneId()  [Martinusbe]
-b81fff0  dct: Sync with upstream  [Martinusbe]
-a99ff79  Fix default data reset issue on device powerup  [Martinusbe]
-   * vendor/motorola/
-b1c6f76  Merge pull request #254 from Rashed97/quark-blur  [GitHub]
-6a52ec0  quark: Enable uiblur  [Rashed Abdel-Tawab]
-8a532f4  quark: Use new generic blobs extraction scrips  [Rashed Abdel-Tawab]
-3c57dc1  Merge pull request #253 from luk1337/cm-13.0  [GitHub]
-
-====================
-     08-17-2016
-====================
-
-   * build/
-0773ba7  build: Source a Tipsy-specific global BoardConfig  [Martinusbe]
-   * device/oneplus/oneplus3/
-591b9e6  Revert "op3: Lights improvements"  [Martinusbe]
-   * hardware/qcom/wlan-caf/
-9d2f34e  wifi-hal: stop the UMAC logspam  [Nicholas Flintham]
-   * manifest/
-d770dbc  Marty was drunk again  [GitHub]
-   * vendor/tipsy/
-f5b96d9  Tipsy: charger: Add support for double backlight displays  [Martinusbe]
-e23dbda  Tipsy: Add custom off-mode charging screen  [Martinusbe]
-
-====================
-     08-16-2016
-====================
-
-   * device/qcom/common/
-66a7336  power-8916: Simplify missed soc_id check in 9e40a0e  [Nicholas Flintham]
-   * manifest/
-ee099f2  track slim's external jpeg  [Martinusbe]
-
-====================
-     08-15-2016
-====================
-
-   * device/oneplus/oneplus2/
-62b73e8  Remove duplicate i2c-6 permission  [Martinusbe]
-fa317b3  optimize it  [Martinusbe]
-   * device/oneplus/oneplus3/
-06d3f8a  op3: Remove healthd extension  [Martinusbe]
-e1a224f  op3: Cleanup QC init script  [Martinusbe]
-bd99180  op3: Correct cluster 2 minumum frequency property  [Martinusbe]
-f4edff9  bc: add them optimizations back  [Martinusbe]
-   * vendor/motorola/
-fde0351  Merge pull request #252 from MotoX-2015/cm-13.0  [GitHub]
-026cb79  clark: remove charge_only_mode  [HashBang]
-
-====================
-     08-14-2016
+     09-02-2016
 ====================
 
 
 ====================
-     08-13-2016
+     09-01-2016
+====================
+
+   * frameworks/av/
+fa86e95  libstagefright: mtk: Use vendor extensions to check if we should fixup cropping  [Josue Rivera]
+   * hardware/qcom/audio-caf/msm8916/
+0653e4e  hal: Fix compilation with verbose debugging enabled  [Josue Rivera]
+4cb2753  policy_hal: Fix build with Clang  [Josue Rivera]
+   * hardware/qcom/display-caf/msm8916/
+754051a  display: Fix warnings on 64-bit clang  [Josue Rivera]
+   * hardware/qcom/media-caf/msm8916/
+6f0b6b8  DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers  [Josue Rivera]
+7423f9b  DO NOT MERGE Fix wrong nAllocLen  [Josue Rivera]
+7433d22  media: Fix issues when building with Clang  [Josue Rivera]
+
+====================
+     08-31-2016
+====================
+
+
+====================
+     08-30-2016
+====================
+
+
+====================
+     08-29-2016
 ====================
 
    * device/oneplus/oneplus3/
-b0c6ec3  Revert "bc: add some optimizations"  [Martinusbe]
-2dcaed6  op3: Underp thermal-engine  [Martinusbe]
-6e9ae59  op3: Allow 60 background apps  [Martinusbe]
-1664f63  op3: Claim pro audio feature \o/  [Martinusbe]
-f1da469  bc: add some optimizations  [Martinusbe]
-8d283fb  bc: build with uber 4.9x64  [Martinusbe]
-ab45d37  dep: track BigTopKrazies vendor_oneplus  [Martinusbe]
-e89a2c4  dep: track dataservices  [Martinusbe]
-291693b  dep: track toxic kernel  [Martinusbe]
-   * kernel/oneplus/msm8996/
-59bbd04  Merge branch 'opt/test' into HEAD  [Martinusbe]
-3b16275  qcacld-2.0: Update to LA.HB.1.3.2-22100-8x96.0  [Steve Kondik]
-35a4480  msm: kgsl: Remove superfluous NULL checks when reading timestamps  [Steve Kondik]
-1b85387  spi: spi_qsd: Improve latencies for small transfers  [Steve Kondik]
-db20b01  drivers: lpm-levels: Allow rpm handshake only with cluster LPM  [Steve Kondik]
-22661d6  cpuidle: lpm-workarounds: Skip L2 spm enabling in HLOS  [Steve Kondik]
-8ff4dc8  msm: spm_devices: Initialize the local variable before using  [Steve Kondik]
-534f10a  msm: kgsl: Pass correct buffer size for mapping gpuobj user memory  [Steve Kondik]
-2b5bca4  msm: kgsl: Zero the adreno ioctl command buffer  [Steve Kondik]
-19b16ed  msm: kgsl: Attach mem_entry once we have valid GPU address  [Steve Kondik]
-2bcc698  msm: kgsl: Fix race condition during mem_entry detach  [Steve Kondik]
-7066aad  msm: kgsl: Avoid racing against context delete while releasing contexts  [Steve Kondik]
-3c7c6bc  msm: kgsl: track GPU active time per frequency  [Steve Kondik]
-4adb912  msm: kgsl: Keep the active draw context until it is switched out  [Steve Kondik]
-e87c312  msm: kgsl: Record the ringbuffer start of pipeline timestamp  [Steve Kondik]
-8f06310  iommu/arm-smmu: Ratelimit dynamic ASID allocation error  [Steve Kondik]
-bff25ad  msm: kgsl: Remove unneeded error message in kgsl_iommu.c  [Steve Kondik]
-f424a0f  msm: kgsl: Do INIT_WORK() just before queueing a deferred mem entry  [Steve Kondik]
-94b9e7a  msm: kgsl: Remove idle wait in kgsl_iommu_set_pf_policy()  [Steve Kondik]
-93f96c8  msm: kgsl: Allow a draw context to skip snapshot  [Steve Kondik]
-b412081  msm: kgsl: Implement fast preemption for 5XX  [Steve Kondik]
-894b9ea  msm: kgsl: Remove harmless preemption log message  [Steve Kondik]
-27b76d1  msm: kgsl: Rate limit all logs from the interrupt handler  [Steve Kondik]
-534e416  msm: kgsl: Purge unused #defines  [Steve Kondik]
-f5c877d  msm: kgsl: Don't overwrite the VBIF XIN offset for A3xx  [Steve Kondik]
-0ef685d  msm: kgsl: Set the DDR high bank bit if specified in the device tree  [Steve Kondik]
-7e35bcc  msm: kgsl: Leave the MMU clocks on with the rest of the GPU  [Steve Kondik]
-bd78b2c  msm: kgsl: Enable GPU-BIMC clocks from kernel driver  [Steve Kondik]
-a05fd7b  msm: kgsl: Preemption cleanups  [Steve Kondik]
-73f7c2c  msm: kgsl: Use the GPU to write the RPTR  [Steve Kondik]
-749677b  msm: kgsl: Clean up adreno trace code  [Steve Kondik]
-34fef8c  msm: kgsl: Streamline ringbuffer initialization  [Steve Kondik]
-7d6de41  msm: kgsl: Enable content protection for A506  [Steve Kondik]
-5e9790d  msm: kgsl: Move A3XX specific ringbuffer init out of common init  [Steve Kondik]
-afa8c6e  msm: kgsl: Update RBBM_CLOCK_HYST_UCHE idle setting value for A50x  [Steve Kondik]
-99ac2d6  msm: kgsl: Disable all HW clockgating during snapshot  [Steve Kondik]
-36e2257  msm: kgsl: Disable guardpage for A5x and suppress pagefaults  [Steve Kondik]
-8050f4b  msm: kgsl: Change the active context tracker  [Steve Kondik]
-6bf1ec7  msm: kgsl: Avoid an interrupt storm from the GPU  [Steve Kondik]
-d63336b  msm: kgsl: Relax timestamp comparisons for processing events  [Steve Kondik]
-bdf025c  ASoC: wcd-mbhc: disable fake electrical interrupts  [Steve Kondik]
-3de9a40  ASoC: wcd9335: Enable standalone ldo_h  [Steve Kondik]
+f19af8f  op3: test WCNSS_qcom_cfg.ini  [Martinusbe]
    * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel/
-9a462ef  Initial commit  [DespairFactor]
+26eb770  Initial commit  [DespairFactor]
    * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel/
-292e438  Initial commit  [DespairFactor]
+6d7eb5c  Initial commit  [DespairFactor]
    * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-kernel/
-5b2a2dd  Initial commit  [DespairFactor]
+e9f5240  Initial commit  [DespairFactor]
    * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.0-kernel/
-80f129e  Initial commit  [DespairFactor]
+95ba422  Initial commit  [DespairFactor]
    * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
-9d44006  Initial commit  [DespairFactor]
+6d1ef95  Initial commit  [DespairFactor]
    * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
-fafc797  Initial commit  [DespairFactor]
+1b8c77c  Initial commit  [DespairFactor]
    * prebuilts/gcc/linux-x86/arm/arm-eabi-7.0-uber/
-3697930  Initial commit  [DespairFactor]
+70214d9  Initial commit  [DespairFactor]
    * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
-a919470  Initial commit  [DespairFactor]
+0dc50fd  Initial commit  [DespairFactor]
    * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
-fd40716  Initial commit  [DespairFactor]
-   * vendor/motorola/
-1737e6a  Merge pull request #251 from razrqcom-dev-team/cm-13.0  [GitHub]
+c91b695  Initial commit  [DespairFactor]
+
+====================
+     08-28-2016
+====================
+
+   * device/motorola/falcon/
+f83c0ce  falcon: Rename hac-handset to voice-hac-handset  [Vatsal]
+d1485f5  falcon: Update extraction scripts  [Vatsal]
+   * device/motorola/msm8226-common/
+1de53bb  msm8226-common: Enable Hearing Aid Compatibility (HAC) mode  [Vatsal]
+b40381b  msm8226-common: Remove duplicated debugfs mount  [Vatsal]
+e68352b  msm8226-common: Get rid of charge_only_mode  [Vatsal]
+   * frameworks/base/
+f7f8da3  pastie derp  [Alx31]
+719e8d8  Add missing package util  [Alx31]
+11d463f  base: add config to apply custom shadow on header images [1/2]  [Alx31]
+7c0fb3f  base: header image tweaks  [Alx31]
+b643028  base: daylight header packs extensions [1/2]  [Alx31]
+5643eb3  base: header image packs [1/2]  [Alx31]
+eb9af0e  Revert "SystemUI: Add option for new Poly HD custom contextual headers (1/2)"  [Alx31]
+1791b8d  Add a timer to screen record  [Alx31]
+eddb8a6  statusbar: fix poly/original contextual header drawable style change  [Alx31]
+6b6f80b  screen record: make sure to always delete tmp files  [Alx31]
+51a3432  Screen Recording: forward port from 4.4  [Alx31]
+62558ad  SystemUI: Add option for new Poly HD custom contextual headers (1/2)  [Alx31]
+   * manifest/
+8562556  track our OmniStyle and reorganize  [Alx31]
+   * packages/apps/OmniStyle/
+b84efeb  rename the packs for Tipsy  [Alx31]
+   * packages/apps/Settings/
+61fabaf  status bar: underp and tipsy adaptation. Thanks to @Martinusbe and @xlxfoxxlx for the help.  [Alx31]
+99d3ecc  Rework contextual headers shadow mod to fix issue below http://jira.dirtyunicorns.com/browse/MAR-78  [Alx31]
+1623295  Squashed Daylight headers commits Settings: header image packs [2/2] Settings: daylight header packs extensions [2/2] Settings: add config to apply custom shadow on header images [2/2]  [Alx31]
+   * vendor/tipsy/
+22686bb  omnistyle: build me.  [Alx31]
+
+====================
+     08-27-2016
+====================
+
 
