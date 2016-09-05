@@ -1,101 +1,61 @@
 ====================
-     08-21-2016
+     09-05-2016
+====================
+
+
+====================
+     09-04-2016
+====================
+
+
+====================
+     09-03-2016
+====================
+
+
+====================
+     09-02-2016
 ====================
 
    * device/sony/huashan/
-3d97b2d  Tipsidize!  [a7r3]
-d5c9ee8  Make use of .dependencies  [a7r3]
-5ccf8b7  Revert "huashan: Use cmsdk FileUtils"  [a7r3]
-80d6f3a  Revert "huashan: Fix the use of cmsdk FileUtils"  [a7r3]
-503d706  huashan: shim: Avoid a rare bootloop when SensorService boots late  [a7r3]
-4712ec9  huashan: devicesettings: Always enable Glove Mode service  [a7r3]
-24b3106  huashan: devicesettings: Adapt Doze Sensors for AOSP-based  [a7r3]
-5ebd66a  huashan: liblights: Remove Multiple LEDs LibLights control  [a7r3]
-de36313  huashan: overlay: Set default disabled Mobile data as a property  [a7r3]
-80170bd  huashan: ui: Disable Blur overlay  [a7r3]
+5fa27cb  Tipsidize!  [a7r3]
+157d6de  huashan: init: Make the header importable more than once  [a7r3]
+   * frameworks/av/
+fa86e95  libstagefright: mtk: Use vendor extensions to check if we should fixup cropping  [Josue Rivera]
+   * hardware/qcom/display-caf/msm8916/
+754051a  display: Fix warnings on 64-bit clang  [Josue Rivera]
 
 ====================
-     08-20-2016
+     09-01-2016
 ====================
-   * OTA_config/
-28387a6  Mako gets drunk  [GitHub]
-66dbce3  Onyx gets frunk  [GitHub]
-f69a950  Falcon gets frunk  [GitHub]
+
 
 ====================
-     08-19-2016
+     08-31-2016
+====================
+
+
+====================
+     08-30-2016
+====================
+
+   * packages/apps/Nfc/
+375f151  Automatic translation import  [Gerrit Code Review]
+
+====================
+     08-29-2016
 ====================
 
    * frameworks/base/
-238538e  OMS: Themes should be dynamically theming the power menu  [Martinusbe]
-6b9784c  AudioService: Allow system effect sounds to be themed  [Martinusbe]
-   * frameworks/opt/net/wifi/
-3ec2317  wifi: Stop spamming logs  [Martinusbe]
-678d560  wifi: Create new WifiConfiguration for savedConfig in addOrUpdateNetworkNative  [Martinusbe]
-03fab77  Wifi: Issue Disconnect when Ip is changed  [Martinusbe]
-7825ca2  Fix potential memory leak  [Martinusbe]
-de37b5d  Do not process the results array if no results are received  [Martinusbe]
+f7f8da3  pastie derp  [Alx31]
+719e8d8  Add missing package util  [Alx31]
+11d463f  base: add config to apply custom shadow on header images [1/2]  [Alx31]
    * manifest/
-460b163  update readme  [GitHub]
-86c2b7a  track slim's external jpeg Change-Id: I6807a2be6d0fb252772d0e889b4e0e7d99beb693  [Alx31]
-84eb353  track out opt_net... again Change-Id: I883b5dfba6d736312b110652a5441e1f3fb907aa Signed-off-by: Martinusbe <martinusbe@gmail.com>  [Alx31]
-
-====================
-     08-18-2016
-====================
-
-   * build/
-0773ba7  build: Source a Tipsy-specific global BoardConfig  [Martinusbe]
-   * device/sony/huashan/
-b8cfd1b  huashan: init: Use a more conventional ramdisk layout  [Adrian DC]
-   * frameworks/opt/telephony/
-160a0c2  DctController: fix mismerge with getTopPriorityRequestPhoneId()  [Martinusbe]
-b81fff0  dct: Sync with upstream  [Martinusbe]
-a99ff79  Fix default data reset issue on device powerup  [Martinusbe]
-   * hardware/qcom/wlan-caf/
-9d2f34e  wifi-hal: stop the UMAC logspam  [Nicholas Flintham]
+8562556  track our OmniStyle and reorganize  [Alx31]
+   * packages/apps/OmniStyle/
+b84efeb  rename the packs for Tipsy  [Alx31]
+   * packages/apps/Settings/
+61fabaf  status bar: underp and tipsy adaptation. Thanks to @Martinusbe and @xlxfoxxlx for the help.  [Alx31]
    * vendor/tipsy/
-f5b96d9  Tipsy: charger: Add support for double backlight displays  [Martinusbe]
-e23dbda  Tipsy: Add custom off-mode charging screen  [Martinusbe]
-
-====================
-     08-17-2016
-====================
-
-   * device/qcom/common/
-66a7336  power-8916: Simplify missed soc_id check in 9e40a0e  [Nicholas Flintham]
-
-====================
-     08-16-2016
-====================
-
-   * kernel/sony/msm8960t/
-c330deb  defconfig: huashan: Update configuration  [Adrian DC]
-c6c30cf  drivers: convert shrinkers to new count/scan API  [Adrian DC]
-91fc233  shrinker: add node awareness  [Adrian DC]
-78a17db  mm: new shrinker API  [Adrian DC]
-2100955  Revert "mm: zcache: Fix 3.4 backport"  [Adrian DC]
-   * vendor/sony/
-33c67bc  Merge pull request #179 from AdrianDC/taoshan  [GitHub]
-5d41436  taoshan: Remove libqc-opt and update libmmcamera_wavelet_lib.so  [Adrian DC]
-78b6c8d  taoshan: Add libqti-perfd-client to replace libqc-opt  [Adrian DC]
-8aa28c7  taoshan: Update rmt_storage from flo MOB30D  [Adrian DC]
-
-====================
-     08-15-2016
-====================
-
-   * device/sony/common/
-fd9dae3  init: Clean the init_sony specific binaries on boot  [Adrian DC]
-9ae961b  init: Use a more conventional ramdisk layout  [Adrian DC]
-   * device/sony/huashan/
-2928967  huashan: charger: Switch to CM charger libhealthd  [Adrian DC]
-   * kernel/sony/msm8960t/
-3ccb8ee  HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands  [Adrian DC]
-69e39b6  Revert "bluetooth: Validate socket address length in sco_sock_bind()."  [Adrian DC]
-
-====================
-     08-14-2016
-====================
-
+22686bb  omnistyle: build me.  [Alx31]
 
