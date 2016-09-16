@@ -1,115 +1,76 @@
 ====================
-     09-03-2016
+     09-16-2016
 ====================
 
-   * device/oneplus/oneplus3/
-229e45f  fix data when libc crashes  [Martinusbe]
-6299d7d  Revert "op3: test WCNSS_qcom_cfg.ini"  [Martinusbe]
-d48906e  Merge branch '6.0' of https://github.com/TipsyOs-Devices/device_oneplus_oneplus3 into HEAD  [Martinusbe]
-844ec86  oneplus3: force HAL1 for certain apps  [Martinusbe]
    * kernel/oneplus/msm8996/
-6303fad  Revert "input: synaptics: s3320: Remove wild msleeps from init"  [Martinusbe]
-790db5b  Revert "Revert "Revert "usb: dwc3: gadget: always enable IOC on bulk/interrupt transfers"""  [Martinusbe]
-3a80f8b  Revert "usb: dwc3: fix for the isoc transfer EP_BUSY flag"  [Martinusbe]
-499e542  op3: Enable CONFIG_SECURITY_PERF_EVENTS_RESTRICT  [Martinusbe]
-b476ad1  msm_defconfig: Enable config for b/29119870  [Martinusbe]
-da92beb8  USB: dwc3: msm: Kill tasklet before disabling irq in suspend  [Martinusbe]
-c7d22a8  FROMLIST: security,perf: Allow further restriction of perf_event_open  [Martinusbe]
-5a62e43  spi: spi_qsd: Don't restrict first transfer in FIFO mode  [Martinusbe]
+f9ab9b9  op3: enable kcal  [Martinusbe]
+cd8bcc2  test: sRGB mode  [Martinusbe]
+d78cb41  Fix for sRGB mode  [Martinusbe]
+6c8ce4b  Revert "video: mdss: LiveDisplay driver"  [Martinusbe]
+12aae8b  Revert "mdss: livedisplay: Add commands to enable SRGB mode"  [Martinusbe]
+a31eb60  Revert "op3: Fix and optimize SRGB commands"  [Martinusbe]
+6fa940f  mdss mdp: kcal for mdss_mdp_v1_7  [Martinusbe]
+e9a9f60d  mdss_fb: add backlight dimmer option  [Martinusbe]
 
 ====================
-     09-02-2016
-====================
-
-
-====================
-     09-01-2016
-====================
-
-   * frameworks/av/
-fa86e95  libstagefright: mtk: Use vendor extensions to check if we should fixup cropping  [Josue Rivera]
-   * hardware/qcom/audio-caf/msm8916/
-0653e4e  hal: Fix compilation with verbose debugging enabled  [Josue Rivera]
-4cb2753  policy_hal: Fix build with Clang  [Josue Rivera]
-   * hardware/qcom/display-caf/msm8916/
-754051a  display: Fix warnings on 64-bit clang  [Josue Rivera]
-   * hardware/qcom/media-caf/msm8916/
-6f0b6b8  DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers  [Josue Rivera]
-7423f9b  DO NOT MERGE Fix wrong nAllocLen  [Josue Rivera]
-7433d22  media: Fix issues when building with Clang  [Josue Rivera]
-
-====================
-     08-31-2016
+     09-15-2016
 ====================
 
 
 ====================
-     08-30-2016
+     09-14-2016
 ====================
 
 
 ====================
-     08-29-2016
+     09-13-2016
 ====================
 
-   * device/oneplus/oneplus3/
-f19af8f  op3: test WCNSS_qcom_cfg.ini  [Martinusbe]
-   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel/
-26eb770  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel/
-6d7eb5c  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-kernel/
-e9f5240  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.0-kernel/
-95ba422  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
-6d1ef95  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber/
-1b8c77c  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-7.0-uber/
-70214d9  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
-0dc50fd  Initial commit  [DespairFactor]
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
-c91b695  Initial commit  [DespairFactor]
 
 ====================
-     08-28-2016
+     09-12-2016
 ====================
 
-   * device/motorola/falcon/
-f83c0ce  falcon: Rename hac-handset to voice-hac-handset  [Vatsal]
-d1485f5  falcon: Update extraction scripts  [Vatsal]
-   * device/motorola/msm8226-common/
-1de53bb  msm8226-common: Enable Hearing Aid Compatibility (HAC) mode  [Vatsal]
-b40381b  msm8226-common: Remove duplicated debugfs mount  [Vatsal]
-e68352b  msm8226-common: Get rid of charge_only_mode  [Vatsal]
-   * frameworks/base/
-f7f8da3  pastie derp  [Alx31]
-719e8d8  Add missing package util  [Alx31]
-11d463f  base: add config to apply custom shadow on header images [1/2]  [Alx31]
-7c0fb3f  base: header image tweaks  [Alx31]
-b643028  base: daylight header packs extensions [1/2]  [Alx31]
-5643eb3  base: header image packs [1/2]  [Alx31]
-eb9af0e  Revert "SystemUI: Add option for new Poly HD custom contextual headers (1/2)"  [Alx31]
-1791b8d  Add a timer to screen record  [Alx31]
-eddb8a6  statusbar: fix poly/original contextual header drawable style change  [Alx31]
-6b6f80b  screen record: make sure to always delete tmp files  [Alx31]
-51a3432  Screen Recording: forward port from 4.4  [Alx31]
-62558ad  SystemUI: Add option for new Poly HD custom contextual headers (1/2)  [Alx31]
+   * device/oppo/common/
+6aad2ae  KeyHandler: get vibrate & Ring working  [Martinusbe]
    * manifest/
-8562556  track our OmniStyle and reorganize  [Alx31]
-   * packages/apps/OmniStyle/
-b84efeb  rename the packs for Tipsy  [Alx31]
+e536f4c  SnapDragonCam test branch  [Martinusbe]
+647ac52  track gallery2 from slim  [Martinusbe]
+
+====================
+     09-11-2016
+====================
+
+   * frameworks/base/
+3a7aa4d  Merge pull request #25 from Slimi9305/6.0  [GitHub]
+cfab580  Merge branch '6.0' of https://github.com/Slimi9305/frameworks_base into HEAD  [limjh16]
+bb3d3fa  sensors: Rename bool for selecting what timestamp to use for orientation sensor  [limjh16]
+6d4b0f1  sensors: Create bool to select what timestamp to use  [limjh16]
+   * manifest/
+a2ed0c6  r66 and inline with oms branch  [Alx31]
+3ee1f1e  track our OmniStyle and reorganize  [Alx31]
    * packages/apps/Settings/
-61fabaf  status bar: underp and tipsy adaptation. Thanks to @Martinusbe and @xlxfoxxlx for the help.  [Alx31]
-99d3ecc  Rework contextual headers shadow mod to fix issue below http://jira.dirtyunicorns.com/browse/MAR-78  [Alx31]
-1623295  Squashed Daylight headers commits Settings: header image packs [2/2] Settings: daylight header packs extensions [2/2] Settings: add config to apply custom shadow on header images [2/2]  [Alx31]
+1c46b93  Merge remote-tracking branch 'tipsy/oms' into 6.0  [Alx31]
+
+====================
+     09-10-2016
+====================
+
+
+====================
+     09-09-2016
+====================
+
+   * kernel/motorola/msm8226/
+48c8cf9  scripts: Call out python2 explicitly  [Gerrit Code Review]
+0bbdeeb  wlan: fix buffer overflow in linkspeed ioctl  [Luca Stefani]
+eb124ce  wlan: Remove the support for setwpaie ioctl  [Luca Stefani]
+a542a5a  Adds bound check on reg_cfg_cmd->u.dmi_info.hi_tbl_offset.  [Gabriele M]
+7fe5b94  ASoC: msm: qdsp6v2: check param length for EAC3 format  [Gabriele M]
+8acbda0  wcnss: Avoid user buffer overloading for write cal data  [Gabriele M]
+e22e047  BACKPORT: tcp: make challenge acks less predictable  [Gerrit Code Review]
+   * vendor/motorola/
+4b9dd8a  Merge pull request #257 from elektroschmock/MOB31E  [GitHub]
    * vendor/tipsy/
-22686bb  omnistyle: build me.  [Alx31]
-
-====================
-     08-27-2016
-====================
-
+d1338a8  4.8 Picon  [Martinusbe]
 
