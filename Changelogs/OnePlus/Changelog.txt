@@ -1,76 +1,178 @@
 ====================
-     09-16-2016
+     11-10-2016
 ====================
 
-   * kernel/oneplus/msm8996/
-f9ab9b9  op3: enable kcal  [Martinusbe]
-cd8bcc2  test: sRGB mode  [Martinusbe]
-d78cb41  Fix for sRGB mode  [Martinusbe]
-6c8ce4b  Revert "video: mdss: LiveDisplay driver"  [Martinusbe]
-12aae8b  Revert "mdss: livedisplay: Add commands to enable SRGB mode"  [Martinusbe]
-a31eb60  Revert "op3: Fix and optimize SRGB commands"  [Martinusbe]
-6fa940f  mdss mdp: kcal for mdss_mdp_v1_7  [Martinusbe]
-e9a9f60d  mdss_fb: add backlight dimmer option  [Martinusbe]
-
-====================
-     09-15-2016
-====================
-
-
-====================
-     09-14-2016
-====================
-
-
-====================
-     09-13-2016
-====================
-
-
-====================
-     09-12-2016
-====================
-
-   * device/oppo/common/
-6aad2ae  KeyHandler: get vibrate & Ring working  [Martinusbe]
-   * manifest/
-e536f4c  SnapDragonCam test branch  [Martinusbe]
-647ac52  track gallery2 from slim  [Martinusbe]
-
-====================
-     09-11-2016
-====================
-
+   * device/oneplus/oneplus3/
+ab511f8  Revert "op3: Moving LiveDisplay native API to OSS"  [Martinusbe]
+232b8e0  temp: permissive && uber  [Martinusbe]
    * frameworks/base/
-3a7aa4d  Merge pull request #25 from Slimi9305/6.0  [GitHub]
-cfab580  Merge branch '6.0' of https://github.com/Slimi9305/frameworks_base into HEAD  [limjh16]
-bb3d3fa  sensors: Rename bool for selecting what timestamp to use for orientation sensor  [limjh16]
-6d4b0f1  sensors: Create bool to select what timestamp to use  [limjh16]
-   * manifest/
-a2ed0c6  r66 and inline with oms branch  [Alx31]
-3ee1f1e  track our OmniStyle and reorganize  [Alx31]
+1af0f85  Revert "Backport changes to whitelist sockets opened by the zygote."  [Martinusbe]
+a9c0210  Revert "Also whitelist Ducati sockets (/dev/rpmsg-omx[01])"  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8996/
+7227e87  Fix potential overflow in Visualizer effect  [Jessica Wagantall]
    * packages/apps/Settings/
-1c46b93  Merge remote-tracking branch 'tipsy/oms' into 6.0  [Alx31]
-
-====================
-     09-10-2016
-====================
-
-
-====================
-     09-09-2016
-====================
-
-   * kernel/motorola/msm8226/
-48c8cf9  scripts: Call out python2 explicitly  [Gerrit Code Review]
-0bbdeeb  wlan: fix buffer overflow in linkspeed ioctl  [Luca Stefani]
-eb124ce  wlan: Remove the support for setwpaie ioctl  [Luca Stefani]
-a542a5a  Adds bound check on reg_cfg_cmd->u.dmi_info.hi_tbl_offset.  [Gabriele M]
-7fe5b94  ASoC: msm: qdsp6v2: check param length for EAC3 format  [Gabriele M]
-8acbda0  wcnss: Avoid user buffer overloading for write cal data  [Gabriele M]
-e22e047  BACKPORT: tcp: make challenge acks less predictable  [Gerrit Code Review]
+e769f02  Revert "[Fingerprint] Remove learn more link if not provisioned. DO NOT MERGE"  [Martinusbe]
    * vendor/motorola/
-4b9dd8a  Merge pull request #257 from elektroschmock/MOB31E  [GitHub]
+170deec  clark: kang perfd from ether  [Dan Pasanen]
+1852634  Add Moto G4/plus  [Abhisek Devkota]
+
+====================
+     11-09-2016
+====================
+
+   * build/
+a9155b0  MOB31K  [Martinusbe]
+36cb581  MOB31J  [Martinusbe]
+7e3d1e4  MOB31I  [Martinusbe]
+9ec0b79  Updating Security String to 2016-11-05 on mnc-dev b/31618336  [Martinusbe]
+552eaf1  Updating Security String to 2016-11-01 on mnc-dev b/31618336  [Martinusbe]
+   * device/oneplus/oneplus3/
+fb0dc8d  op3: disable dexpreopt  [Martinusbe]
+348257b  op3: Update bloblist for CB3.5.5  [Martinusbe]
+0a43dfd  op3: Add missing camera parameter  [Martinusbe]
+efb2c07  op3: Update bloblist  [Martinusbe]
+e853d6e  op3: Add support for new postprocessing library  [Martinusbe]
+02ba42e  op3: Update bloblist for new camera driver  [Martinusbe]
+ae17d9a  op3: Make org.ifaa.android.manager a blob  [Martinusbe]
+4d8c1b7  op3: Moving LiveDisplay native API to OSS  [Martinusbe]
+05e72f5  Revert "op3: Add pocketmode app"  [Martinusbe]
+d8c823e  op3: use gcc tc  [Martinusbe]
+   * external/sepolicy/
+ef18412  Allow the zygote to stat all files it opens.  [Martinusbe]
+   * frameworks/av/
+9af2478  stagefright: don't fail MediaCodec.configure if clients use store-meta key  [Martinusbe]
+3197b8b  IOMX: do not clear buffer if it's allocated by component  [Martinusbe]
+e04014f  IOMX: allow configuration after going to loaded state  [Martinusbe]
+7569153  IOMX: restrict conversion of ANWB to gralloc source in emptyBuffer  [Martinusbe]
+cc0786c  Limit mp4 atom size to something reasonable  [Martinusbe]
+bbb65dd  SampleIterator: clear members on seekTo error  [Martinusbe]
+845350d  Check mprotect result  [Martinusbe]
+e48c838  Radio: get service by value.  [Martinusbe]
+c2f8ecb  SoundTrigger: get service by value.  [Martinusbe]
+0b600f4  Fix stack content leak vulnerability in mediaserver  [Martinusbe]
+6dac39c  Fix potential overflow in Visualizer effect  [Martinusbe]
+2c5c413  IOMX: work against metadata buffer spoofing  [Martinusbe]
+   * frameworks/base/
+1af0f85  Revert "Backport changes to whitelist sockets opened by the zygote."  [Martinusbe]
+a9c0210  Revert "Also whitelist Ducati sockets (/dev/rpmsg-omx[01])"  [Martinusbe]
+f7dbe48  Also whitelist Ducati sockets (/dev/rpmsg-omx[01])  [Martinusbe]
+00ab8e0  Avoid crashing when downloading MitM'd PAC that is too big am: 7d2198b586 am: 9c1cb7a273 am: 6634e90ad7 am: 66ee2296a9  [Martinusbe]
+31b6465  Merge commit '0a9d537f623b2c11dce707fb9b91fea016fd0e9f' into manual_merge_0a9d537  [Martinusbe]
+e475174  DO NOT MERGE Check caller for sending media key to global priority session  [Martinusbe]
+b9557e1  Fix build break due to automerge of 7d2198b5  [Martinusbe]
+e4740f0  DO NOT MERGE: Catch all exceptions when parsing IME meta data  [Martinusbe]
+2cf0c95  DO NOT MERGE: Fix deadlock in AcitivityManagerService.  [Martinusbe]
+c930aac  Ensure munmap matches mmap  [Martinusbe]
+892004e  Fix setPairingConfirmation permissions issue (2/2)  [Martinusbe]
+ede9324  DO NOT MERGE) ExifInterface: Make saveAttributes throw an exception before change  [Martinusbe]
+f602153  Backport changes to whitelist sockets opened by the zygote.  [Martinusbe]
+   * kernel/oneplus/msm8996/
+4349abd  Merge remote-tracking branch 'cm/cm-13.0' into HEAD  [Martinusbe]
+5c4b5ae  misc: fpc1020: Honor proximity state  [Gerrit Code Review]
+   * manifest/
+cc65c25  r74  [Martinusbe]
+e453077  adjust uber tc links  [Martinusbe]
+   * packages/apps/Browser/
+0052b5b  Automatic translation import  [Andreas Blaesius]
+   * packages/apps/Settings/
+1b9db3f  [Fingerprint] Remove learn more link if not provisioned. DO NOT MERGE  [Martinusbe]
+   * system/core/
+426e8aa  liblog: add __android_log_close()  [Martinusbe]
+c642472  liblog: add __android_log_close()  [Martinusbe]
+   * vendor/oneplus/
+434cf82  op3: remove xtra_t app  [Martinusbe]
+83d2e62  op3: Import OnePlus3Oxygen_16_OTA_007_all_1610310039_bc5bc09fd9af4ceb  [Martinusbe]
+7991ac5  op3: Update blobs from CB 3.5.3  [Martinusbe]
+7320624  op3: Add prebuilt org.ifaa.android.manager  [Martinusbe]
+0229217  op3: Remove libjni_livedisplay  [Martinusbe]
+fd1c3c9  Revert "op3: remove xtra_t_app for now"  [Martinusbe]
    * vendor/tipsy/
-d1338a8  4.8 Picon  [Martinusbe]
+0dd954d  version: 5.1 final maybe  [Martinusbe]
+
+====================
+     11-08-2016
+====================
+
+   * hardware/qcom/audio/default/
+5dc4281  Fix potential overflow in Visualizer effect  [Josue Rivera]
+   * libcore/
+990e4ff  IDN: Fix handling of long domain names.  [Josue Rivera]
+   * packages/apps/Bluetooth/
+1ad478e  Fix setPairingConfirmation permissions issue (1/2)  [Josue Rivera]
+   * packages/providers/DownloadProvider/
+1dfa9bd  Enforce calling identity before clearing.  [Josue Rivera]
+   * system/media/
+d86ed9f  Fix potential overflow in Visualizer effect  [Josue Rivera]
+   * vendor/motorola/
+a26e9d5  Merge pull request #270 from razorloves/cm-13.0  [GitHub]
+7b9c19d  shamu: update blobs from MOB31K factory image  [razorloves]
+
+====================
+     11-07-2016
+====================
+
+
+====================
+     11-06-2016
+====================
+
+
+====================
+     11-05-2016
+====================
+
+   * hardware/qcom/media-caf/msm8996/
+e2d259c  Merge tag 'LA.HB.1.3.2-31300-8x96.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD  [dianlujitao]
+   * kernel/oneplus/msm8996/
+1c62873  msm: camera: ispif: RDI Pack mode support  [dianlujitao]
+cacb61a  msm: camera: uapi header split  [dianlujitao]
+93b6c40  msm: mdss: hdmi: use proper fps while finding resolution  [dianlujitao]
+b9a8ee0  msm: mdss: update mdss perf when changing refresh rate  [dianlujitao]
+21b7a16  msm: mdss: hdmi: fix hdmi power on during frame rate change  [dianlujitao]
+5341c53  msm: mdss: hdmi: fix power off/on hdcp during fps configuration  [dianlujitao]
+2a7c44e  msm: mdss: update polarity based on HDMI resolution  [dianlujitao]
+d4341f1  msm: mdss: Correct the format specifiers in sscanf function  [dianlujitao]
+689b8c9  msm: mdss: skip panel type node change during resolution switch  [dianlujitao]
+9526cc0  msm: mdss: fix frame rate calculation for resolution switch  [dianlujitao]
+832a9e6  msm: mdss: Fix memleak in panel_debug_reg_write  [dianlujitao]
+ea0684b  msm: mdss: remove interlace from supported mode list  [dianlujitao]
+75b6881  msm: mdss: correct horizontal timings in case of YUV output  [dianlujitao]
+8f792cf  msm: mdss: Refactor deterministic frame rate control  [dianlujitao]
+65b9482  msm: mdss: Add NULL pointer check in FRC  [dianlujitao]
+06feabf  msm: mdss: Add debug suppport for FRC  [dianlujitao]
+443b542  msm: mdss: Add deterministic frame rate control support  [dianlujitao]
+461a30d  msm: mdss: Handle fb_release_all before cont-splash handoff  [dianlujitao]
+5cd779a  msm: mdss: Add interface for deterministic frame rate control  [dianlujitao]
+6b7a7f5  msm: mdss: Fix deadlock in AD code  [dianlujitao]
+cbec12e  msm: mdss: Fix AD backlight configuration  [dianlujitao]
+51f2e29  dwc3: Revert upstream changes  [dianlujitao]
+c718e11  Merge branch 'linux-3.18.y' of git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable into HEAD  [dianlujitao]
+
+====================
+     11-04-2016
+====================
+
+   * hardware/libhardware/
+59d8f5b  Memory leak fix during sensor HAL initialization  [Josue Rivera]
+   * hardware/qcom/audio-caf/msm8916/
+ef1b273  policy_hal: handle incall sonification without checking output refCount  [Josue Rivera]
+d017179  Revert "policy_hal: Fix build with Clang"  [Josue Rivera]
+bf4f9bb  policy_hal: Fix build with Clang  [Josue Rivera]
+c7ab9bf  hal: add support for 8909 QSIP SKUQ  [Josue Rivera]
+0b6c300  hal: fix routing issue for voip use case  [Josue Rivera]
+1d0443f  mm-audio: Avoid command thread loop if omx component is stopped  [Josue Rivera]
+03cbdf6  audio: Fixed compiler warning  [Josue Rivera]
+   * hardware/qcom/display-caf/msm8916/
+71410d2  Fix duplicate copy file rules  [Josue Rivera]
+7f50020  hwc: Avoid switching rotator session between secure and non secure  [Josue Rivera]
+27f329d  hwc: Isolate DMA state to per Display  [Josue Rivera]
+e84c0cf  hwc: Trigger a padding round when DMA state changes  [Josue Rivera]
+12feac1  hwc: Add a new check for DMA state change  [Josue Rivera]
+67e0eaa  enable zero copy test by add some dependencies  [Josue Rivera]
+1473d38   hwc : Set bw limit on mdss when camera is on.  [Josue Rivera]
+
+====================
+     11-03-2016
+====================
+
 
