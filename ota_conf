@@ -3,8 +3,8 @@ ota_url=https://raw.githubusercontent.com/TipsyOs/OTA_config/master/TipsyOTA.xml
 release_type=Stable
 device_name=ro.product.device
  
-#example ro.validus.version=Tipsy-6.0.1.Vacation.v3.9--20160508-1258
+#exampe ro.tipsy.version=Tipsy-wt88047-7.1.0.Alpha-v4.0-20161129-1718
 version_source=ro.tipsy.version
 version_delimiter=-
-version_position=3
+version_position=4
 version_format=yyyyMMdd
