@@ -2,24 +2,6 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <onyx>
-            <Filename>Tipsy-onyx-frunk-v4.6-20160819-1706.zip</Filename>
-            <RomUrl
-                id="rom"
-                title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=56591</RomUrl>
-            <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Vatsal/Changelog.txt</ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
-            <OPUrl
-                id="op"
-                title="OnePlus Forums"
-                description="Visit GZR onyx thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-05-07-onyx-tipsy-tesla-validus-6-0-1_43-aospb-official.437885/</OPUrl>
-        </onyx>
         <bacon>
             <Filename>Tipsy-bacon-Picon-v4.8-20160916-0912.zip</Filename>
             <RomUrl
@@ -43,67 +25,13 @@
                 title="XDA"
                 description="Visit TipsyOs bacon XDA thread">http://forum.xda-developers.com/oneplus-one/development/rom-kernel-tipsyos-bacon-t3165560</XDAUrl>
         </bacon>
-        <OnePlus2>
-            <Filename>Tipsy-oneplus2-Kirkstall_framboise-v4.0-20160610</Filename>
-            <RomUrl
-                id="rom"
-                title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=56588</RomUrl>
-            <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/Changelog.txt</ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
-            <OPUrl
-                id="op"
-                title="OnePlus Forums"
-                description="Visit GZR OnePlus2 thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-04-29-opt-tipsy-tesla-validus-6-0-1-aospb-official.437904/</OPUrl>
-        </OnePlus2>
         <OnePlus3>
-            <Filename>Tipsy-oneplus3-final_Maybe-v5.1-20161110-1623.zip</Filename>
+            <Filename>Tipsy-oneplus3-7.1.1.Beta-v4.2-20170115-1228.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=529152257862679453</RomUrl>
-            <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/Changelog.txt</ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
-            <XDAUrl
-                id="xda"
-                title="XDA"
-                description="Visit the Tipsy op3 XDA thread">http://forum.xda-developers.com/oneplus-3/development/rom-tipsyos-t3399355</XDAUrl>
-            <OPUrl
-                id="op"
-                title="OnePlus Forums"
-                description="Visit the Tipsy op3 thread on OnePlus Forums">https://forums.oneplus.net/threads/rom-op3-6-0-1-tipsyos.450657/</OPUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=745425885120700623</RomUrl>
         </OnePlus3>
-        <huashan>
-            <Filename>Tipsy-huashan-Picon-v4.8-20160913-1517.zip</Filename>
-            <RomUrl
-                id="rom"
-                title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=24727332921016361</RomUrl>
-            <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Sony/huashan/Changelog.txt</ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
-            <XDAUrl
-                id="xda"
-                title="XDA"
-                description="Visit TipsyOs Xperia SP XDA thread">http://forum.xda-developers.com/xperia-sp/development/rom-6-0-1r22-layers-tipsy-os-3-x-t3361161</XDAUrl>
-        </huashan>
         <wt88047>
             <Filename>Tipsy-wt88047-Vacation-v4.5-20160803-0106.zip</Filename>
             <RomUrl
@@ -123,50 +51,5 @@
                 title="XDA"
                 description="Visit TipsyOs Redmi-2 XDA thread">http://forum.xda-developers.com/redmi-2/development/rom-tipsyos-t3343744</XDAUrl>
         </wt88047>
-       <titan>
-            <Filename>Tipsy-titan-OMS-v4.4-20160802-2316.zip</Filename>
-            <RomUrl
-                id="rom"
-                title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=38446</RomUrl>
-            <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Vatsal/Changelog.txt</ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
-        </titan>
-        <falcon>
-            <Filename>Tipsy-falcon-frunk-v4.6-20160819-1457.zip</Filename>
-            <RomUrl
-                id="rom"
-                title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=34929</RomUrl>
-            <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Vatsal/Changelog.txt</ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
-        </falcon>
-        <mako>
-            <Filename>Tipsy-mako-frunk-v4.6-20160819-1759.zip</Filename>
-            <RomUrl
-                id="rom"
-                title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=88527</RomUrl>
-            <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Vatsal/Changelog.txt</ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
-        </mako>
     </Stable>
 </SlimOTA>
