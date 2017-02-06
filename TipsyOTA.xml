@@ -63,27 +63,19 @@
                 description="Visit GZR OnePlus2 thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-04-29-opt-tipsy-tesla-validus-6-0-1-aospb-official.437904/</OPUrl>
         </OnePlus2>
         <OnePlus3>
-            <Filename>Tipsy-oneplus3-final_Maybe-v5.1-20161110-1623.zip</Filename>
+            <Filename>Tipsy-oneplus3-7.1.1.Affligem-v4.4-20170205-1033.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=529152257862679453</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=529152257862700710</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
                 description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/OnePlus/Changelog.txt</ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
             <XDAUrl
                 id="xda"
                 title="XDA"
-                description="Visit the Tipsy op3 XDA thread">http://forum.xda-developers.com/oneplus-3/development/rom-tipsyos-t3399355</XDAUrl>
-            <OPUrl
-                id="op"
-                title="OnePlus Forums"
-                description="Visit the Tipsy op3 thread on OnePlus Forums">https://forums.oneplus.net/threads/rom-op3-6-0-1-tipsyos.450657/</OPUrl>
+                description="Visit the Tipsy op3 XDA thread">https://forum.xda-developers.com/oneplus-3/development/rom-tesla-n-t3481561</XDAUrl>
         </OnePlus3>
         <huashan>
             <Filename>Tipsy-huashan-Picon-v4.8-20160913-1517.zip</Filename>
