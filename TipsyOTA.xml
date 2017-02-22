@@ -182,5 +182,16 @@
                 title="Gapps"
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </flounder>
+        <clark>
+            <Filename>Tipsy-clark-7.1.1.Celestus-v4.6-20170222-1851.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=457095661767139408</RomUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+        </clark>
     </Stable>
 </SlimOTA>
