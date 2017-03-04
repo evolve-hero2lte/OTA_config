@@ -1,5 +1,5 @@
 #Common OTA url for all devices
-ota_url=https://github.com/evolve-hero2lte/OTA_config/blob/n7.1/TipsyOTA.xml
+ota_url=https://raw.githubusercontent.com/evolve-hero2lte/OTA_config/n7.1/TipsyOTA.xml
 release_type=Stable
 device_name=ro.product.device
  
